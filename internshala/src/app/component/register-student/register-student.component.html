@@ -2,9 +2,11 @@
 <div class="container">
     <div class="row">
         <div class="col-7"></div>
+
         <div class="col">
-            <div class="container" style="border: 2px solid rgb(240, 234, 234); border-radius: 10px;">
-                <!-- <div class="row mt-3">
+            <div class="container" style="border: 1px solid rgb(240, 234, 234); border-radius: 10px;">
+
+                <!-- <div class="row mt-3"> 
                     <div class="container mt-3 mb-3"
                         style="border: 1px solid #dee2e6!important; padding: 6px; border-radius: 5px;">
                         <a class="google_login" href="#" style="text-decoration: none; color: #000;">
@@ -17,7 +19,7 @@
                             </div>
                         </a>
                     </div>
-                </div>
+                </div> 
 
                 <div class="row mt-3">
                     <div class="col">
@@ -32,16 +34,15 @@
                         <div class="border" style="border: 1px solid #dee2e6!important; width:160px;"></div>
                     </div>
                 </div> -->
-                  
 
-                <form class="row g-3" novalidate [formGroup]="myform">
+                <form class=novalidate [formGroup]="myform">
+                    
                     <div class="row mt-3">
-                      
                         <div class="col">
                             <br>
                             <label for="formGroupExampleInput2" class="form-label"><b>Email</b></label>
                             <input formControlName="email" type="email" class="form-control" id="formGroupExampleInput2"
-                                placeholder="shashank@example.com">
+                                placeholder="priya@example.com">
                             <div class="text-danger"
                                 *ngIf="myform.controls['email'].touched && myform.controls['email'].invalid ">
                                 <p *ngIf="myform.controls['email'].errors?.['required']"><b>Email is required</b></p>
@@ -72,33 +73,54 @@
 
                     <div class="row mt-3">
                         <div class="col">
-                            <a href="#" target="_blank" style="float: right; text-decoration: none"><b>Forgot
-                                    password?</b></a>
+                            <label for="formGroupExampleInput2" class="form-label"><b>First Name</b></label>
+                            <input formControlName="fname" type="text" class="form-control" placeholder="Priya" aria-label="First name">
+                            <div class="text-danger" *ngIf="myform.controls['fname'].touched && myform.controls['fname'].invalid">
+                                <p *ngIf="myform.controls['fname'].errors?.['required']"><b>First Name is Required</b></p>
+                              </div>
                         </div>
+                        <div class="col">
+                            <label for="formGroupExampleInput2" class="form-label"><b>Last Name</b></label>
+                            <input  formControlName="lname" type="text" class="form-control" placeholder="Shetty" aria-label="Last name">
+                            <div class="text-danger" *ngIf="myform.controls['lname'].touched && myform.controls['lname'].invalid">
+                                <p *ngIf="myform.controls['lname'].errors?.['required']"><b>Last Name is Required</b></p>
+                              </div>
+                        </div>
+                    </div>
 
-                        <div>
-                            <div class="row mt-3">
-                                <div class="col">
-                                    <div class="d-grid gap-2">
-                                        <button (click)="getValues()" type="submit"
-                                            class="btn btn-primary">Login</button>
-                                    </div>
-                                </div>
-                                <div>
 
-                                    <div class="row mt-3">
-                                        <label style="text-align: center;">
-                                            New to Internshala? Register (
-                                            <a href="/register-student" target="_blank"
-                                                style="text-decoration: none;"><b>Student</b></a> /
-                                            <a href="/register-employer" target="_blank"
-                                                style="text-decoration: none;"><b>Company</b></a>)
-                                        </label>
-                                    </div>
-                                    <br>
-                                </div>
+                    <div class="row mt-3">
+                        <div class="col">
+                            <span style="color: #333333; line-height: 1.57; font-weight: 400">
+                                By Signing up, you agree to our <a href="#" target="_blank"
+                                    style="text-decoration: none;"><b>Terms
+                                        and
+                                        Conditions</b></a>.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col">
+                            <div class="d-grid gap-2">
+                                <button (click)="getValues()" type="submit" class="btn btn-primary">Sign up</button>
                             </div>
                         </div>
+                        <div>
+
+                            <div class=" row mt-3">
+                                <div class="col">
+                                    <div class="d-grid gap-2" style="text-align: center;">
+                                        <span>
+                                            <b>Already Registered?</b>
+                                            <a href="/login" style="text-decoration: none;"><b>Login</b></a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <br>
                     </div>
                 </form>
             </div>

@@ -1,0 +1,29 @@
+h2,
+h6,
+p,
+a {
+    text-align: center;
+}
+
+a {
+    border-width: 5px;
+}
+
+p {
+    line-height: 0.5;
+}
+
+.spaceing {
+    line-height: 2;
+}
+
+.border {
+    background: #F8F8F8;
+    border:1px solid #EEE;
+    box-sizing: border-box;
+    border-radius:6px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #484848;
+    padding:16px 24px;
+}

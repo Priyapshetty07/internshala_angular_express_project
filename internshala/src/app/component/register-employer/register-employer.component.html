@@ -1,0 +1,129 @@
+<br>
+<div class="container">
+    <div class="row">
+
+        <div class="col-7"></div>
+
+        <div class="col">
+            <div class="container-sm" style="border: 2px solid rgb(240, 234, 234); border-radius: 10px;">
+                <form class= novalidate [formGroup]="myform">
+                    <div class=" row mb-3">
+
+                        <div class="col mt-3">
+                            <br>
+                            <label for="formGroupExampleInput" class="form-label"><b>Official Email Id</b></label>
+                            <input formControlName="email" type="text" class="form-control" id="formGroupExampleInput"
+                                placeholder="name@company_name.com">
+                            <div class="text-danger"
+                                *ngIf="myform.controls['email'].touched && myform.controls['email'].invalid ">
+                                <p *ngIf="myform.controls['email'].errors?.['required']"><b>Email is required</b></p>
+                                <p *ngIf="myform.controls['email'].errors?.['email']"><b>Please enter valid Email</b>
+                                </p>
+                                <p *ngIf="myform.controls['email'].errors?.['minlength']"><b>Email min length 4
+                                        character is required</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" row mb-3">
+                        <div class="col">
+                            <label for="formGroupExampleInput2" class="form-label"><b>Password</b></label>
+                            <input formControlName="password" type="password" class="form-control"
+                                id="formGroupExampleInput2" placeholder="Minimum 5 characters">
+                            <div class="text-danger"
+                                *ngIf="myform.controls['password'].touched && myform.controls['password'].invalid">
+                                <p *ngIf="myform.controls['password'].errors?.['required']"><b>Please Enter Password</b>
+                                </p>
+                                <p *ngIf="myform.controls['password'].errors?.['minlength']"><b>Min length should 5
+                                        char</b></p>
+                                <p *ngIf="myform.controls['password'].errors?.['maxlength']"><b>Max length should 7
+                                        char</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="formGroupExampleInput2" class="form-label"><b>First Name</b></label>
+                            <input formControlName="fname" type="text" class="form-control"
+                                placeholder=" Your First name" aria-label="First name">
+                            <div class="text-danger"
+                                *ngIf="myform.controls['fname'].touched && myform.controls['fname'].invalid">
+                                <p *ngIf="myform.controls['fname'].errors?.['required']"><b>First Name is Required</b>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <label for="formGroupExampleInput2" class="form-label"><b>Last Name</b></label>
+                            <input formControlName="lname" type="text" class="form-control"
+                                placeholder=" Your Last name" aria-label="Last name">
+                            <div class="text-danger"
+                                *ngIf="myform.controls['lname'].touched && myform.controls['lname'].invalid">
+                                <p *ngIf="myform.controls['lname'].errors?.['required']"><b>Last Name is Required</b>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone_primary" class="control-label"><b>Mobile Number</b></label>
+                        <div class="row" id="phone_container">
+                            <div class="col col-3">
+                                <input type="text" class="form-control country-code" id="country_code"
+                                    name="country_code" value="+91" autocomplete="none">
+                            </div>
+                            <div class="col col-9">
+                                <input formControlName="mobile" type="number" class="form-control mobile-number"
+                                    id="phone_primary" name="phone_primary" placeholder="10 digit mobile number"
+                                    autocomplete="none">
+                                <div class="text-danger"
+                                    *ngIf="myform.controls['mobile'].touched && myform.controls['mobile'].invalid">
+                                    <p *ngIf="myform.controls['mobile'].errors?.['required']"><b>Please Enter
+                                            Mobile Number</b>
+                                    </p>
+                                    <p *ngIf="myform.controls['mobile'].errors?.['minlength']"><b>Min length should 10
+                                            char</b></p>
+                                    <p *ngIf="myform.controls['mobile'].errors?.['maxlength']"><b>Max length should 10
+                                            char</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col">
+                            <span style="color: #333333; line-height: 1.57; font-weight: 400">
+                                By registering, you agree to our <a href="#" target="_blank"
+                                    style="text-decoration: none;"><b>Terms and Conditions</b></a>.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col ">
+                            <div class="d-grid gap-2">
+                                <button (click)="getValues()" type="submit" class="btn btn-primary">Register
+                                    Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" row mt-3">
+                        <div class="col">
+                            <div class="d-grid gap-2">
+                                <a href="#" style="text-align: center; text-decoration: none;">
+                                    <span>
+                                        <b> Have a question?</b>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </form>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>

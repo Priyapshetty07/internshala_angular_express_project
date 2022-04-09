@@ -12,6 +12,13 @@ import { JobsComponent } from './component/jobs/jobs.component';
 import { LoginComponent } from './component/login/login.component';
 import { RegisterComponent } from './component/register/register.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { RegisterEmployerComponent } from './component/register-employer/register-employer.component';
+import { RegisterStudentComponent } from './component/register-student/register-student.component';
+import { PrivacyComponent } from './component/privacy/privacy.component';
+import { TermsComponent } from './component/terms/terms.component';
+import { ContactComponent } from './component/contact/contact.component';
+import { ServicesComponent } from './component/services/services.component';
+import { HomeComponent } from './component/home/home.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +30,14 @@ import { ReactiveFormsModule } from '@angular/forms';
     OnlineTrainingsComponent,
     JobsComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    RegisterEmployerComponent,
+    RegisterStudentComponent,
+    PrivacyComponent,
+    TermsComponent,
+    ContactComponent,
+    ServicesComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
