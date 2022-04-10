@@ -19,6 +19,7 @@ import { TermsComponent } from './component/terms/terms.component';
 import { ContactComponent } from './component/contact/contact.component';
 import { ServicesComponent } from './component/services/services.component';
 import { HomeComponent } from './component/home/home.component';
+import { HireInternsOfYourCompanyComponent } from './component/hire-interns-of-your-company/hire-interns-of-your-company.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { HomeComponent } from './component/home/home.component';
     TermsComponent,
     ContactComponent,
     ServicesComponent,
-    HomeComponent
+    HomeComponent,
+    HireInternsOfYourCompanyComponent
   ],
   imports: [
     BrowserModule,

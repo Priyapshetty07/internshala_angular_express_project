@@ -1,9 +1,32 @@
-<br>
-<div class="container">
-    <div class="row">
-        <div class="col-7"></div>
 
-        <div class="col">
+<br>
+<div class="colors">
+    <div class="row">
+
+        <div class="col-7">
+            <img src="../../../assets/image/reg_student.png" alt="">
+            <!-- <div class="heading_0">
+                A <span id="free_text"> free </span> ride to your dream career
+            </div>
+            <h3 class="d-none d-md-block">Register and apply to 10000+ opportunities</h3>
+            <div class="features_container">
+                <div class="feature">
+                    <img src="../../../assets/image/rightmark.png">
+                    <h4>Internships</h4>
+                </div>
+                <div class="feature">
+                    <img src="../../../assets/image/check_box.png">
+                    <h4>Fresher jobs</h4>
+                </div>
+                <div class="feature">
+                    <img src="../../../assets/image/check_box.png">
+                    <h4>Work from home jobs</h4>
+                </div>
+            </div> -->
+        </div>
+        <div class="col"></div>
+
+        <div class="col-4 second">
             <div class="container" style="border: 1px solid rgb(240, 234, 234); border-radius: 10px;">
 
                 <!-- <div class="row mt-3"> 
@@ -36,7 +59,7 @@
                 </div> -->
 
                 <form class=novalidate [formGroup]="myform">
-                    
+
                     <div class="row mt-3">
                         <div class="col">
                             <br>
@@ -74,17 +97,23 @@
                     <div class="row mt-3">
                         <div class="col">
                             <label for="formGroupExampleInput2" class="form-label"><b>First Name</b></label>
-                            <input formControlName="fname" type="text" class="form-control" placeholder="Priya" aria-label="First name">
-                            <div class="text-danger" *ngIf="myform.controls['fname'].touched && myform.controls['fname'].invalid">
-                                <p *ngIf="myform.controls['fname'].errors?.['required']"><b>First Name is Required</b></p>
-                              </div>
+                            <input formControlName="fname" type="text" class="form-control" placeholder="Priya"
+                                aria-label="First name">
+                            <div class="text-danger"
+                                *ngIf="myform.controls['fname'].touched && myform.controls['fname'].invalid">
+                                <p *ngIf="myform.controls['fname'].errors?.['required']"><b>First Name is Required</b>
+                                </p>
+                            </div>
                         </div>
                         <div class="col">
                             <label for="formGroupExampleInput2" class="form-label"><b>Last Name</b></label>
-                            <input  formControlName="lname" type="text" class="form-control" placeholder="Shetty" aria-label="Last name">
-                            <div class="text-danger" *ngIf="myform.controls['lname'].touched && myform.controls['lname'].invalid">
-                                <p *ngIf="myform.controls['lname'].errors?.['required']"><b>Last Name is Required</b></p>
-                              </div>
+                            <input formControlName="lname" type="text" class="form-control" placeholder="Shetty"
+                                aria-label="Last name">
+                            <div class="text-danger"
+                                *ngIf="myform.controls['lname'].touched && myform.controls['lname'].invalid">
+                                <p *ngIf="myform.controls['lname'].errors?.['required']"><b>Last Name is Required</b>
+                                </p>
+                            </div>
                         </div>
                     </div>
 
@@ -93,9 +122,7 @@
                         <div class="col">
                             <span style="color: #333333; line-height: 1.57; font-weight: 400">
                                 By Signing up, you agree to our <a href="/terms" target="_blank"
-                                    style="text-decoration: none;"><b>Terms
-                                        and
-                                        Conditions</b></a>.
+                                    style="text-decoration: none;"><b>Terms and Conditions</b></a>.
                             </span>
                         </div>
                     </div>
@@ -125,5 +152,6 @@
                 </form>
             </div>
         </div>
+        <div class="col"></div> 
     </div>
 </div>

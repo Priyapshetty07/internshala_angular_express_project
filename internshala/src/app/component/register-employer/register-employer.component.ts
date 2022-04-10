@@ -16,6 +16,32 @@ export class RegisterEmployerComponent implements OnInit {
     mobile: new FormControl('', [Validators.required, Validators.minLength(10), Validators.maxLength(10)])
   });
 
+  card1 = [
+    {
+      title: '1. Register',
+      text: 'Get started by creating',
+      text1: 'your account',
+      imagelink: 'https://internshala.com/static/images/registration/employer/registration_new/internship/illustrations/1_register.png'
+    },
+    {
+      title: '2. Post',
+      text: 'Post internships for any',
+      text1: 'profile and location',
+      imagelink: 'https://internshala.com/static/images/registration/employer/registration_new/internship/illustrations/2_post.png'
+      
+
+    },
+    {
+      title: '3. Hire',
+      text: 'Screen and hire using',
+      text1: 'our world class ATS',
+      imagelink: 'https://internshala.com/static/images/registration/employer/registration_new/internship/illustrations/3_hire.png'
+
+
+    }
+  ];
+
+
   constructor() { }
 
   ngOnInit(): void {
