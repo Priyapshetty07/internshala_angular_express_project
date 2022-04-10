@@ -1,0 +1,129 @@
+<div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand  gy-5" href="#">
+                <img src="https://internshala.com/static/images/common/new_internshala_logo.svg" alt="" width="250px"
+                    height="24">
+            </a>
+
+            <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarAlignExample">
+
+                <ul class="navbar-nav mx-auto ">
+                    <li>
+                        <a class="nav-link" href="/about-us" role="button" aria-expanded="false">
+                            About us
+                        </a>
+
+                    </li>
+                    <li>
+                        <a class="nav-link" href="/#" role="button" aria-expanded="false">
+                            Careers
+                        </a>
+
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#" role="button" aria-expanded="false">
+                            Culture
+                        </a>
+
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#" role="button" aria-expanded="false">
+                            Home
+                        </a>
+
+                    </li>
+
+                </ul>
+            </div>
+            <div class="d-flex justify-content-between px-5">
+                <button class="btn btn-primary me-3 gx-8" type="button" aria-expanded="false">
+                    <a href="/register" style="text-decoration: none; color:white;">View openings</a>
+                </button>
+            </div>
+        </div>
+    </nav>
+</div>
+
+
+
+
+
+
+
+
+
+<div>
+    <div class="container-fluid">
+        <img src="../../../assets/image/contactus.PNG" />
+    </div>
+    <div class="txt">
+        <div class="container" style="width: 900px;">
+
+
+            <h2><b>Our vision</b></h2>
+
+            <p>Internshala is a dot com business with the heart of dot org.</p>
+
+            <p> <Span class="aling">We are a technology company on a mission to equip students with relevant skills &
+                    practical exposure to help
+                    them get the best possible start to their careers. Imagine a world full of freedom and
+                    possibilities. A
+                    world where you can discover your passion and turn it into your career. A world where you graduate
+                    fully
+                    assured, confident, and prepared to stake a claim on your place in the world.</Span></p>
+        </div>
+        <br>
+    </div>
+</div>
+
+
+
+
+<div class="container-fluid" style="background-color: #eafcff; align-items: center;">
+    <div class="row">
+        <!-- <div class="col"></div> -->
+        <div class="col px-5" *ngFor="let myele of card1">
+            <div class="card mb-3" style="max-width: auto;">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="{{myele.imglink}}" class="img-fluid rounded-start" alt="..." height="200px">
+                    </div>
+                    <div class="col-8">
+                        <div class="card-body ptag">
+                            <h6 class="card-title"><b>{{myele.title}}</b></h6>
+                            <br>
+                            <p class="card-text">{{myele.text}}</p>
+                            <p class="card-text">{{myele.text1}}</p>
+                            <p class="card-text">{{myele.text2}}</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="col"></div> -->
+    </div>
+    <br>
+    <div class="row">
+        <!-- <div class="col"></div> -->
+        <div class="col px-5" *ngFor="let myele of card2">
+            <div class="card mb-3" style="max-width: auto;">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="{{myele.imglink}}" class="img-fluid rounded-start" alt="..." height="200px">
+                    </div>
+                    <div class="col-8">
+                        <div class="card-body ptag">
+                            <h6 class="card-title"><b>{{myele.title}}</b></h6>
+                            <br>
+                            <p class="card-text">{{myele.text}}</p>
+                            <p class="card-text">{{myele.text1}}</p>
+                            <p class="card-text">{{myele.text2}}</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="col"></div> -->
+    </div>
+</div>

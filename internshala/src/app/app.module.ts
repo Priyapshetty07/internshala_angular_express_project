@@ -20,6 +20,8 @@ import { ContactComponent } from './component/contact/contact.component';
 import { ServicesComponent } from './component/services/services.component';
 import { HomeComponent } from './component/home/home.component';
 import { HireInternsOfYourCompanyComponent } from './component/hire-interns-of-your-company/hire-interns-of-your-company.component';
+import { ForgotPasswordComponent } from './component/forgot-password/forgot-password.component';
+import { AboutUsComponent } from './component/about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { HireInternsOfYourCompanyComponent } from './component/hire-interns-of-y
     ContactComponent,
     ServicesComponent,
     HomeComponent,
-    HireInternsOfYourCompanyComponent
+    HireInternsOfYourCompanyComponent,
+    ForgotPasswordComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AboutUsComponent } from './component/about-us/about-us.component';
 import { ContactComponent } from './component/contact/contact.component';
+import { ForgotPasswordComponent } from './component/forgot-password/forgot-password.component';
 import { HireInternsOfYourCompanyComponent } from './component/hire-interns-of-your-company/hire-interns-of-your-company.component';
 import { InternshipsComponent } from './component/internships/internships.component';
 import { JobsComponent } from './component/jobs/jobs.component';
@@ -25,7 +27,9 @@ const routes: Routes = [
   {path:'privacy',component:PrivacyComponent},
   {path:'services',component:ServicesComponent},
   {path:'contact',component:ContactComponent},
-  {path:'hire-interns-of-you-company',component:HireInternsOfYourCompanyComponent}
+  {path:'forgot-password',component:ForgotPasswordComponent},
+  {path:'hire-interns-of-you-company',component:HireInternsOfYourCompanyComponent},
+  {path:'about-us',component:AboutUsComponent}
 
 ];
 

@@ -1,0 +1,28 @@
+.txt{
+    background-color: #eafcff;
+    width: auto;
+    height: auto;
+}
+.txt h2{
+    color: #1757aa;
+    text-align: center;
+}
+.txt p{
+    text-align:center;
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 2;
+    font-weight: 400;
+}
+.txt .aling{
+    text-align: center;
+    width: 500px;
+
+}
+.fl{
+    float: right;
+    margin-top: 0;
+}
+.ptag p{
+    line-height: 0.5;
+}
