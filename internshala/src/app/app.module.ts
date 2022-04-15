@@ -22,7 +22,13 @@ import { HomeComponent } from './component/home/home.component';
 import { HireInternsOfYourCompanyComponent } from './component/hire-interns-of-your-company/hire-interns-of-your-company.component';
 import { ForgotPasswordComponent } from './component/forgot-password/forgot-password.component';
 import { AboutUsComponent } from './component/about-us/about-us.component';
-
+import {AccordionModule} from 'primeng/accordion';
+import { MenuItem } from 'primeng/api';
+import {CarouselModule} from 'primeng/carousel';
+import {ButtonModule} from 'primeng/button';
+import {ToastModule} from 'primeng/toast';
+import {FormsModule} from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,12 +49,21 @@ import { AboutUsComponent } from './component/about-us/about-us.component';
     HomeComponent,
     HireInternsOfYourCompanyComponent,
     ForgotPasswordComponent,
-    AboutUsComponent
+    AboutUsComponent,
+  
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AccordionModule,
+    CarouselModule,
+    ButtonModule,
+    ToastModule,
+    FormsModule,
+    HttpClientModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

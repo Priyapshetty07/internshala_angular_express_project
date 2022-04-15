@@ -4,6 +4,7 @@ import { AboutUsComponent } from './component/about-us/about-us.component';
 import { ContactComponent } from './component/contact/contact.component';
 import { ForgotPasswordComponent } from './component/forgot-password/forgot-password.component';
 import { HireInternsOfYourCompanyComponent } from './component/hire-interns-of-your-company/hire-interns-of-your-company.component';
+import { HomeComponent } from './component/home/home.component';
 import { InternshipsComponent } from './component/internships/internships.component';
 import { JobsComponent } from './component/jobs/jobs.component';
 import { LoginComponent } from './component/login/login.component';
@@ -29,7 +30,8 @@ const routes: Routes = [
   {path:'contact',component:ContactComponent},
   {path:'forgot-password',component:ForgotPasswordComponent},
   {path:'hire-interns-of-you-company',component:HireInternsOfYourCompanyComponent},
-  {path:'about-us',component:AboutUsComponent}
+  {path:'about-us',component:AboutUsComponent},
+  {path:'home',component:HomeComponent}
 
 ];
 
