@@ -31,7 +31,8 @@ const routes: Routes = [
   {path:'forgot-password',component:ForgotPasswordComponent},
   {path:'hire-interns-of-you-company',component:HireInternsOfYourCompanyComponent},
   {path:'about-us',component:AboutUsComponent},
-  {path:'home',component:HomeComponent}
+  {path:'home',component:HomeComponent},
+  {path:'',component:HomeComponent}
 
 ];
 
