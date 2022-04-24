@@ -1,7 +1,7 @@
 <!-- <p>header works!</p> -->
 
 
- <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+ <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light ">
     <div class="container-fluid">
       
       <div class="d-flex justify-content-start">
@@ -10,10 +10,11 @@
             height="24">
         </a>
       </div>
-      <div class="d-flex justify-content-end">
-        <div class="collapse navbar-collapse ">
-          <ul class="navbar-nav mx-auto ">
-            <li class="nav-item dropdown">
+
+      <div class="d-flex justify-content-start">
+        <div class="collapse navbar-collapse d-flex justify-content-start">
+          <ul class="navbar-nav mx-auto d-flex justify-content-start ">
+            <li class="nav-item dropdown d-flex justify-content-start">
               <a class="nav-link dropdown-toggle" href="/internships" id="navbarDropdown" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
                 Intership
@@ -47,7 +48,7 @@
         </div>
         <div>
           <button type="button" class="border border-primary px-3 me-2" style="background-color: white;">
-            <a href="/login" style="text-decoration: none;">Login</a>
+            <a [routerLink]="['login']" style="text-decoration: none;">Login</a>
           </button>
 
           <button class="btn btn-primary me-3 gx-8 dropdown-toggle" type="button" id="dropdownMenuButton1"
@@ -63,18 +64,73 @@
         </div>
       </div>
     </div>
-  </nav> 
-<!-- <div class="container-fluid">
+  </nav>  -->
 
+
+
+  <header>
+
+    <a class="logo" href="#">
+      <img class="logo" src="https://internshala.com/static/images/common/new_internshala_logo.svg" alt="InternShala">
+    </a>
+    <nav>
+      <ul class="nav_links">
+        <!-- <li>
+          <a href="/internships">Internships</a>
+        </li> -->
+        <li class="nav-item dropdown ">
+          <a class="nav-link dropdown-toggle" href="/internships" id="navbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Intership
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Location</a>
+          
+            </li>
+            <li><a class="dropdown-item" href="#">Category</a></li>
+          </ul>
+        </li>
+        <!-- <li>
+          <a href="/online-trainings">Online Training <span id="headOffer">OFFER</span></a>
+        </li> -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="/online-trainings" id="navbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Online Training <span class="off"><b>OFFER</b></span>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Location</a></li>
+            <li><a class="dropdown-item" href="#">Category</a></li>
+          </ul>
+        </li>
+        <!-- <li>
+          <a href="/jobs">Freshers Job</a>
+        </li> -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="/jobs" id="navbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Jobs
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Location</a></li>
+            <li><a class="dropdown-item" href="#">Category</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <a [routerLink]="['login']" id="cta">
+      <button class="headingbutton">Login</button></a>
   
-  <nav class="navbar navbar-light bg-light">
-    <div class="container">
-      <div class="d-flex">
-      <a class="navbar-brand" href="#">
-        <img src="https://internshala.com/static/images/common/new_internshala_logo.svg" alt="" width="250px"
-          height="24">
-      </a>
-    </div>
-    </div>
-  </nav>
-</div> -->
+    <!-- <a href="/register" id="cta1">
+      <button class="headingbutton" id="register">Register</button></a> -->
+      <button class="btn btn-primary me-3 gx-8 dropdown-toggle" type="button" id="dropdownMenuButton1"
+      data-bs-toggle="dropdown" aria-expanded="false">
+      <a href="/register" style="text-decoration: none; color:white;"> Register</a>
+    </button>
+
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+      <li><a class="dropdown-item" href="/register-student">As a student</a></li>
+      <li><a class="dropdown-item" href="/register-employer">As a employer</a></li>
+    </ul>
+   
+  </header>

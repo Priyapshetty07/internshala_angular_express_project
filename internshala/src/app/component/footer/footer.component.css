@@ -1,0 +1,59 @@
+a {
+
+    font-weight: 350;
+
+    text-decoration: none;
+
+    color: #FFFFFF;
+
+    cursor: pointer;
+
+    line-height: 2.5;
+
+    /* text-align: center; */
+
+}
+
+h4{
+
+color: #FFFFFF;
+
+
+
+}
+
+.copy{
+
+    float: right;
+
+    color: #FFFFFF;
+
+    font-weight: 500;
+
+}
+
+.icon i{
+
+   padding: 10px;
+
+   display: inline-block;
+
+    font-size: 20px;
+
+}
+
+.gicon{
+
+    display: inline-block;
+
+    color: #ffffff;
+
+    margin-right: 32px;
+
+    border: 1px solid #fff;
+
+    padding: 8px 12px;
+
+    border-radius: 4px;
+
+}

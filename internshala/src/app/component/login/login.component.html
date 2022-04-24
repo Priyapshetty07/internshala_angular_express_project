@@ -1,10 +1,11 @@
 <br>
-<div class="container">
-    <div class="row">
-        <div class="col-7"></div>
-        <div class="col">
-            <div class="container" style="border: 2px solid rgb(240, 234, 234); border-radius: 10px;">
-                <!-- <div class="row mt-3">
+<div class="modal-body">
+<div class="container-fluid">
+   <div class="row">
+            <div class="col-7"></div>
+            <div class="col">
+                <div class="container" style="border: 2px solid rgb(240, 234, 234); border-radius: 10px;">
+                    <!-- <div class="row mt-3">
                     <div class="container mt-3 mb-3"
                         style="border: 1px solid #dee2e6!important; padding: 6px; border-radius: 5px;">
                         <a class="google_login" href="#" style="text-decoration: none; color: #000;">
@@ -13,7 +14,8 @@
                                     <img src="https://internshala.com/static/images/login/google_logo.png">
 
                                     <b>Sign Up with Google</b>
-                                </div>
+                                </
+                                div>
                             </div>
                         </a>
                     </div>
@@ -31,77 +33,156 @@
                     <div class="col">
                         <div class="border" style="border: 1px solid #dee2e6!important; width:160px;"></div>
                     </div>
-                </div> -->
-                  
+                </div>  -->
 
-                <form class="row g-3" novalidate [formGroup]="myform">
-                    <div class="row mt-3">
-                      
-                        <div class="col">
-                            <br>
-                            <label for="formGroupExampleInput2" class="form-label"><b>Email</b></label>
-                            <input formControlName="email" type="email" class="form-control" id="formGroupExampleInput2"
-                                placeholder="shashank@example.com">
-                            <div class="text-danger"
-                                *ngIf="myform.controls['email'].touched && myform.controls['email'].invalid ">
-                                <p *ngIf="myform.controls['email'].errors?.['required']"><b>Email is required</b></p>
-                                <p *ngIf="myform.controls['email'].errors?.['email']"><b>Please enter valid Email</b>
-                                </p>
-                                <p *ngIf="myform.controls['email'].errors?.['minlength']"><b>Email min length 4
-                                        character is required</b></p>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class=" row mt-3">
-                        <div class="col">
-                            <label for="formGroupExampleInput2" class="form-label"><b>Password</b></label>
-                            <input formControlName="password" type="password" class="form-control"
-                                id="formGroupExampleInput2" placeholder="Minimum be atleast 5 characters">
-                            <div class="text-danger"
-                                *ngIf="myform.controls['password'].touched && myform.controls['password'].invalid">
-                                <p *ngIf="myform.controls['password'].errors?.['required']"><b>Please Enter Password</b>
-                                </p>
-                                <p *ngIf="myform.controls['password'].errors?.['minlength']"><b>Min length should 5
-                                        char</b></p>
-                                <p *ngIf="myform.controls['password'].errors?.['maxlength']"><b>Max length should 7
-                                        char</b></p>
-                            </div>
-                        </div>
-                    </div>
+                    <form class="row g-3" novalidate [formGroup]="myform">
+                        <div class="row mt-3">
 
-                    <div class="row mt-3">
-                        <div class="col">
-                            <a href="/forgot-password" target="_blank" style="float: right; text-decoration: none"><b>Forgot
-                                    password?</b></a>
-                        </div>
-
-                        <div>
-                            <div class="row mt-3">
-                                <div class="col">
-                                    <div class="d-grid gap-2">
-                                        <button (click)="getValues()" type="submit"
-                                            class="btn btn-primary">Login</button>
-                                    </div>
-                                </div>
-                                <div>
-
-                                    <div class="row mt-3">
-                                        <label style="text-align: center;">
-                                            New to Internshala? Register (
-                                            <a href="/register-student" target="_blank"
-                                                style="text-decoration: none;"><b>Student</b></a> /
-                                            <a href="/register-employer" target="_blank"
-                                                style="text-decoration: none;"><b>Company</b></a>)
-                                        </label>
-                                    </div>
-                                    <br>
+                            <div class="col">
+                                <br>
+                                <label for="formGroupExampleInput2" class="form-label"><b>Email</b></label>
+                                <input formControlName="email" type="email" class="form-control"
+                                    id="formGroupExampleInput2" placeholder="shashank@example.com">
+                                <div class="text-danger"
+                                    *ngIf="myform.controls['email'].touched && myform.controls['email'].invalid ">
+                                    <p *ngIf="myform.controls['email'].errors?.['required']"><b>Email is required</b>
+                                    </p>
+                                    <p *ngIf="myform.controls['email'].errors?.['email']"><b>Please enter valid
+                                            Email</b>
+                                    </p>
+                                    <p *ngIf="myform.controls['email'].errors?.['minlength']"><b>Email min length 4
+                                            character is required</b></p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </form>
+
+                        <div class=" row mt-3">
+                            <div class="col">
+                                <label for="formGroupExampleInput2" class="form-label"><b>Password</b></label>
+                                <input formControlName="password" type="password" class="form-control"
+                                    id="formGroupExampleInput2" placeholder="Minimum be atleast 5 characters">
+                                <div class="text-danger"
+                                    *ngIf="myform.controls['password'].touched && myform.controls['password'].invalid">
+                                    <p *ngIf="myform.controls['password'].errors?.['required']"><b>Please Enter
+                                            Password</b>
+                                    </p>
+                                    <p *ngIf="myform.controls['password'].errors?.['minlength']"><b>Min length should 5
+                                            char</b></p>
+                                    <p *ngIf="myform.controls['password'].errors?.['maxlength']"><b>Max length should 7
+                                            char</b></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col">
+                                <a href="/forgot-password" target="_blank"
+                                    style="float: right; text-decoration: none"><b>Forgot
+                                        password?</b></a>
+                            </div>
+
+                            <div>
+                                <div class="row mt-3">
+                                    <div class="col">
+                                        <div class="d-grid gap-2">
+                                            <button (click)="getValues()" type="submit"
+                                                class="btn btn-primary">Login</button>
+                                        </div>
+                                    </div>
+                                    <div>
+
+                                        <div class="row mt-3">
+                                            <label style="text-align: center;">
+                                                New to Internshala? Register (
+                                                <a href="/register-student" target="_blank"
+                                                    style="text-decoration: none;"><b>Student</b></a> /
+                                                <a href="/register-employer" target="_blank"
+                                                    style="text-decoration: none;"><b>Company</b></a>)
+                                            </label>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
+
 </div>
+
+
+<!-- <form class="row g-3" #f="ngForm" novalidate>
+    <div class="row mt-3">
+      
+        <div class="col">
+            <br>
+            <label for="formGroupExampleInput2" class="form-label"><b>Email</b></label>
+            <input ngModel name="email" type="email" class="form-control" id="formGroupExampleInput2"
+                placeholder="shashank@example.com">
+            <div class="text-danger"
+                *ngIf="myform.controls['email'].touched && myform.controls['email'].invalid ">
+                <p *ngIf="myform.controls['email'].errors?.['required']"><b>Email is required</b></p>
+                <p *ngIf="myform.controls['email'].errors?.['email']"><b>Please enter valid Email</b>
+                </p>
+                <p *ngIf="myform.controls['email'].errors?.['minlength']"><b>Email min length 4
+                        character is required</b></p>
+            </div>
+        </div>
+    </div>
+
+    <div class=" row mt-3">
+        <div class="col">
+            <label for="formGroupExampleInput2" class="form-label"><b>Password</b></label>
+            <input ngModel name="password" type="password" class="form-control"
+                id="formGroupExampleInput2" placeholder="Minimum be atleast 5 characters">
+            <div class="text-danger"
+                *ngIf="myform.controls['password'].touched && myform.controls['password'].invalid">
+                <p *ngIf="myform.controls['password'].errors?.['required']"><b>Please Enter Password</b>
+                </p>
+                <p *ngIf="myform.controls['password'].errors?.['minlength']"><b>Min length should 5
+                        char</b></p>
+                <p *ngIf="myform.controls['password'].errors?.['maxlength']"><b>Max length should 7
+                        char</b></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col">
+            <a href="/forgot-password" target="_blank" style="float: right; text-decoration: none"><b>Forgot
+                    password?</b></a>
+        </div>
+
+        <div>
+            <div class="row mt-3">
+                <div class="col">
+                    <div class="d-grid gap-2">
+                        <button (click)="getValues()" type="submit"
+                            class="btn btn-primary">Login</button>
+                    </div>
+                </div>
+                <div>
+
+                    <div class="row mt-3">
+                        <label style="text-align: center;">
+                            New to Internshala? Register (
+                            <a href="/register-student" target="_blank"
+                                style="text-decoration: none;"><b>Student</b></a> /
+                            <a href="/register-employer" target="_blank"
+                                style="text-decoration: none;"><b>Company</b></a>)
+                        </label>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+</div>
+</div>
+</div> -->
