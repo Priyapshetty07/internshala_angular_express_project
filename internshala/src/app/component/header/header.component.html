@@ -1,7 +1,7 @@
 <!-- <p>header works!</p> -->
 
 
- <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light ">
     <div class="container-fluid">
       
       <div class="d-flex justify-content-start">
@@ -68,17 +68,15 @@
 
 
 
-  <header>
+<header>
 
-    <a class="logo" href="#">
-      <img class="logo" src="https://internshala.com/static/images/common/new_internshala_logo.svg" alt="InternShala">
-    </a>
-    <nav>
-      <ul class="nav_links">
-        <!-- <li>
-          <a href="/internships">Internships</a>
-        </li> -->
-        <li class="nav-item dropdown ">
+  <a class="logo" href="#">
+    <img class="logo" src="https://internshala.com/static/images/common/new_internshala_logo.svg" alt="InternShala">
+  </a>
+  <nav>
+    <ul class="nav_links">
+
+      <!-- <li class="nav-item dropdown ">
           <a class="nav-link dropdown-toggle" href="/internships" id="navbarDropdown" role="button"
             data-bs-toggle="dropdown" aria-expanded="false">
             Intership
@@ -90,47 +88,79 @@
             <li><a class="dropdown-item" href="#">Category</a></li>
           </ul>
         </li>
-        <!-- <li>
-          <a href="/online-trainings">Online Training <span id="headOffer">OFFER</span></a>
-        </li> -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="/online-trainings" id="navbarDropdown" role="button"
-            data-bs-toggle="dropdown" aria-expanded="false">
-            Online Training <span class="off"><b>OFFER</b></span>
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Location</a></li>
-            <li><a class="dropdown-item" href="#">Category</a></li>
-          </ul>
-        </li>
-        <!-- <li>
-          <a href="/jobs">Freshers Job</a>
-        </li> -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="/jobs" id="navbarDropdown" role="button"
-            data-bs-toggle="dropdown" aria-expanded="false">
-            Jobs
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Location</a></li>
-            <li><a class="dropdown-item" href="#">Category</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-    <a [routerLink]="['login']" id="cta">
-      <button class="headingbutton">Login</button></a>
-  
-    <!-- <a href="/register" id="cta1">
-      <button class="headingbutton" id="register">Register</button></a> -->
-      <button class="btn btn-primary me-3 gx-8 dropdown-toggle" type="button" id="dropdownMenuButton1"
-      data-bs-toggle="dropdown" aria-expanded="false">
-      <a href="/register" style="text-decoration: none; color:white;"> Register</a>
-    </button>
+        -->
 
-    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-      <li><a class="dropdown-item" href="/register-student">As a student</a></li>
-      <li><a class="dropdown-item" href="/register-employer">As a employer</a></li>
+      <li class="nav-item dropdown" id="myDropdown">
+
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Internships </a>
+
+        <ul class="dropdown-menu">
+
+          <li *ngFor="let intern of internship"> <a class="dropdown-item" href="#"> {{intern.category}} </a>
+
+            <ul class="submenu dropdown-menu">
+
+              <li *ngFor="let opt of intern.options"><a class="dropdown-item" href={{opt.link}}>{{opt.title}}</a>
+
+              </li>
+
+            </ul>
+
+          </li>
+
+        </ul>
+
+      </li>
+
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+          Online Training <span class="off"><b>OFFER</b></span>
+        </a>
+        <ul class="dropdown-menu">
+          <li *ngFor="let intern of onlineTrainings"> <a class="dropdown-item" href="#"> {{intern}} </a>
+          </li>
+        </ul>
+
+      </li>
+      <li class="nav-item dropdown">
+      <li class="nav-item dropdown" id="myDropdown">
+
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Jobs </a>
+
+        <ul class="dropdown-menu">
+
+          <li *ngFor="let intern of jobs"> <a class="dropdown-item" href="#"> {{intern.category}} </a>
+
+            <ul class="submenu dropdown-menu">
+
+              <li *ngFor="let opt of intern.options"><a class="dropdown-item" href={{opt.link}}>{{opt.title}}</a>
+
+              </li>
+
+            </ul>
+
+          </li>
+
+        </ul>
+
+      </li>
+      
     </ul>
-   
-  </header>
+  </nav>
+  <a [routerLink]="['login']" id="cta">
+    <button class="headingbutton">Login</button></a>
+
+  <!-- <a href="/register" id="cta1">
+      <button class="headingbutton" id="register">Register</button></a> -->
+  <button class="btn btn-primary me-3 gx-8 dropdown-toggle" type="button" id="dropdownMenuButton1"
+    data-bs-toggle="dropdown" aria-expanded="false">
+    <a href="/register" style="text-decoration: none; color:white;"> Register</a>
+  </button>
+
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" href="/register-student">As a student</a></li>
+    <li><a class="dropdown-item" href="/register-employer">As a employer</a></li>
+  </ul>
+
+</header>
