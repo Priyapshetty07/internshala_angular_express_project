@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-register-student',
@@ -16,14 +17,22 @@ export class RegisterStudentComponent implements OnInit {
     lname: new FormControl('', Validators.required)
   });
 
-  constructor() { }
+
+
+  
+  userlist:any;
+
+  constructor(private myusersrv: UserService) { }
 
   ngOnInit(): void {
+    this.myusersrv.getProfile().subscribe((result:any)=>{
+      this.userlist=result;
+      console.log(result);
+      
+    });
   }
-
-  getValues() {
-    console.log(this.myform);
+  getValues(){
+    console.log('hello');
   }
-
 }
 

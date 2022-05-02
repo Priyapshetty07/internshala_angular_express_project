@@ -10,7 +10,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  internship = [
+  internship = [{
+    category: "All internship"
+  },
 
     {
       category: "Location", options: [
@@ -112,6 +114,9 @@ export class HeaderComponent implements OnInit {
   ]
 
   jobs = [
+    {
+      category: "All Jobs"
+    },
 
     {
       category: "Location", options: [
