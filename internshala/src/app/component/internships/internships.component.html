@@ -1,1 +1,15 @@
-
+<div class="container">
+    <div class="row mt-3 justify-content-center" *ngFor="let intern of internship">
+        <div class="col-8">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">{{intern.title}}</h3>
+                    <h5>Location  <span>{{intern.location}}</span></h5>
+                    <p class="card-text">{{intern.subtitle}}</p>
+                    <p class="card-text">{{intern.desc}}</p>
+                    <a href="{{intern.link}}" >Apply for internship ></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
