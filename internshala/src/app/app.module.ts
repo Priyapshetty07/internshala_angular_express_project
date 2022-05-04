@@ -7,13 +7,13 @@ import { HeaderComponent } from './component/header/header.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { MainContainerComponent } from './component/main-container/main-container.component';
 import { InternshipsComponent } from './component/internships/internships.component';
-import { OnlineTrainingsComponent } from './component/online-trainings/online-trainings.component';
+//import { OnlineTrainingsComponent } from './component/online-trainings/online-trainings.component';
 import { JobsComponent } from './component/jobs/jobs.component';
 import { LoginComponent } from './component/login/login.component';
 import { RegisterComponent } from './component/register/register.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { RegisterEmployerComponent } from './component/register-employer/register-employer.component';
-import { RegisterStudentComponent } from './component/register-student/register-student.component';
+//import { RegisterEmployerComponent } from './component/register-employer/register-employer.component';
+//import { RegisterStudentComponent } from './component/register-student/register-student.component';
 import { PrivacyComponent } from './component/privacy/privacy.component';
 import { TermsComponent } from './component/terms/terms.component';
 import { ContactComponent } from './component/contact/contact.component';
@@ -29,6 +29,8 @@ import {ButtonModule} from 'primeng/button';
 import {ToastModule} from 'primeng/toast';
 import {FormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatDialogModule} from '@angular/material/dialog';
 
 
 
@@ -39,12 +41,12 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     MainContainerComponent,
     InternshipsComponent,
-    OnlineTrainingsComponent,
+    // OnlineTrainingsComponent,
     JobsComponent,
     LoginComponent,
     RegisterComponent,
-    RegisterEmployerComponent,
-    RegisterStudentComponent,
+    //RegisterEmployerComponent,
+    //RegisterStudentComponent,
     PrivacyComponent,
     TermsComponent,
     ContactComponent,
@@ -65,7 +67,9 @@ import { HttpClientModule } from '@angular/common/http';
     ButtonModule,
     ToastModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatDialogModule
     
   ],
   providers: [],

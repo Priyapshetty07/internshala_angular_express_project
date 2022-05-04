@@ -1,0 +1,201 @@
+<div *ngFor="let user of userlist">
+    {{user | json}}
+
+</div>
+<br>
+<div class="container-fluid" style="background-color: #F9FEFF;">
+    <div class="row">
+
+        <div class="col-7">
+            <img src="../../../assets/image/reg_student.png" alt="">
+        </div>
+        <div class="col"></div>
+
+        <div class="col-4 second">
+            <div class="container" style="border: 1px solid rgb(240, 234, 234); border-radius: 10px;">
+
+                <form class=novalidate [formGroup]="myform">
+
+                    <div class="row mt-3">
+                        <div class="col">
+                            <br>
+                            <label for="formGroupExampleInput2" class="form-label"><b>Email</b></label>
+                            <input formControlName="email" type="email" class="form-control" id="formGroupExampleInput2"
+                                placeholder="priya@example.com">
+                            <div class="text-danger"
+                                *ngIf="myform.controls['email'].touched && myform.controls['email'].invalid ">
+                                <p *ngIf="myform.controls['email'].errors?.['required']"><b>Email is required</b></p>
+                                <p *ngIf="myform.controls['email'].errors?.['email']"><b>Please enter valid Email</b>
+                                </p>
+                                <p *ngIf="myform.controls['email'].errors?.['minlength']"><b>Email min length 4
+                                        character is required</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" row mt-3">
+                        <div class="col">
+                            <label for="formGroupExampleInput2" class="form-label"><b>Password</b></label>
+                            <input formControlName="password" type="password" class="form-control"
+                                id="formGroupExampleInput2" placeholder="Minimum be atleast 5 characters">
+                            <div class="text-danger"
+                                *ngIf="myform.controls['password'].touched && myform.controls['password'].invalid">
+                                <p *ngIf="myform.controls['password'].errors?.['required']"><b>Please Enter Password</b>
+                                </p>
+                                <p *ngIf="myform.controls['password'].errors?.['minlength']"><b>Min length should 5
+                                        char</b></p>
+                                <p *ngIf="myform.controls['password'].errors?.['maxlength']"><b>Max length should 7
+                                        char</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col">
+                            <label for="formGroupExampleInput2" class="form-label"><b>First Name</b></label>
+                            <input formControlName="fname" type="text" class="form-control" placeholder="Priya"
+                                aria-label="First name">
+                            <div class="text-danger"
+                                *ngIf="myform.controls['fname'].touched && myform.controls['fname'].invalid">
+                                <p *ngIf="myform.controls['fname'].errors?.['required']"><b>First Name is Required</b>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label for="formGroupExampleInput2" class="form-label"><b>Last Name</b></label>
+                            <input formControlName="lname" type="text" class="form-control" placeholder="Shetty"
+                                aria-label="Last name">
+                            <div class="text-danger"
+                                *ngIf="myform.controls['lname'].touched && myform.controls['lname'].invalid">
+                                <p *ngIf="myform.controls['lname'].errors?.['required']"><b>Last Name is Required</b>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row mt-3">
+                        <div class="col">
+                            <span style="color: #333333; line-height: 1.57; font-weight: 400">
+                                By Signing up, you agree to our <a href="/terms" target="_blank"
+                                    style="text-decoration: none;"><b>Terms and Conditions</b></a>.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col">
+                            <div class="d-grid gap-2">
+                                <button (click)="getValues()" type="submit" class="btn btn-primary">Register
+                                    Now</button>
+                            </div>
+                        </div>
+                        <div>
+
+                            <div class=" row mt-3">
+                                <div class="col">
+                                    <div class="d-grid gap-2" style="text-align: center;">
+                                        <span>
+                                            <b>Already Registered?</b>
+                                            <a href="/login" style="text-decoration: none;"><b>Login</b></a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <br>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col"></div>
+    </div>
+</div>
+
+<br>
+
+
+
+<div class="container">
+    <br>
+    <h2><b>Hire interns in 3 simple steps</b></h2>
+    <div class="row">
+        <div class="col"></div>
+        <div *ngFor="let myele of card1" class="col">
+            <br>
+            <div class="card border-0" style="width: 20rem;">
+                <img class="card-img-top" src="{{myele.imagelink}}" alt="Card image cap">
+                <div class="card-body ">
+                    <h2 class="card-title">{{myele.title}}</h2>
+                    <br>
+                    <p class="card-text">{{myele.text}}</p>
+                    <p class="card-text">{{myele.text1}}</p>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="col"></div>
+    </div>
+</div>
+
+<br>
+
+<div class="container">
+    <br>
+    <h2><b>3,10,789 companies trust us</b></h2>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../../../assets/image/sl1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../../../assets/image/sl2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../../../assets/image/sl3.PNG" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../../../assets/image/sl4.PNG" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../../../assets/image/sl5.PNG" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon " aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<br>
+
+<div class="container" style="text-align:center;">
+    <button class="btn btn-primary but">
+        <a href="/register"><b> Register Now </b> </a>
+    </button>
+</div>
+<br>
+
+<div class="container border border-0 shadow p-3 mb-5 bg-body rounded">
+    <div class="row">
+        <div class="col">
+            <br><br><br>
+            <h2 class="colh2">Now also post fresher jobs on Internshala</h2>
+            <h4 class="colh2">Hire the best freshers <span style="color:#ff7a00;">faster</span></h4>
+        </div>
+        <div class="col">
+            <img src="https://internshala.com/static/images/registration/employer/registration_new/internship/jobs_banner/r1366-min.png"
+                alt="">
+        </div>
+    </div>
+</div>
+
+<br>
