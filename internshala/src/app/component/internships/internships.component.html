@@ -45,7 +45,7 @@
                                                 <option value="Media">
                                                     Media
                                                 </option>
-                                               
+
                                             </select>
                                         </div>
                                     </div>
@@ -57,7 +57,7 @@
                                         <div id="city_options" style="padding-left: 100px;">
                                             <select id="select_city" name="select_city" data-placeholder="e.g Mumbai"
                                                 class="form_control">
-                                                <option value="Bengaluru">Bengaluru</option>
+                                                <option value="Banglore">Banglore</option>
                                                 <option value="Kolkata">Kolkata</option>
                                                 <option value="Delhi">Delhi</option>
                                                 <option value="Mumbai">Mumbai</option>
@@ -80,7 +80,7 @@
                                         <br>
                                         <!-- Checkbox - 2 -->
                                         <div class="flex_row">
-                                            <label style="font-size: large; color: blue;">Part time :</label>
+                                            <label style="font-size: large; color: blue;">Work from office :</label>
                                             <label class="switch">
                                                 <input type="checkbox">
                                             </label>
@@ -104,8 +104,18 @@
                         <div class="card-body">
 
                             <h2 class="card-title" style="color: blue; text-align: center;">{{intern.title}}</h2>
-                            <h4 class="card-sub" ><b>Company: </b> {{intern.sub}}</h4>
-                            <h4><i class="fa fa-location-arrow"></i><b>Location: </b> <span>{{intern.location}}</span></h4>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h4 class="card-sub"><span><i class="fa fa-building"></i></span><b>Company: </b> {{intern.sub}} </h4>
+                                    
+                                </div>
+                                <div>
+                                    <h4><i class="fa fa-location-arrow"></i><b>Location: </b>
+                                        <span>{{intern.location}}</span>
+                                    </h4>
+                                </div>
+                            </div>
+                            <br>
                             <div class="d-flex justify-content-around">
                                 <div>
                                     <h4 class="card-text1"><b>START DATE</b><br>{{intern.startdate}}</h4>
@@ -121,7 +131,7 @@
                                 </div>
                             </div>
 
-                            <div class="d-flex bd-highlight mb-3">
+                            <!-- <div class="d-flex bd-highlight mb-3">
                                 <div class="p-2 bd-highlight">
                                     <a href="#" style="color: rgb(13, 13, 15); font-size: larger;">
                                         <b>Work from home</b> </a>
@@ -131,16 +141,16 @@
                                         style="color: rgb(13, 13, 15);; font-size: larger;">
                                         <b> Part time job </b></a></div>
 
-                            </div>
-
-                            <!-- <div>
-                                <div class="d-flex bd-highlight mb-3">
-                                    <div class="p-2 bd-highlight"><i class="fa  fa-house-chimney"></i></div>
-                                    <div class="p-2 bd-highlight"><i class="fa-solid fa-house-chimney"></i></div>
-                                    <div class="ml-auto p-2 bd-highlight"><a href="{{intern.link}}"><b>View Details</b></a></div>
-                                  </div>
                             </div> -->
-                            <a href="{{intern.link}}"><b>View Details</b></a>
+                            <br>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <p><i class="fa fa-briefcase"></i><b>    {{intern.type}}</b></p>
+                                </div>
+                                <div>
+                                    <a href="{{intern.link}}"><b>View Details</b></a>
+                                </div>
+                            </div>
                         </div>
 
                     </div>

@@ -17,7 +17,8 @@ export class InternshipsComponent implements OnInit {
       stipend: "$7000/month",
       location: "Banglore",
       apply: "ASAP",
-      link: "#"
+      link: "#",
+      type:"work from home"
     },
 
     {
@@ -28,7 +29,8 @@ export class InternshipsComponent implements OnInit {
       stipend: "$8000/month",
       location: "Kolkata",
       apply: "ASAP",
-      link: "https://google.com"
+      link: "https://google.com",
+      type:"Work from office"
     },
 
     {
@@ -39,7 +41,8 @@ export class InternshipsComponent implements OnInit {
       stipend: "$5000/month",
       location: "Delhi",
       apply: "ASAP",
-      link: "https://google.com"
+      link: "https://google.com",
+      type:"work from home"
     },
 
     {
@@ -50,7 +53,8 @@ export class InternshipsComponent implements OnInit {
       stipend: "$7800/month",
       location: "Chennai",
       apply: "ASAP",
-      link: "https://google.com"
+      link: "https://google.com",
+      type:"work from home"
     },
 
     {
@@ -95,7 +99,8 @@ export class InternshipsComponent implements OnInit {
       stipend: "$10000/month",
       location: "Kolkata",
       apply: "ASAP",
-      link: "#"
+      link: "#",
+      type:"Work from office"
     },
 
     {
@@ -408,7 +413,8 @@ export class InternshipsComponent implements OnInit {
       stipend: "$6000/month",
       location: "Delhi",
       apply: "ASAP",
-      link: "https://google.com"
+      link: "https://google.com",
+      type:"Work from office"
     },
 
     
@@ -490,7 +496,8 @@ export class InternshipsComponent implements OnInit {
       stipend: "$9000/month",
       location: "Chennai",
       apply: "ASAP",
-      link: "https://google.com"
+      link: "https://google.com",
+      type:"Work from office"
     },
 
     {
@@ -538,7 +545,8 @@ export class InternshipsComponent implements OnInit {
       stipend: "$8000/month",
       location: "Hyderabad",
       apply: "ASAP",
-      link: "https://google.com"
+      link: "https://google.com",
+      type:"Work from office"
     },
 
     {
@@ -549,7 +557,8 @@ export class InternshipsComponent implements OnInit {
       stipend: "$6000/month",
       location: "Banglore",
       apply: "ASAP",
-      link: "https://google.com"
+      link: "https://google.com",
+      type:"Work from office"
     },
 
     {
