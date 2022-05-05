@@ -8,10 +8,618 @@ import { Component, OnInit } from '@angular/core';
 export class InternshipsComponent implements OnInit {
 
   constructor() { }
-internship=[{title:"infosys support intern",subtitle:"Graphic design",desc:"$500/month",location:"bangalore",link:"https://google.com"},
-{title:"google internship",subtitle:"Web Development intern",desc:"$400/month",location:"shimoga",link:"https://google.com"},
-{title:"jnnce internship",subtitle:"Java Developer intern",desc:"$800/month",location:"mumbai",link:"https://google.com"},
-{title:"thbs internship",subtitle:"Python Developer intern",desc:"$100/month",location:"chennai",link:"https://google.com"}]
+  internship = [
+    {
+      title: "Backend Development",
+      sub:"THIS",
+      startdate: "Immediately",
+      duration: "3-months",
+      stipend: "$7000/month",
+      location: "Banglore",
+      apply: "ASAP",
+      link: "#"
+    },
+
+    {
+      title: "Java Development",
+      sub:"ORACLE",
+      startdate: "Immediately",
+      duration: "6-months",
+      stipend: "$8000/month",
+      location: "Kolkata",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+    {
+      title: "Media",
+      sub:"TCS",
+      startdate: "Immediately",
+      duration: "3-months",
+      stipend: "$5000/month",
+      location: "Delhi",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+    {
+      title: "CAD Design",
+      sub:"INFOSY",
+      startdate: "Immediately",
+      duration: "7-months",
+      stipend: "$7800/month",
+      location: "Chennai",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+    {
+      title: "Medicine",
+      sub:"TECH MEHINDRA",
+      startdate: "Immediately",
+      duration: "6-months",
+      stipend: "$7000/month",
+      location: "Mumbai",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+    {
+      title: "Front End Development",
+      sub:"CAPGEMINI",
+      startdate: "Immediately",
+      duration: "4-months",
+      stipend: "$3500/month",
+      location: "Banglore",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+    {
+      title: "NGO",
+      sub:"COGNIZANT",
+      startdate: "Immediately",
+      duration: "3-months",
+      stipend: "$3500/month",
+      location: "Mumabi",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+
+    {
+      title: "Backend Development",
+      sub:"HP",
+      startdate: "Immediately",
+      duration: "4-months",
+      stipend: "$10000/month",
+      location: "Kolkata",
+      apply: "ASAP",
+      link: "#"
+    },
+
+    {
+      title: "Front End Development",
+      sub:"ACCENTURE",
+      startdate: "Immediately",
+      duration: "5-months",
+      stipend: "$5500/month",
+      location: "Kolkata",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+    {
+      title: "Media",
+      sub:"TECH MEHINDRA",
+      startdate: "Immediately",
+      duration: "3-months",
+      stipend: "$9000/month",
+      location: "Chennai",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+    {
+      title: "Front End Development",
+      sub:"THIS",
+      startdate: "Immediately",
+      duration: "6-months",
+      stipend: "$9000/month",
+      location: "Delhi",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+    {
+      title: "Front End Development",
+      sub:"SUN MOBILITY",
+      startdate: "Immediately",
+      duration: "4-months",
+      stipend: "$3500/month",
+      location: "Mumbai",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+    {
+      title: "Front End Development",
+      sub:"TCS",
+      startdate: "Immediately",
+      duration: "4-months",
+      stipend: "$3500/month",
+      location: "Chennai",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+    {
+      title: "Front End Development",
+      sub:"COGNIZANT",
+      startdate: "Immediately",
+      duration: "8-months",
+      stipend: "$3500/month",
+      location: "Hyderabad",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+    {
+      title: "Java Development",
+      sub:"HP",
+      startdate: "Immediately",
+      duration: "6-months",
+      stipend: "$8000/month",
+      location: "Banglore",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+    {
+      title: "Backend Development",
+      sub:"WIPRO",
+      startdate: "Immediately",
+      duration: "3-months",
+      stipend: "$8000/month",
+      location: "Delhi",
+      apply: "ASAP",
+      link: "#"
+    },
+
+    
+
+    {
+      title: "Java Development",
+      sub:"INFOSY",
+      startdate: "Immediately",
+      duration: "4-months",
+      stipend: "$8000/month",
+      location: "Delhi",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+    {
+      title: "Java Development",
+      sub:"WIPRO",
+      startdate: "Immediately",
+      duration: "3-months",
+      stipend: "$3000/month",
+      location: "Mumbai",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+    {
+      title: "Java Development",
+      sub:"IBM",
+      startdate: "Immediately",
+      duration: "6-months",
+      stipend: "$8000/month",
+      location: "Chennai",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+    {
+      title: "Java Development",
+      sub:"TECH MAHINDRA ",
+      startdate: "Immediately",
+      duration: "8-months",
+      stipend: "$8000/month",
+      location: "Hyderabad",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+    {
+      title: "CAD Design",
+      sub:"HCL",
+      startdate: "Immediately",
+      duration: "4-months",
+      stipend: "$5800/month",
+      location: "Banglore",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+    
+    {
+      title: "Backend Development",
+      sub:"TCS",
+      startdate: "Immediately",
+      duration: "3-months",
+      stipend: "$4000/month",
+      location: "Mumbai",
+      apply: "ASAP",
+      link: "#"
+    },
+
+    {
+      title: "CAD Design",
+      sub:"TCS",
+      startdate: "Immediately",
+      duration: "9-months",
+      stipend: "$9000/month",
+      location: "Kolkata",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+    {
+      title: "CAD Design",
+      sub:"IBM",
+      startdate: "Immediately",
+      duration: "4-months",
+      stipend: "$5800/month",
+      location: "Delhi",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+    {
+      title: "CAD Design",
+      sub:"THBS",
+      startdate: "Immediately",
+      duration: "4-months",
+      stipend: "$5800/month",
+      location: "Mumbai",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+  
+
+    {
+      title: "CAD Design",
+      sub:"ORACLE",
+      startdate: "Immediately",
+      duration: "3-months",
+      stipend: "$9800/month",
+      location: "Hyderabad",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+    {
+      title: "MBA",
+      sub:"DQS INDIA",
+      startdate: "Immediately",
+      duration: "8-months",
+      stipend: "$4500/month",
+      location: "Banglore",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+    {
+      title: "MBA",
+      sub:"IBM",
+      startdate: "Immediately",
+      duration: "4-months",
+      stipend: "$4500/month",
+      location: "Kolkata",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+    {
+      title: "MBA",
+      sub:"ACCENTURE",
+      startdate: "Immediately",
+      duration: "9-months",
+      stipend: "$5500/month",
+      location: "Delhi",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+    {
+      title: "MBA",
+      sub:"WIPRO",
+      startdate: "Immediately",
+      duration: "9-months",
+      stipend: "$10000/month",
+      location: "Mumbai",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+    {
+      title: "MBA",
+      sub:"ORACLE",
+      startdate: "Immediately",
+      duration: "8-months",
+      stipend: "$4500/month",
+      location: "Chennai",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+    {
+      title: "MBA",
+      sub:"COGNIZANT",
+      startdate: "Immediately",
+      duration: "8-months",
+      stipend: "$8500/month",
+      location: "Hyderabad",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+    {
+      title: "Medicine",
+      sub:"CAPGEMIN",
+      startdate: "Immediately",
+      duration: "11-months",
+      stipend: "$6000/month",
+      location: "Banglore",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+    {
+      title: "Backend Development",
+      sub:"IBM",
+      startdate: "Immediately",
+      duration: "3-months",
+      stipend: "$6000/month",
+      location: "Chennai",
+      apply: "ASAP",
+      link: "#"
+    },
+
+    {
+      title: "Medicine",
+      sub:"THBS",
+      startdate: "Immediately",
+      duration: "2-months",
+      stipend: "$6000/month",
+      location: "Kolkata",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+    {
+      title: "Medicine",
+      sub:"HCL",
+      startdate: "Immediately",
+      duration: "6-months",
+      stipend: "$6000/month",
+      location: "Delhi",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+    
+
+    {
+      title: "Medicine",
+      sub:"TCS",
+      startdate: "Immediately",
+      duration: "11-months",
+      stipend: "$6000/month",
+      location: "Chennai",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+    {
+      title: "Medicine",
+      sub:"HP",
+      startdate: "Immediately",
+      duration: "6-months",
+      stipend: "$7000/month",
+      location: "Hyderabad",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+    {
+      title: "NGO",
+      sub:"EUPRIME",
+      startdate: "Immediately",
+      duration: "8-months",
+      stipend: "$9000/month",
+      location: "Banglore",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+    {
+      title: "NGO",
+      sub:"INFOSYS",
+      startdate: "Immediately",
+      duration: "3-months",
+      stipend: "$8000/month",
+      location: "Banglore",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+    {
+      title: "NGO",
+      sub:"TCS",
+      startdate: "Kolkata",
+      duration: "8-months",
+      stipend: "$7000/month",
+      location: "Banglore",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+    {
+      title: "NGO",
+      sub:"THBS",
+      startdate: "Immediately",
+      duration: "10-months",
+      stipend: "$8000/month",
+      location: "Delhi",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+
+   
+
+    {
+      title: "NGO",
+      sub:"CAPGEMIN",
+      startdate: "Immediately",
+      duration: "7-months",
+      stipend: "$9000/month",
+      location: "Chennai",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+    {
+      title: "NGO",
+      sub:"WIPRO",
+      startdate: "Immediately",
+      duration: "6-months",
+      stipend: "$3000/month",
+      location: "Hyderabad",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+    {
+      title: "Media",
+      sub:"WIPRO",
+      startdate: "Immediately",
+      duration: "3-months",
+      stipend: "$7000/month",
+      location: "Kolkata",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+    
+
+    {
+      title: "Media",
+      sub:"THIS",
+      startdate: "Immediately",
+      duration: "9-months",
+      stipend: "$10000/month",
+      location: "Mumbai",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+   
+
+    {
+      title: "Media",
+      sub:"COGNIZANT",
+      startdate: "Immediately",
+      duration: "4-months",
+      stipend: "$8000/month",
+      location: "Hyderabad",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+    {
+      title: "Humanities",
+      sub:"MAGAMONEY CARTS PRIVATE LIMITED",
+      startdate: "Immediately",
+      duration: "8-months",
+      stipend: "$6000/month",
+      location: "Banglore",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+    {
+      title: "Humanities",
+      sub:"HEXAWARE",
+      startdate: "Immediately",
+      duration: "4-months",
+      stipend: "$4000/month",
+      location: "Kolkata",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+    {
+      title: "Humanities",
+      sub:"CAPGEMINI",
+      startdate: "Immediately",
+      duration: "6-months",
+      stipend: "$5000/month",
+      location: "Delhi",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+    {
+      title: "Humanities",
+      sub:"THIS",
+      startdate: "Immediately",
+      duration: "7-months",
+      stipend: "$7000/month",
+      location: "Mumbai",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+    {
+      title: "Backend Development",
+      sub:"ORACLE",
+      startdate: "Immediately",
+      duration: "3-months",
+      stipend: "$5000/month",
+      location: "Hyderabad",
+      apply: "ASAP",
+      link: "#"
+    },
+
+    {
+      title: "Humanities",
+      sub:"TCS",
+      startdate: "Immediately",
+      duration: "9-months",
+      stipend: "$10000/month",
+      location: "Chennai",
+      apply: "ASAP",
+      link: "https://google.com"
+    },
+
+    {
+      title: "Humanities",
+      sub:"ORACLE",
+      startdate: "Immediately",
+      duration: "2-months",
+      stipend: "$5000/month",
+      location: "Hyderabad",
+      apply: "ASAP",
+      link: "https://google.com"
+    }
+  
+  ]
+
   ngOnInit(): void {
   }
 

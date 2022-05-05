@@ -13,104 +13,94 @@ export class HeaderComponent implements OnInit {
     category: "All internship"
   },
 
-    {
-      category: "Location", options: [
+  {
+    category: "Location", options: [
 
-        { title: "Work from Home", link: "https://www.google.com" },
+      { title: "Work from Home", link: "https://www.google.com" },
 
-        { title: "Internship in Bangalore", link: "https://www.google.com" },
+      { title: "Internship in Bengaluru", link: "https://www.google.com" },
+      { title: "Internship in Kolkata", link: "https://www.google.com" },
+      { title: "Internship in Delhi", link: "https://www.google.com" },
+      { title: "Internship in Mumbai", link: "https://www.google.com" },
+      { title: "Internship in Chennai", link: "https://www.google.com" },
+      { title: "Internship in Hyderabad", link: "https://www.google.com" },
+      { title: "View all internships", link: "https://www.google.com" }
 
-        { title: "Internship in Delhi", link: "https://www.google.com" },
+    ]
 
-        { title: "Internship in Hyderabad", link: "https://www.google.com" },
+  },
 
-        { title: "Internship in Mumbai", link: "https://www.google.com" },
+  // {
+  //   category: "Profile", options: [
 
-        { title: "Internship in Chennai", link: "https://www.google.com" },
+  //     { title: "Computer Science Internship", link: "https://www.google.com" },
 
-        { title: "Internship in Pune", link: "https://www.google.com" },
+  //     { title: "Marketing Internship", link: "https://www.google.com" },
 
-        { title: "Internship in Kolkata", link: "https://www.google.com" },
+  //     { title: "Finance Internship", link: "https://www.google.com" },
 
-        { title: "Internship in Jaipur", link: "https://www.google.com" },
+  //     { title: "Graphic Design Internship", link: "https://www.google.com" },
 
-        { title: "International Internship", link: "https://www.google.com" },
+  //     { title: "Architecture Internship", link: "https://www.google.com" },
 
-        { title: "View all internships", link: "https://www.google.com" }
+  //     { title: "Mechanical Internship", link: "https://www.google.com" },
 
-      ]
+  //     { title: "HR Internship", link: "https://www.google.com" },
 
-    },
+  //     { title: "Digital Marketing Internship", link: "https://www.google.com" },
 
-    {
-      category: "Profile", options: [
+  //     { title: "Law Internship", link: "https://www.google.com" },
 
-        { title: "Computer Science Internship", link: "https://www.google.com" },
+  //     { title: "Electrinics Internship", link: "https://www.google.com" },
 
-        { title: "Marketing Internship", link: "https://www.google.com" },
+  //     { title: "Content Writing Internship", link: "https://www.google.com" },
 
-        { title: "Finance Internship", link: "https://www.google.com" },
+  //     { title: "Civil Internship", link: "https://www.google.com" },
 
-        { title: "Graphic Design Internship", link: "https://www.google.com" },
+  //     { title: "Campus Ambassador Program", link: "https://www.google.com" },
 
-        { title: "Architecture Internship", link: "https://www.google.com" },
+  //     { title: "View all internships", link: "https://www.google.com" }
 
-        { title: "Mechanical Internship", link: "https://www.google.com" },
+  //   ]
 
-        { title: "HR Internship", link: "https://www.google.com" },
+  // },
 
-        { title: "Digital Marketing Internship", link: "https://www.google.com" },
+  {
+    category: "Category", options: [
+      { title: "Backend Development", link: "https://www.google.com" },
+      { title: "Front End Development", link: "https://www.google.com" },
+      { title: "Java Development", link: "https://www.google.com" },
+      { title: "Humanities", link: "https://www.google.com" },
+      { title: "CAD Design", link: "https://www.google.com" },
+      { title: "MBA", link: "https://www.google.com" },
+      { title: "Medicine", link: "https://www.google.com" },
+      { title: "NGO", link: "https://www.google.com" },
+      { title: "Media", link: "https://www.google.com" },
+      { title: "View all internships", link: "https://www.google.com" },
 
-        { title: "Law Internship", link: "https://www.google.com" },
+    ]
+  },
 
-        { title: "Electrinics Internship", link: "https://www.google.com" },
+    // {
+    //   category: "Specializations", options: [
+    //     { title: "Digital Marketing Specialization", link: "" },
 
-        { title: "Content Writing Internship", link: "https://www.google.com" },
+    //     { title: "Human Resource Management Specialization", link: "#" },
 
-        { title: "Civil Internship", link: "https://www.google.com" },
-
-        { title: "Campus Ambassador Program", link: "https://www.google.com" },
-
-        { title: "View all internships", link: "https://www.google.com" }
-
-      ]
-
-    },
-
-    {
-      category: "Category", options: [
-        { title: "Engineering Intership", link: "https://www.google.com" },
-        { title: "MBA Internship", link: "https://www.google.com" },
-        { title: "Part-Time Jobs/Internship", link: "https://www.google.com" },
-        { title: "Humanities Intership", link: "https://www.google.com" },
-        { title: "Science Intership", link: "https://www.google.com" },
-        { title: "Interships with job Offer", link: "https://www.google.com" },
-        { title: "Internships for Women", link: "https://www.google.com" },
-        { title: "View all internships", link: "https://www.google.com" },
-
-      ]
-    },
-
-    {
-      category: "Specializations", options: [
-        { title: "Digital Marketing Specialization", link: "" },
-
-        { title: "Human Resource Management Specialization", link: "#" },
-
-        { title: "Data Science Specialization", link: "#" }]
-    }
+    //     { title: "Data Science Specialization", link: "#" }]
+    // }
 
   ]
-  onlineTrainings = [
-    "Web Development",
-    "Java",
-    "API",
-    "Digital Marketing",
-    "Machine Learning",
-    "Advanced Excel",
-    "AutoCAD",
-    "Ethical Hacking"
-  ]
+  // onlineTrainings = [
+  //   "Web Development",
+  //   "Java",
+  //   "API",
+  //   "Digital Marketing",
+  //   "Machine Learning",
+  //   "Advanced Excel",
+  //   "AutoCAD",
+  //   "Ethical Hacking"
+  // ]
 
   jobs = [
     {
@@ -172,7 +162,7 @@ export class HeaderComponent implements OnInit {
     }
   ]
 
-  constructor(public dialog: MatDialog) {}
+  constructor(public dialog: MatDialog) { }
 
   openDialog() {
     const dialogRef = this.dialog.open(LoginComponent);

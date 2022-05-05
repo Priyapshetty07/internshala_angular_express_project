@@ -1,13 +1,150 @@
-<div class="container">
-    <div class="row mt-3 justify-content-center" *ngFor="let intern of internship">
-        <div class="col-8">
-            <div class="card">
-                <div class="card-body">
-                    <h3 class="card-title">{{intern.title}}</h3>
-                    <h5>Location  <span>{{intern.location}}</span></h5>
-                    <p class="card-text">{{intern.subtitle}}</p>
-                    <p class="card-text">{{intern.desc}}</p>
-                    <a href="{{intern.link}}" >Apply for internship ></a>
+<div style="background-color: #FAFAFA;">
+    <div class="container "><br> <br>
+        <h1 style="text-align: center;">INTERNSHIPS</h1>
+        <div class="row">
+            <div class="col sticky">
+                <div class="card sticky">
+                    <div class="card-body">
+                        <div id="form_container">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <i class="fa fa-filter" aria-hidden="true" style="font-size:xx-large">Filters</i>
+                            </div>
+                            <div class="card sticky">
+                                <form class="card sticky" style="align-content: center; padding-left: 10px;">
+                                    <!-- Category Selector -->
+                                    <div>
+                                        <label for="select_category" style="font-size: large; color: blue;">Category
+                                            :</label>
+                                        <div id="category_options" style="padding-left: 100px;">
+                                            <select id="select_category" name="select_category"
+                                                data-placeholder="e.g Marketing" class="form_control">
+                                                <option value="Backend Development">
+                                                    Backend Development
+                                                </option>
+                                                <option value="Front End Development">
+                                                    Front End Development
+                                                </option>
+                                                <option value="Java Development">
+                                                    Java Development
+                                                </option>
+                                                <option value="Humanities">
+                                                    Humanities
+                                                </option>
+                                                <option value="CAD Design">
+                                                    CAD Design
+                                                </option>
+                                                <option value="MBA">
+                                                    MBA
+                                                </option>
+                                                <option value="Medicine">
+                                                    Medicine
+                                                </option>
+                                                <option value="NGO">
+                                                    NGO
+                                                </option>
+                                                <option value="Media">
+                                                    Media
+                                                </option>
+                                               
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <!-- City selector -->
+                                    <div class="category_container">
+                                        <label for="select_city" style="font-size: large; color: blue;">Location
+                                            :</label>
+                                        <div id="city_options" style="padding-left: 100px;">
+                                            <select id="select_city" name="select_city" data-placeholder="e.g Mumbai"
+                                                class="form_control">
+                                                <option value="Bengaluru">Bengaluru</option>
+                                                <option value="Kolkata">Kolkata</option>
+                                                <option value="Delhi">Delhi</option>
+                                                <option value="Mumbai">Mumbai</option>
+                                                <option value="Chennai">Chennai</option>
+                                                <option value="Hyderabad">Hyderabad</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <!-- Check box - 1 -->
+                                    <br>
+                                    <div class="filters_checkboxes">
+                                        <div class="flex_row">
+                                            <label for="work_from_home" style="font-size: large; color: blue;">Work from
+                                                home :</label>
+                                            <label class="switch">
+                                                <input type="checkbox">
+                                            </label>
+                                        </div>
+                                        <br>
+                                        <!-- Checkbox - 2 -->
+                                        <div class="flex_row">
+                                            <label style="font-size: large; color: blue;">Part time :</label>
+                                            <label class="switch">
+                                                <input type="checkbox">
+                                            </label>
+                                        </div>
+
+
+                                        <div style="text-align: center; border-radius: 20px;">
+                                            <input type="reset" style="font-size: x-large;">
+                                        </div>
+                                        <br>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8">
+                <div *ngFor="let intern of internship">
+                    <div class="card">
+                        <div class="card-body">
+
+                            <h2 class="card-title" style="color: blue; text-align: center;">{{intern.title}}</h2>
+                            <h4 class="card-sub" ><b>Company: </b> {{intern.sub}}</h4>
+                            <h4><i class="fa fa-location-arrow"></i><b>Location: </b> <span>{{intern.location}}</span></h4>
+                            <div class="d-flex justify-content-around">
+                                <div>
+                                    <h4 class="card-text1"><b>START DATE</b><br>{{intern.startdate}}</h4>
+                                </div>
+                                <div>
+                                    <h4 class="card-text2"><b>DURATION</b><br>{{intern.duration}}</h4>
+                                </div>
+                                <div>
+                                    <h4 class="card-text3"><b>STIPEND</b><br>{{intern.stipend}}</h4>
+                                </div>
+                                <div>
+                                    <h4 class="card-text4"><b>APPLY BY</b><br>{{intern.apply}}</h4>
+                                </div>
+                            </div>
+
+                            <div class="d-flex bd-highlight mb-3">
+                                <div class="p-2 bd-highlight">
+                                    <a href="#" style="color: rgb(13, 13, 15); font-size: larger;">
+                                        <b>Work from home</b> </a>
+                                </div>
+
+                                <div class="p-2 bd-highlight"> <a href="#"
+                                        style="color: rgb(13, 13, 15);; font-size: larger;">
+                                        <b> Part time job </b></a></div>
+
+                            </div>
+
+                            <!-- <div>
+                                <div class="d-flex bd-highlight mb-3">
+                                    <div class="p-2 bd-highlight"><i class="fa  fa-house-chimney"></i></div>
+                                    <div class="p-2 bd-highlight"><i class="fa-solid fa-house-chimney"></i></div>
+                                    <div class="ml-auto p-2 bd-highlight"><a href="{{intern.link}}"><b>View Details</b></a></div>
+                                  </div>
+                            </div> -->
+                            <a href="{{intern.link}}"><b>View Details</b></a>
+                        </div>
+
+                    </div>
+                    <br>
                 </div>
             </div>
         </div>
