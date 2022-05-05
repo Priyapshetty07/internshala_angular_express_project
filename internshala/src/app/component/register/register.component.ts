@@ -11,9 +11,9 @@ export class RegisterComponent implements OnInit {
 
   myform: FormGroup = new FormGroup({
     email: new FormControl('', [Validators.required, Validators.email, Validators.minLength(4)]),
-    password: new FormControl('', [Validators.required, Validators.minLength(5), Validators.maxLength(7)]),
-    fname: new FormControl('', Validators.required),
-    lname: new FormControl('', Validators.required)
+    paswd: new FormControl('', [Validators.required, Validators.minLength(5), Validators.maxLength(7)]),
+    firstname: new FormControl('', Validators.required),
+    lastname: new FormControl('', Validators.required)
   });
 
   card1 = [
@@ -57,7 +57,11 @@ export class RegisterComponent implements OnInit {
     });
   }
   getValues() {
-    console.log('hello');
+    // console.log('hello');
+    alert("successfully register")
+    this.myusersrv.registerDetails(this.myform.value).subscribe((data)=>{
+      console.log(data)
+    })
   }
 }
 

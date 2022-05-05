@@ -17,7 +17,7 @@ router.get('/login', function (req, res, next) {
 
 //post methods-login
 
-router.post('/login', (req, res, next) => {
+router.post('/register', (req, res, next) => {
   let {
    email,
    paswd,
@@ -26,7 +26,7 @@ router.post('/login', (req, res, next) => {
     
   } = req.body
 
-  let insertcommand = `INSERT INTO internshala.login  (email,paswd,firstname,lastname)
+  let insertcommand = `INSERT INTO INTERNSHALA.login  (email,paswd,firstname,lastname)
    VALUES ('${email}','${paswd}','${ firstname}','${lastname}')`;
 
   dbConnection.query(insertcommand, (err, result) => {
@@ -50,6 +50,8 @@ router.get('/login', function (req, res, next) {
   //res.send('respond with a resource');
 
 });
+
+
 
 
 

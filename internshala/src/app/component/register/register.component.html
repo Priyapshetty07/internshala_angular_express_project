@@ -36,15 +36,15 @@
                     <div class=" row mt-3">
                         <div class="col">
                             <label for="formGroupExampleInput2" class="form-label"><b>Password</b></label>
-                            <input formControlName="password" type="password" class="form-control"
+                            <input formControlName="paswd" type="password" class="form-control"
                                 id="formGroupExampleInput2" placeholder="Minimum be atleast 5 characters">
                             <div class="text-danger"
-                                *ngIf="myform.controls['password'].touched && myform.controls['password'].invalid">
-                                <p *ngIf="myform.controls['password'].errors?.['required']"><b>Please Enter Password</b>
+                                *ngIf="myform.controls['paswd'].touched && myform.controls['paswd'].invalid">
+                                <p *ngIf="myform.controls['paswd'].errors?.['required']"><b>Please Enter Password</b>
                                 </p>
-                                <p *ngIf="myform.controls['password'].errors?.['minlength']"><b>Min length should 5
+                                <p *ngIf="myform.controls['paswd'].errors?.['minlength']"><b>Min length should 5
                                         char</b></p>
-                                <p *ngIf="myform.controls['password'].errors?.['maxlength']"><b>Max length should 7
+                                <p *ngIf="myform.controls['paswd'].errors?.['maxlength']"><b>Max length should 7
                                         char</b></p>
                             </div>
                         </div>
@@ -53,21 +53,21 @@
                     <div class="row mt-3">
                         <div class="col">
                             <label for="formGroupExampleInput2" class="form-label"><b>First Name</b></label>
-                            <input formControlName="fname" type="text" class="form-control" placeholder="Priya"
+                            <input formControlName="firstname" type="text" class="form-control" placeholder="Priya"
                                 aria-label="First name">
                             <div class="text-danger"
-                                *ngIf="myform.controls['fname'].touched && myform.controls['fname'].invalid">
-                                <p *ngIf="myform.controls['fname'].errors?.['required']"><b>First Name is Required</b>
+                                *ngIf="myform.controls['firstname'].touched && myform.controls['firstname'].invalid">
+                                <p *ngIf="myform.controls['firstname'].errors?.['firstname']"><b>First Name is Required</b>
                                 </p>
                             </div>
                         </div>
                         <div class="col">
                             <label for="formGroupExampleInput2" class="form-label"><b>Last Name</b></label>
-                            <input formControlName="lname" type="text" class="form-control" placeholder="Shetty"
+                            <input formControlName="lastname" type="text" class="form-control" placeholder="Shetty"
                                 aria-label="Last name">
                             <div class="text-danger"
-                                *ngIf="myform.controls['lname'].touched && myform.controls['lname'].invalid">
-                                <p *ngIf="myform.controls['lname'].errors?.['required']"><b>Last Name is Required</b>
+                                *ngIf="myform.controls['lastname'].touched && myform.controls['lastname'].invalid">
+                                <p *ngIf="myform.controls['lastname'].errors?.['required']"><b>Last Name is Required</b>
                                 </p>
                             </div>
                         </div>
@@ -178,8 +178,8 @@
 <br>
 
 <div class="container" style="text-align:center;">
-    <button class="btn btn-primary but">
-        <a href="/register"><b> Register Now </b> </a>
+    <button (click)="getValues()" type="submit" class="btn btn-primary but">
+       Register Now 
     </button>
 </div>
 <br>
