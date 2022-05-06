@@ -6,16 +6,9 @@ let dbConnection = require('./../db/data').localConnect();
 router.get('/', function(req, res, next) {
   res.send('respond with a resource');
 });
-router.get('/login', function (req, res, next) {
-  dbConnection.query('SELECT * FROM internshala.login', (error,results,fields) => {
-    if(error) throw error;
-    res.send(results);
 
-  });
-  // res.send('respond with a resource');
-});
 
-//post methods-login
+//post methods-register
 
 router.post('/register', (req, res, next) => {
   let {
@@ -39,7 +32,8 @@ router.post('/register', (req, res, next) => {
 
 })
 
-router.get('/login', function (req, res, next) {
+//get methods-register
+router.get('/register', function (req, res, next) {
 
   dbConnection.query('SELECT * FROM internshala.login', (error, results, fields) => {
     if (error) throw error;
@@ -50,6 +44,8 @@ router.get('/login', function (req, res, next) {
   //res.send('respond with a resource');
 
 });
+
+
 
 
 
