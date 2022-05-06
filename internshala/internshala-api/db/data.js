@@ -6,7 +6,7 @@ let mysqlConnect = function () {
         host: 'localhost',
         user: 'root',
         password: 'PriyaDiya@0713',
-        database: 'INTERNSHALA',
+        database: 'Internshala_project',
         insecureAuth: true
     });
 

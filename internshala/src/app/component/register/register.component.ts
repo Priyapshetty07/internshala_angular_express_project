@@ -50,17 +50,18 @@ export class RegisterComponent implements OnInit {
   constructor(private myusersrv: UserService) { }
 
   ngOnInit(): void {
-    this.myusersrv.getProfile().subscribe((result: any) => {
-      this.userlist = result;
-      console.log(result);
+    // this.myusersrv.getProfile().subscribe((result: any) => {
+    //   this.userlist = result;
+    //   console.log(result);
 
-    });
+    // });
   }
   getValues() {
     // console.log('hello');
     alert("successfully register")
     this.myusersrv.registerDetails(this.myform.value).subscribe((data)=>{
       console.log(data)
+      this.myform.reset();
     })
   }
 }

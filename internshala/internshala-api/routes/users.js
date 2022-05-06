@@ -4,7 +4,7 @@ let dbConnection = require('./../db/data').localConnect();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+  res.json({name:"shashank/priya"});
 });
 
 
@@ -19,7 +19,7 @@ router.post('/register', (req, res, next) => {
     
   } = req.body
 
-  let insertcommand = `INSERT INTO INTERNSHALA.login  (email,paswd,firstname,lastname)
+  let insertcommand = `INSERT INTO internshala_project.register  (email,paswd,firstname,lastname)
    VALUES ('${email}','${paswd}','${ firstname}','${lastname}')`;
 
   dbConnection.query(insertcommand, (err, result) => {
@@ -35,7 +35,7 @@ router.post('/register', (req, res, next) => {
 //get methods-register
 router.get('/register', function (req, res, next) {
 
-  dbConnection.query('SELECT * FROM internshala.login', (error, results, fields) => {
+  dbConnection.query('SELECT * FROM internshala_project.register', (error, results, fields) => {
     if (error) throw error;
     res.send(results);
 
