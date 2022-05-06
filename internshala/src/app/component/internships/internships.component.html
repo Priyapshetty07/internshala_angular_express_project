@@ -13,6 +13,7 @@
                                 <form class="card sticky" style="align-content: center; padding-left: 10px;">
                                     <!-- Category Selector -->
                                     <div>
+                                        <br>
                                         <label for="select_category" style="font-size: large; color: blue;">Category
                                             :</label>
                                         <div id="category_options" style="padding-left: 100px;">
@@ -72,23 +73,19 @@
                                     <div class="filters_checkboxes">
                                         <div class="flex_row">
                                             <label for="work_from_home" style="font-size: large; color: blue;">Work from
-                                                home :</label>
-                                            <label class="switch">
-                                                <input type="checkbox">
-                                            </label>
+                                                home : <input type="checkbox"> </label>
                                         </div>
                                         <br>
                                         <!-- Checkbox - 2 -->
                                         <div class="flex_row">
-                                            <label style="font-size: large; color: blue;">Work from office :</label>
-                                            <label class="switch">
-                                                <input type="checkbox">
-                                            </label>
+                                            <label style="font-size: large; color: blue;">Work from office : <input
+                                                    type="checkbox"></label>
                                         </div>
-
-
-                                        <div style="text-align: center; border-radius: 20px;">
-                                            <input type="reset" style="font-size: x-large;">
+                                        <br>
+                                        <div class="d-flex justify-content-center">
+                                            <div class="button">
+                                                <input type="reset" class="button1">
+                                            </div>
                                         </div>
                                         <br>
                                     </div>
@@ -106,11 +103,12 @@
                             <h2 class="card-title" style="color: blue; text-align: center;">{{intern.title}}</h2>
                             <div class="d-flex justify-content-between">
                                 <div>
-                                    <h4 class="card-sub"><span><i class="fa fa-building"></i></span><b>Company: </b> {{intern.sub}} </h4>
-                                    
+                                    <h4 class="card-sub"><span><i class="bi bi-building"></i></span><b> Company: </b>
+                                        {{intern.sub}} </h4>
+
                                 </div>
                                 <div>
-                                    <h4><i class="fa fa-location-arrow"></i><b>Location: </b>
+                                    <h4><b><i class="bi bi-geo-alt"></i> Location: </b>
                                         <span>{{intern.location}}</span>
                                     </h4>
                                 </div>
@@ -118,16 +116,20 @@
                             <br>
                             <div class="d-flex justify-content-around">
                                 <div>
-                                    <h4 class="card-text1"><b>START DATE</b><br>{{intern.startdate}}</h4>
+                                    <h4 class="card-text1"><b><i class="bi bi-play-circle"></i> START
+                                            DATE</b><br>{{intern.startdate}}</h4>
                                 </div>
                                 <div>
-                                    <h4 class="card-text2"><b>DURATION</b><br>{{intern.duration}}</h4>
+                                    <h4 class="card-text2"><b><i class="bi bi-calendar-check"></i>
+                                            DURATION</b><br>{{intern.duration}}</h4>
                                 </div>
                                 <div>
-                                    <h4 class="card-text3"><b>STIPEND</b><br>{{intern.stipend}}</h4>
+                                    <h4 class="card-text3"><b><i class="bi bi-cash"></i>
+                                            STIPEND</b><br>{{intern.stipend}}</h4>
                                 </div>
                                 <div>
-                                    <h4 class="card-text4"><b>APPLY BY</b><br>{{intern.apply}}</h4>
+                                    <h4 class="card-text4"><b><i class="bi bi-hourglass-split"></i> APPLY
+                                            BY</b><br>{{intern.apply}}</h4>
                                 </div>
                             </div>
 
@@ -145,7 +147,7 @@
                             <br>
                             <div class="d-flex justify-content-between">
                                 <div>
-                                    <p><i class="fa fa-briefcase"></i><b>    {{intern.type}}</b></p>
+                                    <p><i class="fa fa-briefcase"></i><b> {{intern.type}}</b></p>
                                 </div>
                                 <div>
                                     <a href="{{intern.link}}"><b>View Details</b></a>

@@ -12,7 +12,14 @@ export class UserService {
   }
   registerDetails(data:any){
     return this.myhttp.post('http://localhost:4200/api/users/register',data,{ responseType:'text'})
+  }
+  loginUser(email: string, paswd: string) {
+    //rest api call to express
+    let loginData = {
+      username: email,
+      password: paswd
+    };
 
-    
+    return this.myhttp.post('api/users/login', loginData);
   }
 }

@@ -21,3 +21,11 @@ body{
     top: 0;
    
 }
+.button .button1{
+    color: white;
+    border: none;
+    background-color: #0000FF;
+   font-size: larger;
+   border-radius: 4px;
+   padding: 10px;
+}
