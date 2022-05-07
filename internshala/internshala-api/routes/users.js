@@ -45,6 +45,36 @@ router.get('/register', function (req, res, next) {
 
 });
 
+// router.post('/login', (req, res, next) => {
+//   let {
+//     email,
+//     paswd
+//   } = req.body; // destructing of object property 
+
+//   let userFound = `select * from Internshala_project.register  WHERE email = '${email}' and paswd= '${paswd}'`;
+
+//   dbConnection.query(userFound, (error, result, fields) => {
+
+//     if (error) {
+//       res.send(error);
+//     } else {
+//       if (result.length) {
+//         // res.send(`{message: 'user found', usercount: 1}`);
+//         res.json(result)
+//       } else {
+//         // res.send(`{message: 'user no found', usercount: 0}`);
+//         res.json({message: 'user no found', usercount: 0})
+//       }
+//     }
+
+//   });
+
+
+// });
+
+
+//login and signup page connection
+
 router.post('/login', (req, res, next) => {
   let {
     email,
@@ -63,7 +93,7 @@ router.post('/login', (req, res, next) => {
         res.json(result)
       } else {
         // res.send(`{message: 'user no found', usercount: 0}`);
-        res.json({message: 'user no found', usercount: 0})
+        res.json({message: 'user not found', usercount: 0})
       }
     }
 
@@ -71,6 +101,7 @@ router.post('/login', (req, res, next) => {
 
 
 });
+
 
 
 

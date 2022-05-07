@@ -3,7 +3,8 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-5">
-                <img src="https://img.freepik.com/free-vector/mobile-login-concept-illustration_114360-83.jpg?w=2000" alt="images" width="400" height="400">
+                <img src="https://img.freepik.com/free-vector/mobile-login-concept-illustration_114360-83.jpg?w=2000"
+                    alt="images" width="400" height="400">
             </div>
             <div class="col">
                 <div class="container" style="border: 2px solid rgb(240, 234, 234); border-radius: 10px;">
@@ -38,7 +39,7 @@
                 </div>  -->
 
 
-                    <form class="row g-3" novalidate [formGroup]="myform">
+                    <!-- <form class="row g-3" novalidate [formGroup]="myform">
                         <div class="row mt-3">
 
                             <div class="col">
@@ -106,11 +107,56 @@
                                 </div>
                             </div>
                         </div>
+                    </form> -->
+
+                    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                        <div style="margin-top:25%; text-align: center; color: blue; font-size: 25px;">
+                            <b>Login Here! </b>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="form-group mb-3">
+                            <label for="email"><b>Email address</b></label>
+                            <input type="email" formControlName="email" class="form-control" id="exampleInputEmail1"
+                                placeholder="Enter your email" aria-describedby="emailHelp" email="true"
+                                [ngClass]="{'is-invalid': submitted && f['email'].errors}" />
+                            <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
+                                <div class="text-danger" *ngIf="f['email'].errors['required']">Valid email is required
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class=" form-group mb-3">
+                            <label for="paswd"><b>Password</b></label>
+                            <input type="password" class="form-control" formControlName="paswd"
+                                id="exampleInputPassword1" placeholder="Password" minlength="2"
+                                [ngClass]="{ 'is-invalid': submitted && f['paswd'].errors }" required>
+                            <div *ngIf="submitted && f['paswd'].errors" class="invalid-feedback">
+
+                                <div class="text-danger" *ngIf="f['paswd'].errors['required']">Password is required
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <!-- <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1"><b>Check me out</b></label>
+                            &nbsp;&nbsp; <a href="#">forget password</a> -->
+
+                        <div class="form-group">
+                            <button [disabled]="loading" class="btn btn-primary">
+                                <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+                                Login
+                            </button>
+                            <a routerLink="/register" class="btn btn-link">Register</a>
+                            &nbsp;&nbsp; <a href="#">forget password</a>
+
+                        </div>
+                        <div *ngIf="userMessage" class="form-control is-invalid"> {{userMessage}}</div>
+                        <br> <br> <br>
+                        <!-- <button type="submit" class="btn btn-primary">Login</button> -->
                     </form>
-                    <mat-dialog-actions align="end">
-                        <!-- <button mat-button mat-dialog-close>Cancel</button>
-                        <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Install</button> -->
-                      </mat-dialog-actions>
+
                 </div>
             </div>
         </div>

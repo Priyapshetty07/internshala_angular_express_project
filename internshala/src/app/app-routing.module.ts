@@ -20,7 +20,7 @@ const routes: Routes = [
   {path:'internships',component:InternshipsComponent},
   // {path:'online-trainings',component:OnlineTrainingsComponent},
   {path:'jobs',component:JobsComponent},
-  // {path:'login',component:LoginComponent},
+   {path:'login',component:LoginComponent},
   {path:'register',component:RegisterComponent},
   //{path:'register-student',component:RegisterStudentComponent},
   // {path:'register-employer',component:RegisterEmployerComponent},
