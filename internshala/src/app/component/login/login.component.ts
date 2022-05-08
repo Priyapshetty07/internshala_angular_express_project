@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { MatDialogRef } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import { UserService } from 'src/app/services/user.service';
 import { RegisterComponent } from '../register/register.component';
@@ -13,7 +14,7 @@ export class LoginComponent implements OnInit {
 
   myform: FormGroup = new FormGroup({
     email: new FormControl('', [Validators.required, Validators.email, Validators.minLength(4)]),
-    paswd: new FormControl('', [Validators.required, Validators.minLength(5), Validators.maxLength(7)])
+    paswd: new FormControl('', [Validators.required, Validators.minLength(5), Validators.maxLength(15)])
   });
 
   loginForm!: FormGroup;
@@ -27,8 +28,8 @@ export class LoginComponent implements OnInit {
     private formBuilder: FormBuilder,
     private route: ActivatedRoute,
     private router: Router,
-    private myuser:  UserService
-   
+    private myuser:  UserService,
+    private dialogRef: MatDialogRef<LoginComponent>
   ) { }
 
 
@@ -64,7 +65,8 @@ export class LoginComponent implements OnInit {
 
 
             if (data.length) {
-              this.router.navigate(['/']);
+              this.loading = false;
+              this.dialogRef.close();
             } else {
               this.userMessage = 'Login user not found, please enter correct email and password';
             }

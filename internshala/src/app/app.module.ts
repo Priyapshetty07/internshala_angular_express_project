@@ -12,15 +12,13 @@ import { JobsComponent } from './component/jobs/jobs.component';
 import { LoginComponent } from './component/login/login.component';
 import { RegisterComponent } from './component/register/register.component';
 import { ReactiveFormsModule } from '@angular/forms';
-//import { RegisterEmployerComponent } from './component/register-employer/register-employer.component';
-//import { RegisterStudentComponent } from './component/register-student/register-student.component';
 import { PrivacyComponent } from './component/privacy/privacy.component';
 import { TermsComponent } from './component/terms/terms.component';
 import { ContactComponent } from './component/contact/contact.component';
 import { ServicesComponent } from './component/services/services.component';
 import { HomeComponent } from './component/home/home.component';
 import { HireInternsOfYourCompanyComponent } from './component/hire-interns-of-your-company/hire-interns-of-your-company.component';
-import { ForgotPasswordComponent } from './component/forgot-password/forgot-password.component';
+// import { ForgotPasswordComponent } from './component/forgot-password/forgot-password.component';
 import { AboutUsComponent } from './component/about-us/about-us.component';
 import {AccordionModule} from 'primeng/accordion';
 import { MenuItem } from 'primeng/api';
@@ -31,6 +29,8 @@ import {FormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatDialogModule} from '@angular/material/dialog';
+import { SearchResultsComponent } from './search-results/search-results.component';
+// import { ForgetPasswordComponent } from './component/forget-password/forget-password.component';
 
 
 
@@ -53,8 +53,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     ServicesComponent,
     HomeComponent,
     HireInternsOfYourCompanyComponent,
-    ForgotPasswordComponent,
     AboutUsComponent,
+    SearchResultsComponent,
   
     
   ],

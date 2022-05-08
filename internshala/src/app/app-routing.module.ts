@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutUsComponent } from './component/about-us/about-us.component';
 import { ContactComponent } from './component/contact/contact.component';
-import { ForgotPasswordComponent } from './component/forgot-password/forgot-password.component';
+
 import { HireInternsOfYourCompanyComponent } from './component/hire-interns-of-your-company/hire-interns-of-your-company.component';
 import { HomeComponent } from './component/home/home.component';
 import { InternshipsComponent } from './component/internships/internships.component';
@@ -15,6 +15,7 @@ import { PrivacyComponent } from './component/privacy/privacy.component';
 import { RegisterComponent } from './component/register/register.component';
 import { ServicesComponent } from './component/services/services.component';
 import { TermsComponent } from './component/terms/terms.component';
+import { SearchResultsComponent } from './search-results/search-results.component';
 
 const routes: Routes = [
   {path:'internships',component:InternshipsComponent},
@@ -28,11 +29,13 @@ const routes: Routes = [
   {path:'privacy',component:PrivacyComponent},
   {path:'services',component:ServicesComponent},
   {path:'contact',component:ContactComponent},
-  {path:'forgot-password',component:ForgotPasswordComponent},
+ 
   {path:'hire-interns-of-you-company',component:HireInternsOfYourCompanyComponent},
   {path:'about-us',component:AboutUsComponent},
   {path:'home',component:HomeComponent},
-  {path:'',component:HomeComponent}
+  {path:'',component:HomeComponent},
+  {path:"search/jobs",component:SearchResultsComponent},
+  {path:'search/intern',component:SearchResultsComponent}
 
 ];
 

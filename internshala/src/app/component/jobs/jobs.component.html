@@ -18,7 +18,7 @@
                                             :</label>
                                         <div id="category_options" style="padding-left: 100px;">
                                             <select id="select_category" name="select_category"
-                                                data-placeholder="e.g Marketing" class="form_control">
+                                            ngModel #category="ngModel" data-placeholder="e.g Marketing" class="form_control">
                                                 <option value="Backend Development">
                                                     Backend Development
                                                 </option>
@@ -57,8 +57,8 @@
                                             :</label>
                                         <div id="city_options" style="padding-left: 100px;">
                                             <select id="select_city" name="select_city" data-placeholder="e.g Mumbai"
-                                                class="form_control">
-                                                <option value="Banglore">Banglore</option>
+                                            ngModel #location="ngModel" class="form_control">
+                                                <option value="Bangalore">Bangalore</option>
                                                 <option value="Kolkata">Kolkata</option>
                                                 <option value="Delhi">Delhi</option>
                                                 <option value="Mumbai">Mumbai</option>
@@ -83,6 +83,11 @@
                                         </div>
                                         <br>
                                         <div class="d-flex justify-content-center">
+                                            <div class="button">
+                                                <input [routerLink]="['/search/intern']"
+                                                    [queryParams]="{ category:category.value, location: location.value,type:'jobs'}"
+                                                    type="submit" class="button1">
+                                            </div>
                                             <div class="button">
                                                 <input type="reset" class="button1">
                                             </div>

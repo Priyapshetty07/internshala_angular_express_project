@@ -1,0 +1,33 @@
+a{
+    float: right;
+    text-decoration: none;
+    font-size:larger;
+}
+h4{
+    font-size: larger;
+}
+p{
+    font-size: larger;
+}
+i{
+    font-size: larger;
+}
+body{
+    background-color: #FAFAFA;
+}
+.sticky{
+     /* position: -webkit-sticky;  */
+    position: sticky;
+    top: 0;
+   
+}
+.button .button1{
+    color: white;
+    border: none;
+    background-color: #0000FF;
+   font-size: larger;
+   border-radius: 4px;
+   padding: 10px;
+}
+
+
