@@ -57,7 +57,7 @@
                                 aria-label="First name">
                             <div class="text-danger"
                                 *ngIf="myform.controls['firstname'].touched && myform.controls['firstname'].invalid">
-                                <p *ngIf="myform.controls['firstname'].errors?.['firstname']"><b>First Name is Required</b>
+                                <p *ngIf="myform.controls['firstname'].errors?.['required']"><b>First Name is Required</b>
                                 </p>
                             </div>
                         </div>
