@@ -19,6 +19,7 @@ const routes: Routes = [
   
   {path:'jobs',component:JobsComponent},
    {path:'login',component:LoginComponent},
+  //  {path:'login',component:RegisterComponent},
   {path:'register',component:RegisterComponent},
  
   {path:'terms',component:TermsComponent},
