@@ -72,41 +72,27 @@ export class HeaderComponent implements OnInit {
 
         { title: "Jobs in Kolkata", link: "Kolkata" },
 
-        { title: "Jobs in Chennai", link: "Chennai" },
-
-        { title: "Jobs in Pune", link: "Pune" },
-
-        { title: "Jobs in Jaipur", link: "Jaipur" }
+        { title: "Jobs in Chennai", link: "Chennai" }
 
       ]
 
     },
 
+    
+
     {
       category: "Category", options: [
-
-        { title: "Marketing Job", link: "" },
-
-        { title: "Finance Job", link: "" },
-
-        { title: "Graphic Design Job", link: "" },
-
-        { title: "Architecture Job", link: "" },
-
-        { title: "Fresher jobs", link: "" },
-
-        { title: "HR Job", link: "" },
-
-        { title: "Digital Marketing Job", link: "" },
-
-        { title: "Law Job", link: "" },
-
-        { title: "Computer science jobs", link: "" },
-
-        { title: "View all Job", link: "" }
-
+        { title: "Backend Development", link: "" },
+        { title: "Front End Development", link: '' },
+        { title: "Java Development", link: '' },
+        { title: "Humanities", link: '' },
+        { title: "CAD Design", link: '' },
+        { title: "MBA", link: '' },
+        { title: "Medicine", link:''},
+        { title: "NGO", link: ''},
+        { title: "Media", link:''},
+  
       ]
-
     }
   ]
 
@@ -117,7 +103,7 @@ export class HeaderComponent implements OnInit {
 
     dialogRef.afterClosed().subscribe(result => {
       if(result) {
-        this.router.navigate(['/about-us']);
+        this.router.navigate(['/jobs']);
       }
     });
   }
