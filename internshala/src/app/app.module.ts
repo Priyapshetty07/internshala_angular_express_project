@@ -30,7 +30,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatDialogModule} from '@angular/material/dialog';
 import { SearchResultsComponent } from './search-results/search-results.component';
-import { FffComponent } from './fff/fff.component';
+
 import { ViewJobComponent } from './component/view-job/view-job.component';
 import { ViewInternshipsComponent } from './component/view-internships/view-internships.component';
 // import { ForgetPasswordComponent } from './component/forget-password/forget-password.component';
@@ -58,7 +58,7 @@ import { ViewInternshipsComponent } from './component/view-internships/view-inte
     HireInternsOfYourCompanyComponent,
     AboutUsComponent,
     SearchResultsComponent,
-    FffComponent,
+ 
     ViewJobComponent,
     ViewInternshipsComponent,
   
