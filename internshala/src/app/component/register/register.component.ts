@@ -8,7 +8,7 @@ import { UserService } from 'src/app/services/user.service';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
-
+errmsg='';
   myform: FormGroup = new FormGroup({
     email: new FormControl('', [Validators.required, Validators.email, Validators.minLength(4)]),
     paswd: new FormControl('', [Validators.required, Validators.minLength(5), Validators.maxLength(7)]),
@@ -58,11 +58,16 @@ export class RegisterComponent implements OnInit {
   }
   getValues() {
     // console.log('hello');
-    alert("successfully register")
-    this.myusersrv.registerDetails(this.myform.value).subscribe((data)=>{
-      console.log(data)
-      this.myform.reset();
-    })
+    if (this.myform.valid) {
+      alert("successfully register")
+      this.myusersrv.registerDetails(this.myform.value).subscribe((data) => {
+        console.log(data)
+        this.myform.reset();
+      })
+    } else {
+      this.errmsg="please enter all fields";
+    }
+
   }
 }
 

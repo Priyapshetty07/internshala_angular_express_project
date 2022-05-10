@@ -12,6 +12,8 @@ import { PrivacyComponent } from './component/privacy/privacy.component';
 import { RegisterComponent } from './component/register/register.component';
 import { ServicesComponent } from './component/services/services.component';
 import { TermsComponent } from './component/terms/terms.component';
+import { ViewInternshipsComponent } from './component/view-internships/view-internships.component';
+import { ViewJobComponent } from './component/view-job/view-job.component';
 import { SearchResultsComponent } from './search-results/search-results.component';
 
 const routes: Routes = [
@@ -30,10 +32,12 @@ const routes: Routes = [
   {path:'hire-interns-of-you-company',component:HireInternsOfYourCompanyComponent},
   {path:'about-us',component:AboutUsComponent},
   {path:'home',component:HomeComponent},
-  {path:'',component:HomeComponent},
   {path:"search/jobs",component:SearchResultsComponent},
-  {path:'search/intern',component:SearchResultsComponent}
-
+  {path:'search/intern',component:SearchResultsComponent},
+  {path:"view-job",component:ViewJobComponent},
+  {path:"view-internships",component:ViewInternshipsComponent},
+  {path:'',component:HomeComponent}
+ 
 ];
 
 @NgModule({

@@ -29,7 +29,8 @@ export class LoginComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router,
     private myuser:  UserService,
-    private dialogRef: MatDialogRef<LoginComponent>
+    private dialogRef: MatDialogRef<LoginComponent>,
+    private userservice:UserService
   ) { }
 
 
@@ -66,7 +67,11 @@ export class LoginComponent implements OnInit {
 
             if (data.length) {
               this.loading = false;
+              localStorage.setItem('username',data[0].firstname+' '+data[0].lastname);
+              localStorage.setItem('login','true');
               this.dialogRef.close();
+              
+              this.router.navigate(['/about-us'])
             } else {
               this.userMessage = 'Login user not found, please enter correct email and password';
             }

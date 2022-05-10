@@ -12,3 +12,7 @@
     color: white;
 }
 
+.hvr:hover{
+    border: rgb(1, 128, 179) 2px solid; 
+    cursor: hand;
+}

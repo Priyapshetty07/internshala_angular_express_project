@@ -14,7 +14,7 @@
         <div class="col-4 second">
             <div class="container" style="border: 1px solid rgb(240, 234, 234); border-radius: 10px;">
 
-                <form class=novalidate [formGroup]="myform">
+                <form novalidate [formGroup]="myform">
 
                     <div class="row mt-3">
                         <div class="col">
@@ -91,6 +91,7 @@
                     <div class="row mt-3">
                         <div class="col">
                             <div class="d-grid gap-2">
+                                <p>{{errmsg}}</p>
                                 <button (click)="getValues()" type="submit" class="btn btn-primary">Register
                                     Now</button>
                             </div>

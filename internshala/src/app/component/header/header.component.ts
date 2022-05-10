@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
+import { UserService } from 'src/app/services/user.service';
 import { HomeComponent } from '../home/home.component';
 import { LoginComponent } from '../login/login.component';
 
@@ -10,7 +11,8 @@ import { LoginComponent } from '../login/login.component';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
+username:any=''
+islogin:boolean=false;
   internship = [
   {
     category: "Location", options: [
@@ -96,7 +98,7 @@ export class HeaderComponent implements OnInit {
     }
   ]
 
-  constructor(public dialog: MatDialog,private router:Router) { }
+  constructor(public dialog: MatDialog,private router:Router,private userservice:UserService) { }
 
   openDialog() {
     const dialogRef = this.dialog.open(LoginComponent);
@@ -107,10 +109,23 @@ export class HeaderComponent implements OnInit {
       }
     });
   }
-
+  logout(){
+    this.username='';
+    this.islogin=false;
+    localStorage.removeItem('username');
+    localStorage.removeItem('login');
+    this.router.navigate(['/home']);
+  }
 
   ngOnInit(): void {
-
+    if(localStorage.getItem('username')){
+      this.username=localStorage.getItem('username');
+    }
+    if(localStorage.getItem('login')) {
+      if(localStorage.getItem('login')=='true'){
+        this.islogin=true;
+      };
+    }
   }
 
 }
