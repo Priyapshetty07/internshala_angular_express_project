@@ -52,7 +52,7 @@
 
     </ul>
   </nav>
-  <p *ngIf="islogin">welcome {{username}}</p>
+  <!-- <p *ngIf="islogin">welcome {{username}}</p> -->
   <a id="cta" *ngIf="!islogin">
     <button mat-button (click)="openDialog()" class="headingbutton"
       style="color: blue; font-size: larger;">Login</button></a>
@@ -62,3 +62,5 @@
     <button  class="headingbutton" style="background-color: blue; color: beige; font-size: larger;">Register</button></a>
 
 </header>
+<br>
+<p *ngIf="islogin" style="color: rgb(32, 24, 145); font-size: x-large; font-family: cursive; text-align:center;" >Welcome {{username}}</p>
