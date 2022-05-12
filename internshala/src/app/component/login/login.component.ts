@@ -69,9 +69,10 @@ export class LoginComponent implements OnInit {
               this.loading = false;
               localStorage.setItem('username',data[0].firstname+' '+data[0].lastname);
               localStorage.setItem('login','true');
-              this.dialogRef.close();
+              localStorage.setItem('email',data[0].email);
+              this.dialogRef.close('success');
               
-              this.router.navigate(['/about-us'])
+              // this.router.navigate(['/about-us'])
             } else {
               this.userMessage = 'Login user not found, please enter correct email and password';
             }

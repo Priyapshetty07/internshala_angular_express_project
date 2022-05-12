@@ -104,8 +104,10 @@ islogin:boolean=false;
     const dialogRef = this.dialog.open(LoginComponent);
 
     dialogRef.afterClosed().subscribe(result => {
-      if(result) {
-        this.router.navigate(['/jobs']);
+      if(result=='success') {
+        // this.router.navigate(['/']);
+        window.location.reload()
+        
       }
     });
   }

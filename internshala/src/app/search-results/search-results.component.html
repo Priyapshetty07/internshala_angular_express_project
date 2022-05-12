@@ -7,6 +7,7 @@
 
         </div>
         <div class="col-8">
+            <h1 *ngIf="internships.length>0">Internship</h1>
             <div *ngFor="let intern of internships">
                 <div class="card">
                     <div class="card-body">
@@ -49,7 +50,7 @@
                                 <p><i class="fa fa-briefcase"></i><b> {{intern.type}}</b></p>
                             </div>
                             <div>
-                                <a href="{{intern.link}}"><b>View Details</b></a>
+                                <a [routerLink]="['/view-internships']"[queryParams]="{internshipID:intern.id}"><b>View Details</b></a>
                             </div>
                         </div>
                     </div>
@@ -58,56 +59,60 @@
                 <br>
             </div>
 
-            <div *ngFor="let job of jobs">
-                <div class="card">
-                    <div class="card-body">
-    
-                        <h2 class="card-title" style="color: blue; text-align: center;">{{job.title}}</h2>
-                        <div class="d-flex justify-content-between">
-                            <div>
-                                <h4 class="card-sub"><span><i class="bi bi-building"></i></span><b> Company: </b>
-                                    {{job.sub}} </h4>
-    
+            <div>
+                <h1 *ngIf="jobs.length>0">Jobs</h1>
+                <div *ngFor="let job of jobs">
+                    <div class="card">
+                        <div class="card-body">
+        
+                            <h2 class="card-title" style="color: blue; text-align: center;">{{job.title}}</h2>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h4 class="card-sub"><span><i class="bi bi-building"></i></span><b> Company: </b>
+                                        {{job.sub}} </h4>
+        
+                                </div>
+                                <div>
+                                    <h4><b><i class="bi bi-geo-alt"></i> Location: </b>
+                                        <span>{{job.location}}</span>
+                                    </h4>
+                                </div>
                             </div>
-                            <div>
-                                <h4><b><i class="bi bi-geo-alt"></i> Location: </b>
-                                    <span>{{job.location}}</span>
-                                </h4>
+                            <br>
+                            <div class="d-flex justify-content-around">
+                                <div>
+                                    <h4 class="card-text1"><b><i class="bi bi-play-circle"></i> START
+                                            DATE</b><br>{{job.startdate}}</h4>
+                                </div>
+                                <!-- <div>
+                                    <h4 class="card-text2"><b><i class="bi bi-calendar-check"></i>
+                                            DURATION</b><br>{{job.duration}}</h4>
+                                </div> -->
+                                <div>
+                                    <h4 class="card-text3"><b><i class="bi bi-cash"></i>
+                                        CTC</b><br>{{job.ctc}}</h4>
+                                </div>
+                                <div>
+                                    <h4 class="card-text4"><b><i class="bi bi-hourglass-split"></i> APPLY
+                                            BY</b><br>{{job.apply}}</h4>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <p><i class="fa fa-briefcase"></i><b> {{job.type}}</b></p>
+                                </div>
+                                <div>
+                                    <a href="{{job.link}}"><b>View Details</b></a>
+                                </div>
                             </div>
                         </div>
-                        <br>
-                        <div class="d-flex justify-content-around">
-                            <div>
-                                <h4 class="card-text1"><b><i class="bi bi-play-circle"></i> START
-                                        DATE</b><br>{{job.startdate}}</h4>
-                            </div>
-                            <!-- <div>
-                                <h4 class="card-text2"><b><i class="bi bi-calendar-check"></i>
-                                        DURATION</b><br>{{job.duration}}</h4>
-                            </div> -->
-                            <div>
-                                <h4 class="card-text3"><b><i class="bi bi-cash"></i>
-                                    CTC</b><br>{{job.ctc}}</h4>
-                            </div>
-                            <div>
-                                <h4 class="card-text4"><b><i class="bi bi-hourglass-split"></i> APPLY
-                                        BY</b><br>{{job.apply}}</h4>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="d-flex justify-content-between">
-                            <div>
-                                <p><i class="fa fa-briefcase"></i><b> {{job.type}}</b></p>
-                            </div>
-                            <div>
-                                <a href="{{job.link}}"><b>View Details</b></a>
-                            </div>
-                        </div>
+        
                     </div>
-    
+                    <br>
                 </div>
-                <br>
             </div>
+            
         </div>
         <div class="col">
 

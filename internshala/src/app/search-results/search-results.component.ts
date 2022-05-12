@@ -36,32 +36,31 @@ internships:any[]=[];
           this.internships=this.userservice.internship.filter((val)=>
             (data['menutype']=='location')?val.location===data['location']:val.title===data['location']
           );
-          // if(data['menutype']=="location") {
-          //   this.internships=this.userservice.internship.filter((val)=>
-          //   val.location===data['location']
-          // );
-          // } else if(data['menutype']=='category') {
-          //   this.internships=this.userservice.internship.filter((val)=>
-          //   val.title==data['category']
-          // );
-          // }
         } else if("jobs") {
           this.jobs=this.userservice.jobs.filter((val)=>
             (data['menutype']=='location')?val.location===data['location']:val.title===data['location']
           );
         }
-      } 
-      // else {
-      //   this.jobs=this.userservice.jobs.filter((val)=>
-      //   val.location===data['location']
-      // );
-      // }
-      
+      } else if(Object.hasOwn(data,'worktype') && Object.hasOwn(data,'type')){
+        if(data['type']=="internship") {
+          if(data['worktype']=="work from home"){
+            this.internships=this.userservice.internship.filter((val)=>
+            (data['worktype']==val.type));
+          } else {
+
+          }
+        } else if(data['type']=="jobs") {
+          if(data['worktype']=="work from home"){
+
+          } else {
+
+          }
+        }
+      }
       console.log(this.jobs);
       console.log(this.internships)
     })
    }
-
   ngOnInit(): void {
     
   }

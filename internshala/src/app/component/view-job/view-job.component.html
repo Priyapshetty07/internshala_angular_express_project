@@ -1,1 +1,67 @@
-<p>view-job works!</p>
+<div class="container">
+    <div *ngFor="let intern of jobs">
+        <div class="card">
+            <div class="card-body">
+                <div class="">
+                    <h2 class="card-title" style="color: blue; text-align: center;">{{intern.title}}</h2>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h4 class="card-sub"><span><i class="bi bi-building"></i></span><b> Company: </b>
+                            {{intern.sub}} </h4>
+                    </div>
+                    <div>
+                        <h4><b><i class="bi bi-geo-alt"></i> Location: </b>
+                            <span>{{intern.location}}</span>
+                        </h4>
+                    </div>
+                </div>
+                <br>
+                <div class="d-flex justify-content-around">
+                    <div>
+                        <h4 class="card-text1"><b><i class="bi bi-play-circle"></i> START
+                                DATE</b><br>{{intern.startdate}}</h4>
+                    </div>
+                    <div>
+                        <h4 class="card-text2"><b><i class="bi bi-calendar-check"></i>
+                                DURATION</b><br>{{intern.duration}}</h4>
+                    </div>
+                    <div>
+                        <h4 class="card-text3"><b><i class="bi bi-cash"></i>
+                                STIPEND</b><br>{{intern.stipend}}</h4>
+                    </div>
+                    <div>
+                        <h4 class="card-text4"><b><i class="bi bi-hourglass-split"></i> APPLY
+                                BY</b><br>{{intern.apply}}</h4>
+                    </div>
+                </div>
+                <br>
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <p><i class="fa fa-briefcase"></i><b> {{intern.type}}</b></p>
+                    </div>
+                    <div class="des">
+                         <b style="font-size:larger;">   {{intern.decription}} </b>
+                    </div>
+                </div>
+                <div>
+                    <h3></h3>
+                    <p></p>
+                </div>
+
+                <div>
+                    <div class="col-5">
+                        <div class="input-group mb-3">
+                            <input type="file" class="form-control input-group-sm" id="inputGroupFile02">
+                            <label class="input-group-text" for="inputGroupFile02"> Upload </label>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary"> Enroll </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+</div>

@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
 import { UserService } from 'src/app/services/user.service';
-
+import { LoginComponent } from '../login/login.component';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
@@ -47,7 +48,7 @@ errmsg='';
 
   userlist: any;
 
-  constructor(private myusersrv: UserService) { }
+  constructor(private myusersrv: UserService,public dialog: MatDialog) { }
 
   ngOnInit(): void {
     // this.myusersrv.getProfile().subscribe((result: any) => {
@@ -68,6 +69,15 @@ errmsg='';
       this.errmsg="please enter all fields";
     }
 
+  }
+
+  login() {
+    const dialogRef = this.dialog.open(LoginComponent);
+    dialogRef.afterClosed().subscribe(result => {
+      if(result=='success') {
+        window.location.reload()
+      }
+    });
   }
 }
 

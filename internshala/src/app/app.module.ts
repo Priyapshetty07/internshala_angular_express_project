@@ -32,6 +32,7 @@ import { SearchResultsComponent } from './search-results/search-results.componen
 
 import { ViewJobComponent } from './component/view-job/view-job.component';
 import { ViewInternshipsComponent } from './component/view-internships/view-internships.component';
+
 // import { ForgetPasswordComponent } from './component/forget-password/forget-password.component';
 
 
@@ -59,7 +60,8 @@ import { ViewInternshipsComponent } from './component/view-internships/view-inte
     SearchResultsComponent,
  
     ViewJobComponent,
-    ViewInternshipsComponent
+    ViewInternshipsComponent,
+   
   
     
   ],
