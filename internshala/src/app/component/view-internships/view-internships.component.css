@@ -1,7 +1,16 @@
+body{
+    background-color: #FAFAFA;
+}
+
 p{
- font-size: x-large;   
+ font-size: larger;   
  line-height: 40px;
 }
 .desc{
     font-size:x-large;
 }
+
+b{
+    font-size: large;
+}
+

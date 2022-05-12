@@ -1,66 +1,50 @@
 <header>
-
   <a class="logo" href="#">
     <img class="logo" src="https://internshala.com/static/images/common/new_internshala_logo.svg" alt="InternShala">
   </a>
   <nav>
     <ul class="nav_links">
       <li class="nav-item dropdown" id="myDropdown">
-
         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" style="color: blue; font-size: larger;">
           Internships </a>
-
         <ul class="dropdown-menu">
           <li> <a class="dropdown-item" href="/internships">All internships</a>
           <li *ngFor="let intern of internship;index as i"> <a class="dropdown-item"> {{intern.category}} </a>
-
             <ul class="submenu dropdown-menu">
-
               <li *ngFor="let opt of intern.options"><a class="dropdown-item" [routerLink]="['/search/jobs']"
                   [queryParams]="{location:(i==0)?opt.link:opt.title,menutype:(i==0)?'location':'category',type:'internship'}">{{opt.title}}</a>
-
               </li>
-
             </ul>
-
           </li>
-
         </ul>
-
       </li>
       <li class="nav-item dropdown">
       <li class="nav-item dropdown" id="myDropdown">
-
         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" style="color: blue; font-size: larger;">
           Jobs </a>
-
         <ul class="dropdown-menu">
           <li> <a class="dropdown-item" href="/jobs">All jobs</a>
           <li *ngFor="let job of jobs;index as i"> <a class="dropdown-item" href="/jobs"> {{job.category}} </a>
-
             <ul class="submenu dropdown-menu">
-
               <li *ngFor="let opt of job.options"><a class="dropdown-item" [routerLink]="['/search/jobs']"
                   [queryParams]="{location:(i==0)?opt.link:opt.title,menutype:(i==0)?'location':'category',type:'jobs'}">{{opt.title}}</a>
               </li>
             </ul>
           </li>
-
         </ul>
-
       </li>
-
     </ul>
   </nav>
   <!-- <p *ngIf="islogin">welcome {{username}}</p> -->
   <a id="cta" *ngIf="!islogin">
     <button mat-button (click)="openDialog()" class="headingbutton"
       style="color: blue; font-size: larger;">Login</button></a>
-      <a href="/home" *ngIf="islogin">
-        <button  class="headingbutton" (click)="logout()" style="background-color: blue; color: beige; font-size: larger;">Logout</button></a>
+  <a href="/home" *ngIf="islogin">
+    <button class="headingbutton" (click)="logout()"
+      style="background-color: blue; color: beige; font-size: larger;">Logout</button></a>
   <a href="/register" *ngIf="!islogin">
-    <button  class="headingbutton" style="background-color: blue; color: beige; font-size: larger;">Register</button></a>
-
+    <button class="headingbutton" style="background-color: blue; color: beige; font-size: larger;">Register</button></a>
 </header>
 <br>
-<p *ngIf="islogin" style="color: rgb(32, 24, 145); font-size: x-large; font-family: cursive; text-align:center;" >Welcome {{username}}</p>
+<p *ngIf="islogin" style="color: rgb(32, 24, 145); font-size: x-large; font-family: cursive; text-align:center;">Welcome
+  {{username}}</p>
