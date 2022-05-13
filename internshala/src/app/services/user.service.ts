@@ -46,16 +46,16 @@ export class UserService {
       apply: "30 May'22",
       link: "#",
       type: "work from home",
-      company: "The Company Torry Harris Business Solutions (THBS), founded in 1998, is headquartered in New Jersey, USA. The company is a trusted advisor to enterprises worldwide, helping them extend the power of digital access through integration.",
-      decription: "Key responsibilities: 1. Work on data structures/algorithms and understand design trade-offs, 2. Work with at least one backend programming language (Golang, JavaScript is a plus)",
-      skills: "Algorithms, Data Structures,Golang,JavaScript,MySQL",
-      whocanapply: "1. Those who are from or open to relocate to Bangalore  2. Knowledge of data structures/algorithms is a must and understanding of design trade-offs 3. Knowledge of object-oriented concepts is a plus  4. Knowledge of at least one backend programming language (Golang, JavaScript is a plus), 5. Hands-on experience with databases. (SQL is a plus)  6. Proactive and eager to work on new challenges and find solutions to different application development problems 7. Motivated self-starter with a proactive attitude towards risks 8. Strong logical reasoning skills",
+      company: "The Company Torry Harris integration Solutions (THIS), founded in 1998, is headquartered in New Jersey, USA. The company is a trusted advisor to enterprises worldwide, helping them extend the power of digital access through integration.",
+      decription: "Key responsibilities: 1. Design and devlop backend APIs, 2. Maintain and imrpove the services offered by the UnitGrid platform",
+      skills: "Golang, MongoDB,MySQL, PostgreSQL, Python, REST API,SQL",
+      whocanapply: "1. Would prefer a candidate with previous experience, 2. Advanced level skills in Golang or Python, 3. Advanced to intermediate level skills in PostgreSQL, plPGSQL/SQL & NoSQL databases like MongoDB, 4. In-depth knowledge of working with REST APIs and REST API security mechanisms,  5. Intermediate level skill in DevOps and Git versioning",
       duration:"3 months" ,
       salaryduringprobation:" 30,000 - 40,000 /month ",
       annualctc:"6.6 - 8.2 LPA",
       annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
       perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
-      openings: "5"
+      openings: "3"
     },
 
     {
@@ -66,8 +66,17 @@ export class UserService {
       ctc: "5.5-7.8 LPA",
       location: "Kolkata",
       apply: "30 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "Work from office"
+      type: "Work from office",
+      company: "Oracle Corporation is an American multinational computer technology corporation headquartered in Austin, Texas. In 2020, Oracle was the second-largest software company in the world by revenue and market capitalization.",
+      decription: "Key responsibilities: 1. Designing, developing, implementing, and maintaining Java-based application phases, codes, and software,2. Contributing to all phases of the development lifecycle,3. Writing testable, scalable, and efficient code,4. Testing and debugging new applications and updates,5. Maintaining up to date code documentation, 6. Participating in code review",
+      skills: "Angular 2.0, AngularJS,Hibernate (Java),J2EE,Java,MySQL,Spring MVC",
+      whocanapply: "1. Only computer science graduates, 2. Some experience in Java 8 Version, Java-J2EE, and Spring Boot, 3. Strong CS fundamentals in OOD, DS, algorithms, and problem solving for a wide variety of problem spaces and technologies,4. Must have good coding skills, 5. Experience creating large-scale, multi-tiered, distributed web applications with databases, and designing web services, APIs, data models, and schemas, using SQL or NoSQL, 6. Experience with different types of data storage solutions, such as Elastic Search, SQL, Hadoop, or MongoDB, 7. Worked in Agile environments previously, 8. Good analytical and troubleshooting skills",
+       duration:"6 months" ,
+      salaryduringprobation:" 30,000 - 40,000 /month ",
+      annualctc:"5.5-7.8 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "2"
     },
 
     {
@@ -78,8 +87,17 @@ export class UserService {
       ctc: "4.5-7.8 LPA",
       location: "Delhi",
       apply: "1 Jun'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "work from home"
+       type: "work from home",
+      company: "Tata Consultancy Services is an Indian multinational information technology services and consulting company headquartered in Mumbai. It is a part of the Tata Group and operates in 149 locations across 46 countries.",
+      decription: "Key responsibilities: . Create content for social media and WhatsApp marketing 2. Create videos using Canva  3. Work on basic photo editing",
+      skills: "Canva, Creative Writing, Instagram Marketing",
+      whocanapply: "1. Good communication, spoken and written English 2. Content creation skills",
+     duration:"8 months" ,
+      salaryduringprobation:" 10,000 - 25,000 /month ",
+      annualctc:"4.5-7.8 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "6"
     },
 
     {
@@ -90,8 +108,18 @@ export class UserService {
       ctc: "3.5-5.5 LPA",
       location: "Chennai",
       apply: "28 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "work from home"
+      //decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
+      type: "work from home",
+      company: "Infosys Limited is an Indian multinational information technology company that provides business consulting, information technology and outsourcing services. The company was founded in Pune and is headquartered in Bangalore",
+      decription: "Key responsibilities:1. Take ownership of projects through their entire lifecycle, from initial concept generation through fabrication and production bring-up, 2. Work on the preparation of overall machine design concepts for custom-designed special-purpose equipment and systems, 3. Work on detailed machine designs, including the creation of machine layouts, detailed part drawings, and assembly drawings,4. Conduct design reviews for internal team feedback and cross-functional presentations,5. Manage liaison between product engineering and equipment design departments & work on the specification and sourcing of commercial components pertaining to designs,  6. Work on the preparation of mechanical bill of materials and system documentation, 7. Work on the validation of equipment specifications and redesign of systems to meet specs where necessary, 8. Solve complex, open-ended problems with an emphasis on speed of execution and efficiency",
+      skills: "Autodesk Fusion 360,CAD, Engineering Drawing, Physics, Python, Rapid Prototyping",
+      whocanapply: "1. Have worked on projects and built something apart from the college coursework, 2. Strong knowledge of material properties and applications, 3. Able to work independently and on teams, 4. Sound decision-making ability, 5. Strong understanding of drafting standards and the application of GD&T,6. Experience with common machine components - electromechanical systems, motors, actuators, linear rails, bearings, lifting/rigging, etc. 7. Familiarity with modern machine controls, including PLCs and pneumatic systems, 8. Familiarity with product design and understanding of design for manufacturability principles, 9. Hands-on with tool installation and equipment commissioning experience, 10. Understanding of common manufacturing processes and machines, including mills, lathes, 3D printing, sheet metal, weldments, wire EDM, etc.",
+     duration:"3 months" ,
+      salaryduringprobation:" 15,000 - 40,000 /month ",
+      annualctc:"3.5-5.5 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "2"
     },
     {
       id: 5,
@@ -101,8 +129,18 @@ export class UserService {
       ctc: "3.5-4.8 LPA",
       location: "Hyderabad",
       apply: "24 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "work from home"
+      //decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
+      type: "work from home",
+      company: "Wipro Limited is an Indian multinational corporation that provides information technology, consulting and business process services. Thierry Delaporte has served as CEO and managing director of Wipro since July 2020. It is headquartered in Bangalore, Karnataka, India. ",
+      decription: "Key responsibilities: 1. Work on data structures/algorithms and understand design trade-offs, 2. Work with at least one backend programming language (Golang, JavaScript is a plus)",
+      skills: "Algorithms, Data Structures,Golang,JavaScript,MySQL",
+      whocanapply: "1. Those who are from or open to relocate to Bangalore  2. Knowledge of data structures/algorithms is a must and understanding of design trade-offs 3. Knowledge of object-oriented concepts is a plus  4. Knowledge of at least one backend programming language (Golang, JavaScript is a plus), 5. Hands-on experience with databases. (SQL is a plus)  6. Proactive and eager to work on new challenges and find solutions to different application development problems 7. Motivated self-starter with a proactive attitude towards risks 8. Strong logical reasoning skills",
+      duration:"9 months" ,
+      salaryduringprobation:" 20,000 - 30,000 /month ",
+      annualctc:"3.5-4.8 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "2"
     },
     {
       id: 6,
@@ -112,8 +150,17 @@ export class UserService {
       ctc: "3.5-4.8 LPA",
       location: "Hyderabad",
       apply: "24 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "work from home"
+      type: "work from home",
+      company: "Wipro Limited is an Indian multinational corporation that provides information technology, consulting and business process services. Thierry Delaporte has served as CEO and managing director of Wipro since July 2020. It is headquartered in Bangalore, Karnataka, India. ",
+      decription: "Key responsibilities:1. Coordinating the backend work of the NGO, 2. Coordinating with the field office 3. Handling work meetings and other organization work  4. Managing virtual interns",
+      skills: "English Proficiency (Spoken),English Proficiency (Written),MS-Office",
+      whocanapply: "1. Only male candidates are required, 2. Masters in social work/development/gender studies/communications and media with exposure in the developmental sector, preferably work on gender/women’s empowerment issues,3. Candidate should preferably be from Bengaluru, wanting to work with an academic institute of excellence and make a difference",
+       duration:"3 months" ,
+      salaryduringprobation:" 25,000 - 30,000 /month ",
+      annualctc:"3.5 - 4.8 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "3"
     },
 
     {
@@ -124,8 +171,17 @@ export class UserService {
       ctc: "6.5-8.8 LPA",
       location: "Mumbai",
       apply: "29 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "work from office"
+       type: "work from office",
+      company: "Tech Mahindra is an Indian multinational information technology services and consulting company. Part of the Mahindra Group, the company is headquartered in Pune and has its registered office in Mumbai. Tech Mahindra is a US$5.2 billion company with over 145,000 employees across 90 countries.",
+      decription: "Key responsibilities: 1. Work on pharmacy user verification, 2. Work on pharmacy user support & retailer support,3. Manage in-store operations, 4. Work on drug data management",
+      skills: "English Proficiency (Written), Hindi Proficiency (Spoken), Telugu Proficiency (Spoken)",
+      whocanapply: "1. Bachelor's/Master’s degree in pharmacy is required,2. Must have knowledge of drug details, 3. Basic computer knowledge with MS Excel, 4. Strong communication and presentation skills,5. Speaking skills in Telugu or Hindi and written proficiency in English",
+      duration:"6 months" ,
+      salaryduringprobation:" 28,000 - 38,000 /month ",
+      annualctc:"6.5 - 8.8 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "4"
     },
 
     {
@@ -136,8 +192,17 @@ export class UserService {
       ctc: "5.5-7.8 LPA",
       location: "Bangalore",
       apply: "28 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "work from home"
+      type: "work from home",
+      company: "Capgemini is a global leader in consulting, digital transformation, technology and engineering services      ",
+      decription: "Key responsibilities: 1. Write high-quality code and scripts, 2. Maintain existing website codes and update them if required, 3. Create complex charts using D3.js and customize them if required, 4. Sync with other developers to make the projects function properly",
+      skills: "ReactJS",
+      whocanapply: "1. B.Tech or B.E in CSE or IT preferred, 2. Knowledge of Django is desired but not mandatory",
+      duration:"6 months" ,
+      salaryduringprobation:" 30,000 - 35,000 /month ",
+      annualctc: "5.5 - 7.8 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "5"
     },
 
     {
@@ -148,8 +213,18 @@ export class UserService {
       ctc: "2.5-3.8 LPA",
       location: "Mumabi",
       apply: "27 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "work from office"
+      //decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
+      type: "work from office",
+      company: "Cognizant is an American multinational information technology services and consulting company. It is headquartered in Teaneck, New Jersey, United States. Cognizant is part of the NASDAQ-100 and trades under CTSH",
+      decription: "Key responsibilities:1. Coordinating the backend work of the NGO, 2. Coordinating with the field office 3. Handling work meetings and other organization work  4. Managing virtual interns",
+      skills: "English Proficiency (Spoken),English Proficiency (Written),MS-Office",
+      whocanapply: "1. Only male candidates are required, 2. Masters in social work/development/gender studies/communications and media with exposure in the developmental sector, preferably work on gender/women’s empowerment issues,3. Candidate should preferably be from Bengaluru, wanting to work with an academic institute of excellence and make a difference",
+      duration:"2 months" ,
+      salaryduringprobation:" 10,000 - 15,000 /month ",
+      annualctc:"2.5-3.8 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "9"
     },
 
 
@@ -162,7 +237,17 @@ export class UserService {
       location: "Kolkata",
       apply: "26 May'22",
       link: "#",
-      type: "Work from office"
+      type: "Work from office",
+      company: "HP Inc. is an American multinational information technology company headquartered in Palo Alto, California, that develops personal computers, printers and related supplies, as well as 3D printing solutions.",
+      decription: "Key responsibilities: 1. Design and devlop backend APIs, 2. Maintain and imrpove the services offered by the UnitGrid platform",
+      skills: "Golang, MongoDB,MySQL, PostgreSQL, Python, REST API,SQL",
+      whocanapply: "1. Would prefer a candidate with previous experience, 2. Advanced level skills in Golang or Python, 3. Advanced to intermediate level skills in PostgreSQL, plPGSQL/SQL & NoSQL databases like MongoDB, 4. In-depth knowledge of working with REST APIs and REST API security mechanisms,  5. Intermediate level skill in DevOps and Git versioning",
+      duration:"5 months" ,
+      salaryduringprobation:" 30,000 - 40,000 /month ",
+      annualctc:"9.5-10.5 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "8"
     },
 
     {
@@ -173,8 +258,18 @@ export class UserService {
       ctc: "4.0-6.0 LPA",
       location: "Mumbai",
       apply: "25 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "work from home"
+     // decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
+      type: "work from home",
+      company: "Wipro Limited is an Indian multinational corporation that provides information technology, consulting and business process services. Thierry Delaporte has served as CEO and managing director of Wipro since July 2020. It is headquartered in Bangalore, Karnataka, India. ",
+      decription: "Key responsibilities: 1. Facilitating new-comers joining formalities2. Preparing and submitting all relevant HR letters/documents/certificates as per the requirement in consultation with the management, 3. Working on employee engagement, 4. Planning support in the organizational recruitment process and coordinating with various departments, 5. Managing the complete clearance procedure of employees, 7. Sourcing and screening applicants, 8. Preparing letters, such as offers and confirmation, 9. Training new or existing employees,10. Tracking attendance, maintaining leave records, issue letters, etc.",
+      skills:"English Proficiency (Spoken),English Proficiency (Written), MS-Excel,MS-Office, MS-Word",
+      whocanapply: "1. Those who are from or open to relocate to Indore, 2. Education - bachelor’s (required) & master’s (preferred), 3. Must have good communication skills, 4. Can manage recruitment & selection process efficiently, 5. MS Office, computer knowledge,  6. Should be mentally prepared to work under pressure",
+      duration:"6 months" ,
+      salaryduringprobation:" 25,000 - 30,000 /month ",
+      annualctc:"4.0-6.0 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "7"
     },
 
     {
@@ -185,8 +280,18 @@ export class UserService {
       ctc: "4.5-5.5 LPA",
       location: "Kolkata",
       apply: "24 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "Work from home"
+      //decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
+      type: "Work from home",
+      company: "Accenture plc is an Ireland-based multinational professional services company that specialises in information technology services and consulting. A Fortune Global 500 company, it reported revenues of $50.53 billion in 2021.",
+      decription: "Key responsibilities: 1. Write high-quality code and scripts, 2. Maintain existing website codes and update them if required, 3. Create complex charts using D3.js and customize them if required, 4. Sync with other developers to make the projects function properly",
+      skills: "ReactJS",
+      whocanapply: "1. B.Tech or B.E in CSE or IT preferred, 2. Knowledge of Django is desired but not mandatory",
+      duration:"3 months" ,
+      salaryduringprobation:" 25,000 - 30,000 /month ",
+      annualctc:"4.5-5.5 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "6"
     },
 
     {
@@ -197,8 +302,18 @@ export class UserService {
       ctc: "6.5-7.5 LPA",
       location: "Chennai",
       apply: "30 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "Work from office"
+      //decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
+      type: "Work from office",
+      company: "Tech Mahindra is an Indian multinational information technology services and consulting company. Part of the Mahindra Group, the company is headquartered in Pune and has its registered office in Mumbai. Tech Mahindra is a US$5.2 billion company with over 145,000 employees across 90 countries.",
+      decription: "Key responsibilities: . Create content for social media and WhatsApp marketing 2. Create videos using Canva  3. Work on basic photo editing",
+      skills: "Canva, Creative Writing, Instagram Marketing",
+      whocanapply: "1. Good communication, spoken and written English 2. Content creation skills",
+     duration:"3 months" ,
+      salaryduringprobation:" 30,000 - 35,000 /month ",
+      annualctc:"6.5-7.5 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "5"
     },
 
     {
@@ -209,8 +324,18 @@ export class UserService {
       ctc: "4.5-6.5 LPA",
       location: "Delhi",
       apply: "24 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "Work from home"
+      //decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
+      type: "Work from home",
+      company: "The Company Torry Harris integration Solutions (THIS), founded in 1998, is headquartered in New Jersey, USA. The company is a trusted advisor to enterprises worldwide, helping them extend the power of digital access through integration.",
+      decription: "Key responsibilities: 1. Write high-quality code and scripts, 2. Maintain existing website codes and update them if required, 3. Create complex charts using D3.js and customize them if required, 4. Sync with other developers to make the projects function properly",
+      skills: "ReactJS",
+      whocanapply: "1. B.Tech or B.E in CSE or IT preferred, 2. Knowledge of Django is desired but not mandatory",
+      duration:"6 months" ,
+      salaryduringprobation:" 25,000 - 30,000 /month ",
+      annualctc:"4.5-6.5 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "4"
     },
 
 
@@ -223,8 +348,18 @@ export class UserService {
       ctc: "5.5-7.8 LPA",
       location: "Bangalore",
       apply: "29 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "work from office"
+     // decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
+      type: "work from office",
+      company: "HP Inc. is an American multinational information technology company headquartered in Palo Alto, California, that develops personal computers, printers and related supplies, as well as 3D printing solutions.",
+      decription: "Key responsibilities: 1. Designing, developing, implementing, and maintaining Java-based application phases, codes, and software,2. Contributing to all phases of the development lifecycle,3. Writing testable, scalable, and efficient code,4. Testing and debugging new applications and updates,5. Maintaining up to date code documentation, 6. Participating in code review",
+      skills: "Angular 2.0, AngularJS,Hibernate (Java),J2EE,Java,MySQL,Spring MVC",
+      whocanapply: "1. Only computer science graduates, 2. Some experience in Java 8 Version, Java-J2EE, and Spring Boot, 3. Strong CS fundamentals in OOD, DS, algorithms, and problem solving for a wide variety of problem spaces and technologies,4. Must have good coding skills, 5. Experience creating large-scale, multi-tiered, distributed web applications with databases, and designing web services, APIs, data models, and schemas, using SQL or NoSQL, 6. Experience with different types of data storage solutions, such as Elastic Search, SQL, Hadoop, or MongoDB, 7. Worked in Agile environments previously, 8. Good analytical and troubleshooting skills",
+       duration:"6 months" ,
+      salaryduringprobation:" 30,000 - 40,000 /month ",
+      annualctc:"5.5-7.8 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "3"
     },
 
     {
@@ -235,8 +370,18 @@ export class UserService {
       ctc: "5.9-8.8 LPA",
       location: "Kolkata",
       apply: "27 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "work from home"
+      //decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
+      type: "work from home",
+      company: "International Business Machines Corporation is an American multinational technology corporation headquartered in Armonk, New York, with operations in over 171 countries..",
+      decription: "Key responsibilities: 1. Facilitating new-comers joining formalities2. Preparing and submitting all relevant HR letters/documents/certificates as per the requirement in consultation with the management, 3. Working on employee engagement, 4. Planning support in the organizational recruitment process and coordinating with various departments, 5. Managing the complete clearance procedure of employees, 7. Sourcing and screening applicants, 8. Preparing letters, such as offers and confirmation, 9. Training new or existing employees,10. Tracking attendance, maintaining leave records, issue letters, etc.",
+      skills:"English Proficiency (Spoken),English Proficiency (Written), MS-Excel,MS-Office, MS-Word",
+      whocanapply: "1. Those who are from or open to relocate to Indore, 2. Education - bachelor’s (required) & master’s (preferred), 3. Must have good communication skills, 4. Can manage recruitment & selection process efficiently, 5. MS Office, computer knowledge,  6. Should be mentally prepared to work under pressure",
+      duration:"3 months" ,
+      salaryduringprobation:" 30,000 - 40,000 /month ",
+      annualctc:"5.9-8.8 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "2"
     },
 
     {
@@ -247,8 +392,18 @@ export class UserService {
       ctc: "7.5-8.5 LPA",
       location: "Mumbai",
       apply: "28 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "work from home"
+      //decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
+      type: "work from home",
+      company: "The Company Torry Harris Business Solutions (THBS), founded in 1998, is headquartered in New Jersey, USA. The company is a trusted advisor to enterprises worldwide, helping them extend the power of digital access through integration.",
+      decription: "Key responsibilities:1. Take ownership of projects through their entire lifecycle, from initial concept generation through fabrication and production bring-up, 2. Work on the preparation of overall machine design concepts for custom-designed special-purpose equipment and systems, 3. Work on detailed machine designs, including the creation of machine layouts, detailed part drawings, and assembly drawings,4. Conduct design reviews for internal team feedback and cross-functional presentations,5. Manage liaison between product engineering and equipment design departments & work on the specification and sourcing of commercial components pertaining to designs,  6. Work on the preparation of mechanical bill of materials and system documentation, 7. Work on the validation of equipment specifications and redesign of systems to meet specs where necessary, 8. Solve complex, open-ended problems with an emphasis on speed of execution and efficiency",
+      skills: "Autodesk Fusion 360,CAD, Engineering Drawing, Physics, Python, Rapid Prototyping",
+      whocanapply: "1. Have worked on projects and built something apart from the college coursework, 2. Strong knowledge of material properties and applications, 3. Able to work independently and on teams, 4. Sound decision-making ability, 5. Strong understanding of drafting standards and the application of GD&T,6. Experience with common machine components - electromechanical systems, motors, actuators, linear rails, bearings, lifting/rigging, etc. 7. Familiarity with modern machine controls, including PLCs and pneumatic systems, 8. Familiarity with product design and understanding of design for manufacturability principles, 9. Hands-on with tool installation and equipment commissioning experience, 10. Understanding of common manufacturing processes and machines, including mills, lathes, 3D printing, sheet metal, weldments, wire EDM, etc.",
+     duration:"3 months" ,
+      salaryduringprobation:" 30,000 - 40,000 /month ",
+      annualctc:"7.5-8.5 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "1"
     },
 
     {
@@ -259,8 +414,18 @@ export class UserService {
       ctc: "8.8-9.5 LPA",
       location: "Chennai",
       apply: "27 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "Work from office"
+      //decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
+      type: "Work from office",
+      company: "Capgemini is a global leader in consulting, digital transformation, technology and engineering services.",
+      decription: "Key responsibilities:1. Coordinating the backend work of the NGO, 2. Coordinating with the field office 3. Handling work meetings and other organization work  4. Managing virtual interns",
+      skills: "English Proficiency (Spoken),English Proficiency (Written),MS-Office",
+      whocanapply: "1. Only male candidates are required, 2. Masters in social work/development/gender studies/communications and media with exposure in the developmental sector, preferably work on gender/women’s empowerment issues,3. Candidate should preferably be from Bengaluru, wanting to work with an academic institute of excellence and make a difference",
+      duration:"9 months" ,
+      salaryduringprobation:" 30,000 - 40,000 /month ",
+      annualctc:"8.8 - 9.5 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "16"
     },
 
 
@@ -273,7 +438,17 @@ export class UserService {
       location: "Delhi",
       apply: "25 May'22",
       link: "#",
-      type: "work from home"
+      type: "work from home",
+      company: "Wipro Limited is an Indian multinational corporation that provides information technology, consulting and business process services. Thierry Delaporte has served as CEO and managing director of Wipro since July 2020. It is headquartered in Bangalore, Karnataka, India. ",
+      decription: "Key responsibilities: 1. Design and devlop backend APIs, 2. Maintain and imrpove the services offered by the UnitGrid platform",
+      skills: "Golang, MongoDB,MySQL, PostgreSQL, Python, REST API,SQL",
+      whocanapply: "1. Would prefer a candidate with previous experience, 2. Advanced level skills in Golang or Python, 3. Advanced to intermediate level skills in PostgreSQL, plPGSQL/SQL & NoSQL databases like MongoDB, 4. In-depth knowledge of working with REST APIs and REST API security mechanisms,  5. Intermediate level skill in DevOps and Git versioning",
+       duration:"3 months" ,
+      salaryduringprobation:" 30,000 - 40,000 /month ",
+      annualctc:"5.5-6.5 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "15"
     },
 
     {
@@ -284,8 +459,18 @@ export class UserService {
       ctc: "5.5-7.8 LPA",
       location: "Mumbai",
       apply: "28 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "work from office"
+     // decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
+      type: "work from office",
+      company: "SUN Mobility is the leading provider of universal energy infrastructure and services to accelerate mass electric vehicle usage.",
+      decription: "Key responsibilities: 1. Write high-quality code and scripts, 2. Maintain existing website codes and update them if required, 3. Create complex charts using D3.js and customize them if required, 4. Sync with other developers to make the projects function properly",
+      skills: "ReactJS",
+      whocanapply: "1. B.Tech or B.E in CSE or IT preferred, 2. Knowledge of Django is desired but not mandatory",
+      duration:"3 months" ,
+      salaryduringprobation:" 30,000 - 40,000 /month ",
+      annualctc:"5.5-7.8 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "11"
     },
 
 
@@ -298,8 +483,18 @@ export class UserService {
       ctc: "5.3-6.8 LPA",
       location: "Delhi",
       apply: "29 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "work from home"
+      //decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
+      type: "work from home",
+      company: "Infosys Limited is an Indian multinational information technology company that provides business consulting, information technology and outsourcing services. The company was founded in Pune and is headquartered in Bangalore",
+      decription: "Key responsibilities: 1. Designing, developing, implementing, and maintaining Java-based application phases, codes, and software,2. Contributing to all phases of the development lifecycle,3. Writing testable, scalable, and efficient code,4. Testing and debugging new applications and updates,5. Maintaining up to date code documentation, 6. Participating in code review",
+      skills: "Angular 2.0, AngularJS,Hibernate (Java),J2EE,Java,MySQL,Spring MVC",
+      whocanapply: "1. Only computer science graduates, 2. Some experience in Java 8 Version, Java-J2EE, and Spring Boot, 3. Strong CS fundamentals in OOD, DS, algorithms, and problem solving for a wide variety of problem spaces and technologies,4. Must have good coding skills, 5. Experience creating large-scale, multi-tiered, distributed web applications with databases, and designing web services, APIs, data models, and schemas, using SQL or NoSQL, 6. Experience with different types of data storage solutions, such as Elastic Search, SQL, Hadoop, or MongoDB, 7. Worked in Agile environments previously, 8. Good analytical and troubleshooting skills",
+       duration:"3 months" ,
+      salaryduringprobation:" 30,000 - 40,000 /month ",
+      annualctc:"5.3-6.8 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "10"
     },
 
 
@@ -311,8 +506,17 @@ export class UserService {
       ctc: "5.8-7.8 LPA",
       location: "Mumbai",
       apply: "27 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "work from office"
+      //decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
+      type: "work from office",
+      company: "The Company Torry Harris integration Solutions (THIS), founded in 1998, is headquartered in New Jersey, USA. The company is a trusted advisor to enterprises worldwide, helping them extend the power of digital access through integration.",
+      decription: "Key responsibilities: 1. Teaching IELTS including spoken English to the students 2. Making teaching plans for the IELTS program, 3. Managing the class, preparing the lessons to be delivered to the students,  4. Preparing and setting tests, examination papers, and exercises 5. Marking and providing appropriate feedback to the students, 6. Attending walk-ins and telephonic queries for IELTS",
+      whocanapply: "1. Excellent command of spoken and written English, 2. Should know the IELTS system well and its exams, 3. Good presentation and teaching skills",
+    duration:"3 months" ,
+      salaryduringprobation:" 30,000 - 40,000 /month ",
+      annualctc:"5.8-7.8 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "9"
     },
 
 
@@ -325,8 +529,18 @@ export class UserService {
       ctc: "5.5-7.8 LPA",
       location: "Hyderabad",
       apply: "28 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "Work from office"
+     // decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
+      type: "Work from office",
+      company: "Cognizant is an American multinational information technology services and consulting company. It is headquartered in Teaneck, New Jersey, United States. Cognizant is part of the NASDAQ-100 and trades under CTSH",
+      decription: "Key responsibilities: 1. Write high-quality code and scripts, 2. Maintain existing website codes and update them if required, 3. Create complex charts using D3.js and customize them if required, 4. Sync with other developers to make the projects function properly",
+      skills: "ReactJS",
+      whocanapply: "1. B.Tech or B.E in CSE or IT preferred, 2. Knowledge of Django is desired but not mandatory",
+      duration:"3 months" ,
+      salaryduringprobation:" 30,000 - 40,000 /month ",
+      annualctc:"5.5-7.8 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "8"
     },
 
     {
@@ -337,8 +551,18 @@ export class UserService {
       ctc: "6.5-7.8 LPA",
       location: "Chennai",
       apply: "30 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "work from office"
+      //decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
+      type: "work from office",
+      company: "International Business Machines Corporation is an American multinational technology corporation headquartered in Armonk, New York, with operations in over 171 countries..",
+      decription: "Key responsibilities: 1. Designing, developing, implementing, and maintaining Java-based application phases, codes, and software,2. Contributing to all phases of the development lifecycle,3. Writing testable, scalable, and efficient code,4. Testing and debugging new applications and updates,5. Maintaining up to date code documentation, 6. Participating in code review",
+      skills: "Angular 2.0, AngularJS,Hibernate (Java),J2EE,Java,MySQL,Spring MVC",
+      whocanapply: "1. Only computer science graduates, 2. Some experience in Java 8 Version, Java-J2EE, and Spring Boot, 3. Strong CS fundamentals in OOD, DS, algorithms, and problem solving for a wide variety of problem spaces and technologies,4. Must have good coding skills, 5. Experience creating large-scale, multi-tiered, distributed web applications with databases, and designing web services, APIs, data models, and schemas, using SQL or NoSQL, 6. Experience with different types of data storage solutions, such as Elastic Search, SQL, Hadoop, or MongoDB, 7. Worked in Agile environments previously, 8. Good analytical and troubleshooting skills",
+       duration:"3 months" ,
+      salaryduringprobation:" 30,000 - 40,000 /month ",
+      annualctc:"6.5-7.8 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "7"
     },
 
 
@@ -350,8 +574,18 @@ export class UserService {
       ctc: "5.5-7.8 LPA",
       location: "Bangalore",
       apply: "28 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "work from home"
+      //decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
+      type: "work from home",
+      company: "HCL Technologies is an Indian multinational information technology services and consulting company headquartered in Noida. It is a subsidiary of HCL Enterprise. Originally a research and development division of HCL, it emerged as an independent company in 1991 when HCL entered into the software services business.",
+      decription: "Key responsibilities:1. Take ownership of projects through their entire lifecycle, from initial concept generation through fabrication and production bring-up, 2. Work on the preparation of overall machine design concepts for custom-designed special-purpose equipment and systems, 3. Work on detailed machine designs, including the creation of machine layouts, detailed part drawings, and assembly drawings,4. Conduct design reviews for internal team feedback and cross-functional presentations,5. Manage liaison between product engineering and equipment design departments & work on the specification and sourcing of commercial components pertaining to designs,  6. Work on the preparation of mechanical bill of materials and system documentation, 7. Work on the validation of equipment specifications and redesign of systems to meet specs where necessary, 8. Solve complex, open-ended problems with an emphasis on speed of execution and efficiency",
+      skills: "Autodesk Fusion 360,CAD, Engineering Drawing, Physics, Python, Rapid Prototyping",
+      whocanapply: "1. Have worked on projects and built something apart from the college coursework, 2. Strong knowledge of material properties and applications, 3. Able to work independently and on teams, 4. Sound decision-making ability, 5. Strong understanding of drafting standards and the application of GD&T,6. Experience with common machine components - electromechanical systems, motors, actuators, linear rails, bearings, lifting/rigging, etc. 7. Familiarity with modern machine controls, including PLCs and pneumatic systems, 8. Familiarity with product design and understanding of design for manufacturability principles, 9. Hands-on with tool installation and equipment commissioning experience, 10. Understanding of common manufacturing processes and machines, including mills, lathes, 3D printing, sheet metal, weldments, wire EDM, etc.",
+     duration:"3 months" ,
+      salaryduringprobation:" 30,000 - 40,000 /month ",
+      annualctc:"5.5-7.8 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "6"
     },
 
     {
@@ -362,8 +596,18 @@ export class UserService {
       ctc: "4.5-5.8 LPA",
       location: "Chennai",
       apply: "26 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "work from office"
+      //decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
+      type: "work from office",
+      company: "Tata Consultancy Services is an Indian multinational information technology services and consulting company headquartered in Mumbai. It is a part of the Tata Group and operates in 149 locations across 46 countries.",
+      decription: "Key responsibilities: 1. Write high-quality code and scripts, 2. Maintain existing website codes and update them if required, 3. Create complex charts using D3.js and customize them if required, 4. Sync with other developers to make the projects function properly",
+      skills: "ReactJS",
+      whocanapply: "1. B.Tech or B.E in CSE or IT preferred, 2. Knowledge of Django is desired but not mandatory",
+      duration:"3 months" ,
+      salaryduringprobation:" 30,000 - 40,000 /month ",
+      annualctc:"4.5-5.8 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "5"
     },
 
 
@@ -376,7 +620,17 @@ export class UserService {
       location: "Mumbai",
       apply: "27 May'22",
       link: "#",
-      type: "work from office"
+      type: "work from office",
+      company: "Tata Consultancy Services is an Indian multinational information technology services and consulting company headquartered in Mumbai. It is a part of the Tata Group and operates in 149 locations across 46 countries.",
+      decription: "Key responsibilities: 1. Design and devlop backend APIs, 2. Maintain and imrpove the services offered by the UnitGrid platform",
+      skills: "Golang, MongoDB,MySQL, PostgreSQL, Python, REST API,SQL",
+      whocanapply: "1. Would prefer a candidate with previous experience, 2. Advanced level skills in Golang or Python, 3. Advanced to intermediate level skills in PostgreSQL, plPGSQL/SQL & NoSQL databases like MongoDB, 4. In-depth knowledge of working with REST APIs and REST API security mechanisms,  5. Intermediate level skill in DevOps and Git versioning",
+      duration:"3 months" ,
+      salaryduringprobation:" 30,000 - 40,000 /month ",
+      annualctc:"3.5-4.8 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "4"
     },
 
     {
@@ -387,8 +641,18 @@ export class UserService {
       ctc: "3.5-4.8 LPA",
       location: "Kolkata",
       apply: "26 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "work from home"
+      //decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
+      type: "work from home",
+      company: "Tata Consultancy Services is an Indian multinational information technology services and consulting company headquartered in Mumbai. It is a part of the Tata Group and operates in 149 locations across 46 countries.",
+      decription: "Key responsibilities:1. Take ownership of projects through their entire lifecycle, from initial concept generation through fabrication and production bring-up, 2. Work on the preparation of overall machine design concepts for custom-designed special-purpose equipment and systems, 3. Work on detailed machine designs, including the creation of machine layouts, detailed part drawings, and assembly drawings,4. Conduct design reviews for internal team feedback and cross-functional presentations,5. Manage liaison between product engineering and equipment design departments & work on the specification and sourcing of commercial components pertaining to designs,  6. Work on the preparation of mechanical bill of materials and system documentation, 7. Work on the validation of equipment specifications and redesign of systems to meet specs where necessary, 8. Solve complex, open-ended problems with an emphasis on speed of execution and efficiency",
+      skills: "Autodesk Fusion 360,CAD, Engineering Drawing, Physics, Python, Rapid Prototyping",
+      whocanapply: "1. Have worked on projects and built something apart from the college coursework, 2. Strong knowledge of material properties and applications, 3. Able to work independently and on teams, 4. Sound decision-making ability, 5. Strong understanding of drafting standards and the application of GD&T,6. Experience with common machine components - electromechanical systems, motors, actuators, linear rails, bearings, lifting/rigging, etc. 7. Familiarity with modern machine controls, including PLCs and pneumatic systems, 8. Familiarity with product design and understanding of design for manufacturability principles, 9. Hands-on with tool installation and equipment commissioning experience, 10. Understanding of common manufacturing processes and machines, including mills, lathes, 3D printing, sheet metal, weldments, wire EDM, etc.",
+      duration:"3 months" ,
+      salaryduringprobation:" 30,000 - 40,000 /month ",
+      annualctc:"3.5-4.8 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "3"
     },
 
     {
@@ -399,8 +663,18 @@ export class UserService {
       ctc: "6.5-7.5 LPA",
       location: "Mumbai",
       apply: "25 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "work from office"
+      //decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
+      type: "work from office",
+      company: "Wipro Limited is an Indian multinational corporation that provides information technology, consulting and business process services. Thierry Delaporte has served as CEO and managing director of Wipro since July 2020. It is headquartered in Bangalore, Karnataka, India. ",
+      decription: "Key responsibilities: 1. Designing, developing, implementing, and maintaining Java-based application phases, codes, and software,2. Contributing to all phases of the development lifecycle,3. Writing testable, scalable, and efficient code,4. Testing and debugging new applications and updates,5. Maintaining up to date code documentation, 6. Participating in code review",
+      skills: "Angular 2.0, AngularJS,Hibernate (Java),J2EE,Java,MySQL,Spring MVC",
+      whocanapply: "1. Only computer science graduates, 2. Some experience in Java 8 Version, Java-J2EE, and Spring Boot, 3. Strong CS fundamentals in OOD, DS, algorithms, and problem solving for a wide variety of problem spaces and technologies,4. Must have good coding skills, 5. Experience creating large-scale, multi-tiered, distributed web applications with databases, and designing web services, APIs, data models, and schemas, using SQL or NoSQL, 6. Experience with different types of data storage solutions, such as Elastic Search, SQL, Hadoop, or MongoDB, 7. Worked in Agile environments previously, 8. Good analytical and troubleshooting skills",
+      duration:"3 months" ,
+      salaryduringprobation:" 30,000 - 40,000 /month ",
+      annualctc:"6.5-7.5 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "2"
     },
 
     {
@@ -411,8 +685,18 @@ export class UserService {
       ctc: "5.5-6.5 LPA",
       location: "Mumbai",
       apply: "24 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "work from home"
+      //decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
+      type: "work from home",
+      company: "The Company Torry Harris integration Solutions (THBS), founded in 1998, is headquartered in New Jersey, USA. The company is a trusted advisor to enterprises worldwide, helping them extend the power of digital access through integration.",
+      decription: "Key responsibilities: . Create content for social media and WhatsApp marketing 2. Create videos using Canva  3. Work on basic photo editing",
+      skills: "Canva, Creative Writing, Instagram Marketing",
+      whocanapply: "1. Good communication, spoken and written English 2. Content creation skills",
+      duration:"3 months" ,
+      salaryduringprobation:" 30,000 - 40,000 /month ",
+      annualctc:"5.5-6.5 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "1"
     },
 
 
@@ -424,8 +708,18 @@ export class UserService {
       ctc: "6.5-7.5 LPA",
       location: "Delhi",
       apply: "29 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "work from home"
+      //decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
+      type: "work from home",
+      company: "International Business Machines Corporation is an American multinational technology corporation headquartered in Armonk, New York, with operations in over 171 countries..",
+      decription: "Key responsibilities:1. Take ownership of projects through their entire lifecycle, from initial concept generation through fabrication and production bring-up, 2. Work on the preparation of overall machine design concepts for custom-designed special-purpose equipment and systems, 3. Work on detailed machine designs, including the creation of machine layouts, detailed part drawings, and assembly drawings,4. Conduct design reviews for internal team feedback and cross-functional presentations,5. Manage liaison between product engineering and equipment design departments & work on the specification and sourcing of commercial components pertaining to designs,  6. Work on the preparation of mechanical bill of materials and system documentation, 7. Work on the validation of equipment specifications and redesign of systems to meet specs where necessary, 8. Solve complex, open-ended problems with an emphasis on speed of execution and efficiency",
+      skills: "Autodesk Fusion 360,CAD, Engineering Drawing, Physics, Python, Rapid Prototyping",
+      whocanapply: "1. Have worked on projects and built something apart from the college coursework, 2. Strong knowledge of material properties and applications, 3. Able to work independently and on teams, 4. Sound decision-making ability, 5. Strong understanding of drafting standards and the application of GD&T,6. Experience with common machine components - electromechanical systems, motors, actuators, linear rails, bearings, lifting/rigging, etc. 7. Familiarity with modern machine controls, including PLCs and pneumatic systems, 8. Familiarity with product design and understanding of design for manufacturability principles, 9. Hands-on with tool installation and equipment commissioning experience, 10. Understanding of common manufacturing processes and machines, including mills, lathes, 3D printing, sheet metal, weldments, wire EDM, etc.",
+      duration:"3 months" ,
+      salaryduringprobation:" 30,000 - 40,000 /month ",
+      annualctc:"6.5-7.5 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "13"
     },
 
 
@@ -437,8 +731,17 @@ export class UserService {
       ctc: "4.5-5.5 LPA",
       location: "Hyderabad",
       apply: "23 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "work from office"
+      //decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
+      type: "work from office",
+      decription: "Key responsibilities: 1. Designing, developing, implementing, and maintaining Java-based application phases, codes, and software,2. Contributing to all phases of the development lifecycle,3. Writing testable, scalable, and efficient code,4. Testing and debugging new applications and updates,5. Maintaining up to date code documentation, 6. Participating in code review",
+      skills: "Angular 2.0, AngularJS,Hibernate (Java),J2EE,Java,MySQL,Spring MVC",
+      whocanapply: "1. Only computer science graduates, 2. Some experience in Java 8 Version, Java-J2EE, and Spring Boot, 3. Strong CS fundamentals in OOD, DS, algorithms, and problem solving for a wide variety of problem spaces and technologies,4. Must have good coding skills, 5. Experience creating large-scale, multi-tiered, distributed web applications with databases, and designing web services, APIs, data models, and schemas, using SQL or NoSQL, 6. Experience with different types of data storage solutions, such as Elastic Search, SQL, Hadoop, or MongoDB, 7. Worked in Agile environments previously, 8. Good analytical and troubleshooting skills",
+      duration:"3 months" ,
+      salaryduringprobation:" 30,000 - 40,000 /month ",
+      annualctc:"4.5-5.5 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "12"
     },
 
 
@@ -452,8 +755,18 @@ export class UserService {
       ctc: "6.5-8.8 LPA",
       location: "Hyderabad",
       apply: "23 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "work from home"
+      //decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
+      type: "work from home",
+      company: "Oracle Corporation is an American multinational computer technology corporation headquartered in Austin, Texas. In 2020, Oracle was the second-largest software company in the world by revenue and market capitalization.",
+      decription: "Key responsibilities:1. Take ownership of projects through their entire lifecycle, from initial concept generation through fabrication and production bring-up, 2. Work on the preparation of overall machine design concepts for custom-designed special-purpose equipment and systems, 3. Work on detailed machine designs, including the creation of machine layouts, detailed part drawings, and assembly drawings,4. Conduct design reviews for internal team feedback and cross-functional presentations,5. Manage liaison between product engineering and equipment design departments & work on the specification and sourcing of commercial components pertaining to designs,  6. Work on the preparation of mechanical bill of materials and system documentation, 7. Work on the validation of equipment specifications and redesign of systems to meet specs where necessary, 8. Solve complex, open-ended problems with an emphasis on speed of execution and efficiency",
+      skills: "Autodesk Fusion 360,CAD, Engineering Drawing, Physics, Python, Rapid Prototyping",
+      whocanapply: "1. Have worked on projects and built something apart from the college coursework, 2. Strong knowledge of material properties and applications, 3. Able to work independently and on teams, 4. Sound decision-making ability, 5. Strong understanding of drafting standards and the application of GD&T,6. Experience with common machine components - electromechanical systems, motors, actuators, linear rails, bearings, lifting/rigging, etc. 7. Familiarity with modern machine controls, including PLCs and pneumatic systems, 8. Familiarity with product design and understanding of design for manufacturability principles, 9. Hands-on with tool installation and equipment commissioning experience, 10. Understanding of common manufacturing processes and machines, including mills, lathes, 3D printing, sheet metal, weldments, wire EDM, etc.",
+      duration:"3 months" ,
+      salaryduringprobation:" 30,000 - 40,000 /month ",
+      annualctc:"6.5-8.8 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "11"
     },
 
     {
@@ -464,8 +777,17 @@ export class UserService {
       ctc: "5.5-7.5 LPA",
       location: "Bangalore",
       apply: "28 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "work from office"
+      //decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
+      type: "work from office",
+      decription: "Key responsibilities: 1. Facilitating new-comers joining formalities2. Preparing and submitting all relevant HR letters/documents/certificates as per the requirement in consultation with the management, 3. Working on employee engagement, 4. Planning support in the organizational recruitment process and coordinating with various departments, 5. Managing the complete clearance procedure of employees, 7. Sourcing and screening applicants, 8. Preparing letters, such as offers and confirmation, 9. Training new or existing employees,10. Tracking attendance, maintaining leave records, issue letters, etc.",
+      skills:"English Proficiency (Spoken),English Proficiency (Written), MS-Excel,MS-Office, MS-Word",
+      whocanapply: "1. Those who are from or open to relocate to Indore, 2. Education - bachelor’s (required) & master’s (preferred), 3. Must have good communication skills, 4. Can manage recruitment & selection process efficiently, 5. MS Office, computer knowledge,  6. Should be mentally prepared to work under pressure",
+      duration:"3 months" ,
+      salaryduringprobation:" 30,000 - 40,000 /month ",
+      annualctc:"5.5-7.5 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "10"
     },
 
 
@@ -478,8 +800,18 @@ export class UserService {
       ctc: "5.5-6.5 LPA",
       location: "Kolkata",
       apply: "24 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "work from office"
+      //decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
+      type: "work from office",
+      company: "The Company Torry Harris bussines Solutions (THBS), founded in 1998, is headquartered in New Jersey, USA. The company is a trusted advisor to enterprises worldwide, helping them extend the power of digital access through integration.",
+      decription: "Key responsibilities: 1. Work on pharmacy user verification, 2. Work on pharmacy user support & retailer support,3. Manage in-store operations, 4. Work on drug data management",
+      skills: "English Proficiency (Written), Hindi Proficiency (Spoken), Telugu Proficiency (Spoken)",
+      whocanapply: "1. Bachelor's/Master’s degree in pharmacy is required,2. Must have knowledge of drug details, 3. Basic computer knowledge with MS Excel, 4. Strong communication and presentation skills,5. Speaking skills in Telugu or Hindi and written proficiency in English",
+      duration:"3 months" ,
+      salaryduringprobation:" 30,000 - 40,000 /month ",
+      annualctc:"5.5-6.5 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "9"
     },
 
     {
@@ -490,8 +822,18 @@ export class UserService {
       ctc: "6.5-7.5 LPA",
       location: "Chennai",
       apply: "29 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "work from home"
+     // decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
+      type: "work from home",
+      company: "Oracle Corporation is an American multinational computer technology corporation headquartered in Austin, Texas. In 2020, Oracle was the second-largest software company in the world by revenue and market capitalization.",
+      decription: "Key responsibilities: 1. Facilitating new-comers joining formalities2. Preparing and submitting all relevant HR letters/documents/certificates as per the requirement in consultation with the management, 3. Working on employee engagement, 4. Planning support in the organizational recruitment process and coordinating with various departments, 5. Managing the complete clearance procedure of employees, 7. Sourcing and screening applicants, 8. Preparing letters, such as offers and confirmation, 9. Training new or existing employees,10. Tracking attendance, maintaining leave records, issue letters, etc.",
+      skills:"English Proficiency (Spoken),English Proficiency (Written), MS-Excel,MS-Office, MS-Word",
+      whocanapply: "1. Those who are from or open to relocate to Indore, 2. Education - bachelor’s (required) & master’s (preferred), 3. Must have good communication skills, 4. Can manage recruitment & selection process efficiently, 5. MS Office, computer knowledge,  6. Should be mentally prepared to work under pressure",
+      duration:"3 months" ,
+      salaryduringprobation:" 30,000 - 40,000 /month ",
+      annualctc:"6.5-7.5 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "8"
     },
 
 
@@ -504,8 +846,18 @@ export class UserService {
       ctc: "5.5-6.5 LPA",
       location: "Bangalore",
       apply: "29 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "work from home"
+      //decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
+      type: "work from home",
+      company: "Capgemini is a global leader in consulting, digital transformation, technology and engineering services.",
+      decription: "Key responsibilities: 1. Work on pharmacy user verification, 2. Work on pharmacy user support & retailer support,3. Manage in-store operations, 4. Work on drug data management",
+      skills: "English Proficiency (Written), Hindi Proficiency (Spoken), Telugu Proficiency (Spoken)",
+      whocanapply: "1. Bachelor's/Master’s degree in pharmacy is required,2. Must have knowledge of drug details, 3. Basic computer knowledge with MS Excel, 4. Strong communication and presentation skills,5. Speaking skills in Telugu or Hindi and written proficiency in English",
+      duration:"3 months" ,
+      salaryduringprobation:" 30,000 - 40,000 /month ",
+      annualctc:"5.5-6.5 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "7"
     },
 
     {
@@ -517,7 +869,17 @@ export class UserService {
       location: "Chennai",
       apply: "27 May'22",
       link: "#",
-      type: "work from home"
+      type: "work from home",
+      company: "International Business Machines Corporation is an American multinational technology corporation headquartered in Armonk, New York, with operations in over 171 countries..",
+      decription: "Key responsibilities: 1. Design and devlop backend APIs, 2. Maintain and imrpove the services offered by the UnitGrid platform",
+      skills: "Golang, MongoDB,MySQL, PostgreSQL, Python, REST API,SQL",
+      whocanapply: "1. Would prefer a candidate with previous experience, 2. Advanced level skills in Golang or Python, 3. Advanced to intermediate level skills in PostgreSQL, plPGSQL/SQL & NoSQL databases like MongoDB, 4. In-depth knowledge of working with REST APIs and REST API security mechanisms,  5. Intermediate level skill in DevOps and Git versioning",
+      duration:"3 months" ,
+      salaryduringprobation:" 30,000 - 40,000 /month ",
+      annualctc:"5.5-6.5 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "6"
     },
 
 
@@ -530,8 +892,18 @@ export class UserService {
       ctc: "3.5-4.8 LPA",
       location: "Delhi",
       apply: "24 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "Work from office"
+      //decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
+      type: "Work from office",
+      company: "HCL Technologies is an Indian multinational information technology services and consulting company headquartered in Noida. It is a subsidiary of HCL Enterprise. Originally a research and development division of HCL, it emerged as an independent company in 1991 when HCL entered into the software services business.",
+      decription: "Key responsibilities: 1. Work on pharmacy user verification, 2. Work on pharmacy user support & retailer support,3. Manage in-store operations, 4. Work on drug data management",
+      skills: "English Proficiency (Written), Hindi Proficiency (Spoken), Telugu Proficiency (Spoken)",
+      whocanapply: "1. Bachelor's/Master’s degree in pharmacy is required,2. Must have knowledge of drug details, 3. Basic computer knowledge with MS Excel, 4. Strong communication and presentation skills,5. Speaking skills in Telugu or Hindi and written proficiency in English",
+      duration:"3 months" ,
+      salaryduringprobation:" 30,000 - 40,000 /month ",
+      annualctc:"3.5-4.8 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "5"
     },
 
     {
@@ -542,8 +914,18 @@ export class UserService {
       ctc: "5.5-7.8 LPA",
       location: "Bangalore",
       apply: "26 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "work from office"
+      //decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
+      type: "work from office",
+      company: "Tata Consultancy Services is an Indian multinational information technology services and consulting company headquartered in Mumbai. It is a part of the Tata Group and operates in 149 locations across 46 countries.",
+      decription: "Key responsibilities:1. Coordinating the backend work of the NGO, 2. Coordinating with the field office 3. Handling work meetings and other organization work  4. Managing virtual interns",
+      skills: "English Proficiency (Spoken),English Proficiency (Written),MS-Office",
+      whocanapply: "1. Only male candidates are required, 2. Masters in social work/development/gender studies/communications and media with exposure in the developmental sector, preferably work on gender/women’s empowerment issues,3. Candidate should preferably be from Bengaluru, wanting to work with an academic institute of excellence and make a difference",
+      duration:"3 months" ,
+      salaryduringprobation:" 30,000 - 40,000 /month ",
+      annualctc:"5.5-7.8 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "4"
     },
 
     {
@@ -554,8 +936,18 @@ export class UserService {
       ctc: "7.5-8.5 LPA",
       location: "Delhi",
       apply: "30 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "work from home"
+      //decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
+      type: "work from home",
+      company: "Accenture plc is an Ireland-based multinational professional services company that specialises in information technology services and consulting. A Fortune Global 500 company, it reported revenues of $50.53 billion in 2021.",
+      decription: "Key responsibilities: 1. Facilitating new-comers joining formalities2. Preparing and submitting all relevant HR letters/documents/certificates as per the requirement in consultation with the management, 3. Working on employee engagement, 4. Planning support in the organizational recruitment process and coordinating with various departments, 5. Managing the complete clearance procedure of employees, 7. Sourcing and screening applicants, 8. Preparing letters, such as offers and confirmation, 9. Training new or existing employees,10. Tracking attendance, maintaining leave records, issue letters, etc.",
+      skills:"English Proficiency (Spoken),English Proficiency (Written), MS-Excel,MS-Office, MS-Word",
+      whocanapply: "1. Those who are from or open to relocate to Indore, 2. Education - bachelor’s (required) & master’s (preferred), 3. Must have good communication skills, 4. Can manage recruitment & selection process efficiently, 5. MS Office, computer knowledge,  6. Should be mentally prepared to work under pressure",
+      duration:"3 months" ,
+      salaryduringprobation:" 30,000 - 40,000 /month ",
+      annualctc:"7.5-8.5 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "3"
     },
 
 
@@ -568,8 +960,18 @@ export class UserService {
       ctc: "5.5-7.5 LPA",
       location: "Chennai",
       apply: "26 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "work from office"
+      //decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
+      type: "work from office",
+      company: "Tata Consultancy Services is an Indian multinational information technology services and consulting company headquartered in Mumbai. It is a part of the Tata Group and operates in 149 locations across 46 countries.",
+      decription: "Key responsibilities: 1. Work on pharmacy user verification, 2. Work on pharmacy user support & retailer support,3. Manage in-store operations, 4. Work on drug data management",
+      skills: "English Proficiency (Written), Hindi Proficiency (Spoken), Telugu Proficiency (Spoken)",
+      whocanapply: "1. Bachelor's/Master’s degree in pharmacy is required,2. Must have knowledge of drug details, 3. Basic computer knowledge with MS Excel, 4. Strong communication and presentation skills,5. Speaking skills in Telugu or Hindi and written proficiency in English",
+      duration:"3 months" ,
+      salaryduringprobation:" 30,000 - 40,000 /month ",
+      annualctc:"5.5-7.5 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "2"
     },
 
 
@@ -582,8 +984,18 @@ export class UserService {
       ctc: "6.5-7.5 LPA",
       location: "Bangalore",
       apply: "27 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "work from home"
+      //decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
+      type: "work from home",
+      company: "Euprime's AI powered platform uses one of the world's best contactless health monitoring technology.",
+      decription: "Key responsibilities:1. Coordinating the backend work of the NGO, 2. Coordinating with the field office 3. Handling work meetings and other organization work  4. Managing virtual interns",
+      skills: "English Proficiency (Spoken),English Proficiency (Written),MS-Office",
+      whocanapply: "1. Only male candidates are required, 2. Masters in social work/development/gender studies/communications and media with exposure in the developmental sector, preferably work on gender/women’s empowerment issues,3. Candidate should preferably be from Bengaluru, wanting to work with an academic institute of excellence and make a difference",
+      duration:"3 months" ,
+      salaryduringprobation:" 30,000 - 40,000 /month ",
+      annualctc:"6.5-7.5 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "1"
     },
 
     {
@@ -594,8 +1006,18 @@ export class UserService {
       ctc: "5.5-6.5 LPA",
       location: "Hyderabad",
       apply: "26 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "work from home"
+      //decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
+      type: "work from home",
+      company: "HP Inc. is an American multinational information technology company headquartered in Palo Alto, California, that develops personal computers, printers and related supplies, as well as 3D printing solutions.",
+      decription: "Key responsibilities: 1. Work on pharmacy user verification, 2. Work on pharmacy user support & retailer support,3. Manage in-store operations, 4. Work on drug data management",
+      skills: "English Proficiency (Written), Hindi Proficiency (Spoken), Telugu Proficiency (Spoken)",
+      whocanapply: "1. Bachelor's/Master’s degree in pharmacy is required,2. Must have knowledge of drug details, 3. Basic computer knowledge with MS Excel, 4. Strong communication and presentation skills,5. Speaking skills in Telugu or Hindi and written proficiency in English",
+      duration:"3 months" ,
+      salaryduringprobation:" 30,000 - 40,000 /month ",
+      annualctc:"5.5-6.5 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "12"
     },
 
     {
@@ -606,8 +1028,18 @@ export class UserService {
       ctc: "4.5-5.5 LPA",
       location: "Chennai",
       apply: "25 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "work from home"
+      //decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
+      type: "work from home",
+      company: "Tata Consultancy Services is an Indian multinational information technology services and consulting company headquartered in Mumbai. It is a part of the Tata Group and operates in 149 locations across 46 countries.",
+      decription: "Key responsibilities: 1. Teaching IELTS including spoken English to the students 2. Making teaching plans for the IELTS program, 3. Managing the class, preparing the lessons to be delivered to the students,  4. Preparing and setting tests, examination papers, and exercises 5. Marking and providing appropriate feedback to the students, 6. Attending walk-ins and telephonic queries for IELTS",
+      skills: "American English, English Proficiency (Spoken), English Proficiency (Written)",
+      whocanapply: "1. Excellent command of spoken and written English, 2. Should know the IELTS system well and its exams, 3. Good presentation and teaching skills",
+   duration:"6 months" ,
+      salaryduringprobation:" 30,000 - 40,000 /month ",
+      annualctc:"4.5-5.5 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "11"
     },
 
     {
@@ -618,8 +1050,17 @@ export class UserService {
       ctc: "5.5-6.5 LPA",
       location: "Bangalore",
       apply: "28 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "work from home"
+     // decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
+      type: "work from home",
+      decription: "Key responsibilities:1. Coordinating the backend work of the NGO, 2. Coordinating with the field office 3. Handling work meetings and other organization work  4. Managing virtual interns",
+      skills: "English Proficiency (Spoken),English Proficiency (Written),MS-Office",
+      whocanapply: "1. Only male candidates are required, 2. Masters in social work/development/gender studies/communications and media with exposure in the developmental sector, preferably work on gender/women’s empowerment issues,3. Candidate should preferably be from Bengaluru, wanting to work with an academic institute of excellence and make a difference",
+      duration:"2 months" ,
+      salaryduringprobation:" 30,000 - 40,000 /month ",
+      annualctc:"5.5-6.5 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "1"
     },
 
     {
@@ -630,8 +1071,18 @@ export class UserService {
       ctc: "7.5-8.5 LPA",
       location: "Hyderabad",
       apply: "27 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "work from office"
+      //decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
+      type: "work from office",
+      company: "Cognizant is an American multinational information technology services and consulting company. It is headquartered in Teaneck, New Jersey, United States. Cognizant is part of the NASDAQ-100 and trades under CTSH",
+      decription: "Key responsibilities: 1. Facilitating new-comers joining formalities2. Preparing and submitting all relevant HR letters/documents/certificates as per the requirement in consultation with the management, 3. Working on employee engagement, 4. Planning support in the organizational recruitment process and coordinating with various departments, 5. Managing the complete clearance procedure of employees, 7. Sourcing and screening applicants, 8. Preparing letters, such as offers and confirmation, 9. Training new or existing employees,10. Tracking attendance, maintaining leave records, issue letters, etc.",
+      skills:"English Proficiency (Spoken),English Proficiency (Written), MS-Excel,MS-Office, MS-Word",
+      whocanapply: "1. Those who are from or open to relocate to Indore, 2. Education - bachelor’s (required) & master’s (preferred), 3. Must have good communication skills, 4. Can manage recruitment & selection process efficiently, 5. MS Office, computer knowledge,  6. Should be mentally prepared to work under pressure",
+      duration:"9 months" ,
+      salaryduringprobation:" 30,000 - 40,000 /month ",
+      annualctc:"7.5-8.5 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "2"
     },
 
 
@@ -644,8 +1095,16 @@ export class UserService {
       ctc: "5.5-6.5 LPA",
       location: "Delhi",
       apply: "25 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "work from home"
+      type: "work from home",
+      decription: "Key responsibilities:1. Coordinating the backend work of the NGO, 2. Coordinating with the field office 3. Handling work meetings and other organization work  4. Managing virtual interns",
+      skills: "English Proficiency (Spoken),English Proficiency (Written),MS-Office",
+      whocanapply: "1. Only male candidates are required, 2. Masters in social work/development/gender studies/communications and media with exposure in the developmental sector, preferably work on gender/women’s empowerment issues,3. Candidate should preferably be from Bengaluru, wanting to work with an academic institute of excellence and make a difference",
+      duration:"6 months" ,
+      salaryduringprobation:" 30,000 - 40,000 /month ",
+      annualctc:"5.5-6.5 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "3"
     },
 
     {
@@ -656,8 +1115,18 @@ export class UserService {
       ctc: "3.5-4.5 LPA",
       location: "Delhi",
       apply: "24 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "work from office"
+      //decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
+      type: "work from office",
+      company: "Capgemini is a global leader in consulting, digital transformation, technology and engineering services      ",
+      decription: "Key responsibilities: 1. Teaching IELTS including spoken English to the students 2. Making teaching plans for the IELTS program, 3. Managing the class, preparing the lessons to be delivered to the students,  4. Preparing and setting tests, examination papers, and exercises 5. Marking and providing appropriate feedback to the students, 6. Attending walk-ins and telephonic queries for IELTS",
+      skills: "American English, English Proficiency (Spoken), English Proficiency (Written)",
+      whocanapply: "1. Excellent command of spoken and written English, 2. Should know the IELTS system well and its exams, 3. Good presentation and teaching skills",
+  duration:"9 months" ,
+      salaryduringprobation:" 30,000 - 40,000 /month ",
+      annualctc:"3.5-4.5 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "4"
     },
 
 
@@ -669,8 +1138,18 @@ export class UserService {
       ctc: "4.5-7.5 LPA",
       location: "Kolkata",
       apply: "27 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "work from home"
+      //decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
+      type: "work from home",
+      company: "Wipro Limited is an Indian multinational corporation that provides information technology, consulting and business process services. Thierry Delaporte has served as CEO and managing director of Wipro since July 2020. It is headquartered in Bangalore, Karnataka, India. ",
+      decription: "Key responsibilities: . Create content for social media and WhatsApp marketing 2. Create videos using Canva  3. Work on basic photo editing",
+      skills: "Canva, Creative Writing, Instagram Marketing",
+      whocanapply: "1. Good communication, spoken and written English 2. Content creation skills",
+     duration:"9 months" ,
+      salaryduringprobation:" 30,000 - 40,000 /month ",
+      annualctc:"4.5-7.5 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "5"
     },
 
 
@@ -683,8 +1162,17 @@ export class UserService {
       ctc: "5.5-7.5 LPA",
       location: "Bangalore",
       apply: "25 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "Work from office"
+       type: "Work from office",
+      company: "Megamoney Carts Private Limited is a Private incorporated on 27 November 2020. It is classified as Non-govt company and is registered at Registrar of Companies, Pune. Its authorized share capital is Rs. 100,000 and its paid up capital is Rs. 25,000. It is inolved in Other computer related activities [for example maintenance of websites of other firms/ creation of multimedia presentations for other firms etc. ",
+      decription: "Key responsibilities: 1. Teaching IELTS including spoken English to the students 2. Making teaching plans for the IELTS program, 3. Managing the class, preparing the lessons to be delivered to the students,  4. Preparing and setting tests, examination papers, and exercises 5. Marking and providing appropriate feedback to the students, 6. Attending walk-ins and telephonic queries for IELTS",
+      skills: "American English, English Proficiency (Spoken), English Proficiency (Written)",
+      whocanapply: "1. Excellent command of spoken and written English, 2. Should know the IELTS system well and its exams, 3. Good presentation and teaching skills",
+  duration:"2 months" ,
+      salaryduringprobation:" 30,000 - 40,000 /month ",
+      annualctc:"5.5-7.5 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "6"
     },
 
     {
@@ -695,8 +1183,18 @@ export class UserService {
       ctc: "6.5-7.5 LPA",
       location: "Hyderabad",
       apply: "24 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "Work from office"
+      //decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
+      type: "Work from office",
+      company: "Cognizant is an American multinational information technology services and consulting company. It is headquartered in Teaneck, New Jersey, United States. Cognizant is part of the NASDAQ-100 and trades under CTSH",
+      decription: "Key responsibilities: . Create content for social media and WhatsApp marketing 2. Create videos using Canva  3. Work on basic photo editing",
+      skills: "Canva, Creative Writing, Instagram Marketing",
+      whocanapply: "1. Good communication, spoken and written English 2. Content creation skills",
+     duration:"7 months" ,
+      salaryduringprobation:" 30,000 - 40,000 /month ",
+      annualctc:"6.5-7.5 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "7"
     },
 
     {
@@ -707,8 +1205,17 @@ export class UserService {
       ctc: "3.5-4.8 LPA",
       location: "Kolkata",
       apply: "25 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "work from home"
+       type: "work from home",
+      company: "We transform how IT services are delivered; and are on our journey to be the first IT services company in the world where half the workforce is digital. ",
+      decription: "Key responsibilities: 1. Teaching IELTS including spoken English to the students 2. Making teaching plans for the IELTS program, 3. Managing the class, preparing the lessons to be delivered to the students,  4. Preparing and setting tests, examination papers, and exercises 5. Marking and providing appropriate feedback to the students, 6. Attending walk-ins and telephonic queries for IELTS",
+      skills: "American English, English Proficiency (Spoken), English Proficiency (Written)",
+      whocanapply: "1. Excellent command of spoken and written English, 2. Should know the IELTS system well and its exams, 3. Good presentation and teaching skills",
+   duration:"5 months" ,
+      salaryduringprobation:" 30,000 - 40,000 /month ",
+      annualctc:"3.5-4.8 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "8"
     },
 
     {
@@ -720,7 +1227,17 @@ export class UserService {
       location: "Hyderabad",
       apply: "29 May'22",
       link: "#",
-      type: "work from home"
+      type: "work from home",
+      company: "Oracle Corporation is an American multinational computer technology corporation headquartered in Austin, Texas. In 2020, Oracle was the second-largest software company in the world by revenue and market capitalization.",
+      decription: "Key responsibilities: 1. Design and devlop backend APIs, 2. Maintain and imrpove the services offered by the UnitGrid platform",
+      skills: "Golang, MongoDB,MySQL, PostgreSQL, Python, REST API,SQL",
+      whocanapply: "1. Would prefer a candidate with previous experience, 2. Advanced level skills in Golang or Python, 3. Advanced to intermediate level skills in PostgreSQL, plPGSQL/SQL & NoSQL databases like MongoDB, 4. In-depth knowledge of working with REST APIs and REST API security mechanisms,  5. Intermediate level skill in DevOps and Git versioning",
+       duration:"6 months" ,
+      salaryduringprobation:" 30,000 - 40,000 /month ",
+      annualctc:"5.5-6.5 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "9"
     },
 
 
@@ -733,8 +1250,22 @@ export class UserService {
       ctc: "4.5-5.8 LPA",
       location: "Hyderabad",
       apply: "23 May'22",
-      decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "work from office"
+      //decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
+      type: "work from office",
+      company: "Oracle Corporation is an American multinational computer technology corporation headquartered in Austin, Texas. In 2020, Oracle was the second-largest software company in the world by revenue and market capitalization.",
+      
+      decription: "Key responsibilities: 1. Teaching IELTS including spoken English to the students 2. Making teaching plans for the IELTS program, 3. Managing the class, preparing the lessons to be delivered to the students,  4. Preparing and setting tests, examination papers, and exercises 5. Marking and providing appropriate feedback to the students, 6. Attending walk-ins and telephonic queries for IELTS",
+      
+      skills: "American English, English Proficiency (Spoken), English Proficiency (Written)",
+      
+      whocanapply: "1. Excellent command of spoken and written English, 2. Should know the IELTS system well and its exams, 3. Good presentation and teaching skills",
+      
+      duration:"9 months" ,
+      salaryduringprobation:" 30,000 - 40,000 /month ",
+      annualctc:"4.5-5.8 LPA",
+      annualctcbreakup:"1. Fixed component: 80%, 2. Variable component: 10%, 3. Other incentives: 10%",
+      perks: " Free snacks & beverage",
+      openings: "10"
     }
 
   ]
@@ -948,7 +1479,6 @@ export class UserService {
       stipend: "$5500/month",
       location: "Kolkata",
       apply: "ASAP",
-      //decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
       type: "Work from home",
       decription: "About the internship: Selected intern's day-to-day responsibilities include: 1. Manage accounts and contacts in Salesforce 2. Develop responsive email templates using HTML/CSS and JavaScript, 3. Create and manage bulk/on-demand emails sends in the marketing cloud, 4. Create and manage SMS campaigns with the mobile connect module, 5. Learn and use SOQL query language and AMPscript, 6. Gain working knowledge to manage customer journeys in Automation Studio, 7. Learn and apply advanced skills like Lightning Web components Apex and SOSL",
       company: "Accenture plc is an Ireland-based multinational professional services company that specialises in information technology services and consulting. A Fortune Global 500 company, it reported revenues of $50.53 billion in 2021.",
@@ -1380,8 +1910,7 @@ export class UserService {
       stipend: "$9800/month",
       location: "Hyderabad",
       apply: "ASAP",
-      //decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
-      type: "work from home",
+       type: "work from home",
       company: "Oracle Corporation is an American multinational computer technology corporation headquartered in Austin, Texas. In 2020, Oracle was the second-largest software company in the world by revenue and market capitalization.",
       decription: " 1. Work on CAD fashion designing (we will provide fabric pictures, and brainstorm ideas to present, 2. Help post the ready CAD sketch and fabric pictures",
       skills: "Adobe Photoshop, Adobe Photoshop Lightroom CC, CAD, Facebook Marketing, Instagram Marketing",
@@ -1774,7 +2303,7 @@ export class UserService {
       apply: "ASAP",
       //decription: "Stipend structure: This is a performance-based internship. In addition to the minimum-assured stipend, you will also be paid a performance-linked incentive (10% of total funds raised).",
       type: "Work from office",
-      company: "Tata Consultancy Services is an Indian multinational information technology services and consulting company headquartered in Mumbai. It is a part of the Tata Group and operates in 149 locations across 46 countries.",
+      company: "Cognizant is an American multinational information technology services and consulting company. It is headquartered in Teaneck, New Jersey, United States. Cognizant is part of the NASDAQ-100 and trades under CTSH",
       decription: "1. Handle all digital marketing activities, 2. Create backlinks for our clients",
       skills: "Digital Marketing, Search Engine Marketing (SEM), Search Engine Optimization (SEO)",
       listskills: "Learn Search Engine Marketing, Learn SEO",

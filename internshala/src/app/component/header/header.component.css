@@ -3,34 +3,19 @@ header {
   margin: 0;
   padding: 25px;
   display: flex;
-
   align-items: center;
-
   font-weight: bolder;
-
   box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.1);
   justify-content: center;
   align-content: stretch;
   flex-wrap: nowrap;
   flex-direction: row;
+
 }
 
 .nav_links>li,
 a,
 button {
-
-  /* background: #fff;
-  border: none;
-  padding: 10px 20px;
-  display: inline;
- font-size: 1rem;
- font-weight: 800;
- width: 200px;
- cursor: pointer;
- transform: skew(-21deg); */
-
-
-
   font-family: "Inter var", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -172,9 +157,9 @@ button {
 .dropdown-menu>li:hover>.submenu {
   display: block;
 }
-.navbar{
-  /* position: -webkit-sticky;  */
- position: sticky;
- top: 0;
 
-}
+/* .navbar {
+  position: sticky;
+  top: 0;
+
+} */
