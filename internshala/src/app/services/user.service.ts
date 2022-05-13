@@ -45,7 +45,17 @@ export class UserService {
       location: "Bangalore",
       apply: "30 May'22",
       link: "#",
-      type: "work from home"
+      type: "work from home",
+      company: "The Company Torry Harris Business Solutions (THBS), founded in 1998, is headquartered in New Jersey, USA. The company is a trusted advisor to enterprises worldwide, helping them extend the power of digital access through integration.",
+      decription: "Key responsibilities: 1. Work on data structures/algorithms and understand design trade-offs, 2. Work with at least one backend programming language (Golang, JavaScript is a plus)",
+      skills: "Algorithms, Data Structures,Golang,JavaScript,MySQL",
+      whocanapply: "1. Those who are from or open to relocate to Bangalore  2. Knowledge of data structures/algorithms is a must and understanding of design trade-offs 3. Knowledge of object-oriented concepts is a plus  4. Knowledge of at least one backend programming language (Golang, JavaScript is a plus), 5. Hands-on experience with databases. (SQL is a plus)  6. Proactive and eager to work on new challenges and find solutions to different application development problems 7. Motivated self-starter with a proactive attitude towards risks 8. Strong logical reasoning skills",
+      duration:"3 months" ,
+      salaryduringprobation:" 30,000 - 40,000 /month ",
+      annualctc:"6.6 - 8.2 LPA",
+      annualctcbreakup:"1. Fixed component: 90%, 2. Variable component: 9%, 3. Other incentives: 1% ",
+      perks: "Informal dress code, 5 days a week, Free snacks & beverage,  Health Insurance",
+      openings: "5"
     },
 
     {

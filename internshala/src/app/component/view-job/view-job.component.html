@@ -2,10 +2,10 @@
     <div *ngFor="let intern of jobs">
         <div class="card">
             <div class="card-body">
-                <div class="">
+                <div>
                     <h2 class="card-title" style="color: blue; text-align: center;">{{intern.title}}</h2>
                 </div>
-                <div class="d-flex justify-content-between">
+                <!-- <div class="d-flex justify-content-between">
                     <div>
                         <h4 class="card-sub"><span><i class="bi bi-building"></i></span><b> Company: </b>
                             {{intern.sub}} </h4>
@@ -34,35 +34,109 @@
                         <h4 class="card-text4"><b><i class="bi bi-hourglass-split"></i> APPLY
                                 BY</b><br>{{intern.apply}}</h4>
                     </div>
+                </div> -->
+
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h4 class="card-sub"><span><i class="bi bi-building"></i></span><b> Company: </b>
+                            {{intern.sub}} </h4>
+                    </div>
+                    <div>
+                        <h4><b><i class="bi bi-geo-alt"></i> Location: </b>
+                            <span>{{intern.location}}</span>
+                        </h4>
+                    </div>
                 </div>
+
                 <br>
+
+                <div class="d-flex justify-content-around">
+                    <div>
+                        <h4 class="card-text1"><b><i class="bi bi-play-circle"></i> START
+                                DATE</b><br>{{intern.startdate}}</h4>
+                    </div>
+
+                    <div>
+                        <h4 class="card-text3"><b><i class="bi bi-cash"></i> CTC</b><br>{{intern.ctc}}</h4>
+                    </div>
+                    <div>
+                        <h4 class="card-text4"><b><i class="bi bi-hourglass-split"></i> APPLY
+                                BY</b><br>{{intern.apply}}</h4>
+                    </div>
+                </div>
+
+                <br>
+
                 <div class="d-flex justify-content-between">
                     <div>
                         <p><i class="fa fa-briefcase"></i><b> {{intern.type}}</b></p>
                     </div>
-                    <div class="des">
-                         <b style="font-size:larger;">   {{intern.decription}} </b>
-                    </div>
                 </div>
-                <div>
-                    <h3></h3>
-                    <p></p>
+
+                <hr>
+
+
+                <div desc>
+                    <b>About COMPANY :</b>
+                    <p>{{intern.company}}</p>
                 </div>
+                <div desc>
+                    <b>Description : </b>
+                    <P>About the internship: Selected intern's day-to-day responsibilities include:
+                        {{intern.decription}}</P>
+                </div>
+                <div desc>
+                    <b> Skills : </b>
+                    <P>{{intern.skills}}</P>
+                </div>
+                <div desc>
+                    <b> Who can apply : </b>
+                    <P>{{intern.whocanapply}}</P>
+                </div>
+
+                <div desc>
+                    <h2><b> Salary</b></h2>
+
+                    <h3><b>Probation:</b>
+                        <br>
+                        Duration : {{intern.duration}}
+                        <br>
+                        Salary during probation : {{intern.salaryduringprobation}}
+                    </h3>
+
+                    <h3><b>After probation:</b>
+                        <br>
+                        Annual CTC : {{intern.annualctc}}
+                        <br>
+                        Annual CTC breakup : {{intern.annualctcbreakup}}
+                    </h3>
+                </div>
+
+                <div desc>
+                    <b> Perks : </b>
+                    <P>{{intern.perks}}</P>
+                </div>
+                <div desc>
+                    <b> Number of Openings : </b>
+                    <P>{{intern.openings}}</P>
+                </div>
+
 
                 <div>
                     <div class="col-5">
+                        <h2>SUBMIT YOUR RESUME HERE : </h2>
                         <div class="input-group mb-3">
                             <input type="file" class="form-control input-group-sm" id="inputGroupFile02">
-                           <button class="btn btn-primary">Upload</button>
+                            <button class="btn btn-primary">Upload</button>
                             <!-- <label class="input-group-text" for="inputGroupFile02"> Upload </label> -->
                         </div>
                     </div>
-                    <div>
+                    <div style="text-align: center;">
                         <button class="btn btn-primary"> Apply Now </button>
                     </div>
                 </div>
+
             </div>
         </div>
-        <br>
     </div>
 </div>
