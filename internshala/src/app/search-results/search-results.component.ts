@@ -27,9 +27,18 @@ internships:any[]=[];
           val.location===data['location'] && val.title==data['category']
         );
         } else if(data['type']=="internship") {
-          this.internships=this.userservice.internship.filter((val)=>
-          val.location===data['location'] && val.title==data['category']
-        );
+          if(data['home']) {
+            this.internships = this.userservice.internship.filter((val) =>
+            val.type=="work from home"
+            );
+          } else if(data['office']) {
+            this.internships = this.userservice.internship.filter((val) =>
+              val.type=="work from office"
+            );
+          }
+          this.internships = this.userservice.internship.filter((val) =>
+            val.location === data['location'] && val.title == data['category']
+          );
         }
       } else if(Object.hasOwn(data, 'location') && Object.hasOwn(data, 'menutype')){
         if(data['type']=="internship") {
@@ -57,6 +66,15 @@ internships:any[]=[];
           }
         }
       }
+      else if(Object.hasOwn(data,'location') && Object.hasOwn(data,'type')){
+        if(data['type']=='internship'){
+          if(data['location']=='delhi'){
+            this.internships=this.userservice.internship.filter((val)=>
+            (data['location']==val.type));
+          }
+        }
+      }
+
       console.log(this.jobs);
       console.log(this.internships)
     })

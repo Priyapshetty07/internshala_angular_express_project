@@ -13,4 +13,9 @@ p{
 b{
     font-size: large;
 }
-
+.success {
+    color:green;
+}
+.error {
+    color:red;
+}

@@ -93,15 +93,56 @@ router.post('/login', (req, res, next) => {
         res.json(result)
       } else {
         // res.send(`{message: 'user no found', usercount: 0}`);
-        res.json({message: 'user not found', usercount: 0})
+        res.json({ message: 'user not found', usercount: 0 })
       }
     }
 
   });
 
-
 });
 
+
+router.post('/registerintern', (req, res, next) => {
+  let {
+    id,
+    firstname,
+    lastname,
+    email,
+    title,
+    sub,
+    location
+  } = req.body; // destructing of object property 
+  let checkuser = `select * from internshala_project.internships where id='${id}' and email='${email}'`;
+
+  let userFound = `INSERT INTO internshala_project.internships (id,firstname,lastname,email,title,sub,location)
+  VALUES ('${id}','${firstname}','${lastname}','${email}','${title}','${sub}','${location}')`;
+
+
+  dbConnection.query(checkuser, (error, result, fields) => {
+
+    if (error) {
+      res.send(error);
+    } else {
+      if (result.length) {
+        res.send({ message: 'user already exists', usercount: 1 })
+      } else {
+        dbConnection.query(userFound, (error, result, fields) => {
+          if (error) {
+            res.send(error);
+          } else {
+            if (result.length) {
+              // res.send(`{message: 'user found', usercount: 1}`);
+              res.json(result)
+            } else {
+              // res.send(`{message: 'user no found', usercount: 0}`);
+              res.json({ message: 'user not found', usercount: 0 })
+            }
+          }
+        });
+      }
+    }
+  });
+});
 
 
 

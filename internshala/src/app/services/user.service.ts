@@ -12,6 +12,9 @@ interface job {
   providedIn: 'root'
 })
 export class UserService {
+  EnrolltoInternship(user:any) {
+   return this.myhttp.post("http://localhost:4200/api/users/registerintern",user,{ responseType: 'text' })
+  }
   constructor(private myhttp: HttpClient) { }
   getProfile() {
     return this.myhttp.get('http://localhost:4200/api/users')
@@ -26,6 +29,7 @@ export class UserService {
       email: email,
       paswd: paswd
     };
+
 
     return this.myhttp.post('api/users/login', loginData);
   }

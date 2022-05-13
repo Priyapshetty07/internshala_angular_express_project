@@ -92,8 +92,8 @@
                         </div>
 
                         <div style="text-align: center;">
-                            <h6>{{enrollmsg}}<a href="/internships" *ngIf="!enrollbtnflag"> Click here</a></h6>
-                            <button class="btn btn-primary" *ngIf="enrollbtnflag" (click)="enroll(intern.id)"> Enroll
+                            <h3 [ngClass]="msgflag?'success':'error'">{{enrollmsg}}<a href="/internships" *ngIf="!enrollbtnflag"> Click here</a></h3>
+                            <button class="btn btn-primary" *ngIf="enrollbtnflag" (click)="enroll(intern)"> Enroll
                             </button>
                         </div>
                     </div>

@@ -54,7 +54,7 @@
                                     <br>
                                     <!-- City selector -->
                                     <div class="category_container">
-                                        <label for="select_city" style="font-size: large; color: blue;">Location
+                                        <label for="select_city" style="font-size: large; color: blue; ">Location
                                             :</label>
                                         <div id="city_options" style="padding-left: 100px;">
                                             <select id="select_city" name="select_city" data-placeholder="e.g Mumbai"
@@ -74,19 +74,20 @@
                                     <div class="filters_checkboxes">
                                         <div class="flex_row">
                                             <label for="work_from_home" style="font-size: large; color: blue;">Work from
-                                                home : <input type="checkbox"> </label>
+                                                home : <input ngModel id="check-home" name="check-home"
+                                                #home="ngModel"  type="checkbox"> </label>
                                         </div>
                                         <br>
                                         <!-- Checkbox - 2 -->
                                         <div class="flex_row">
                                             <label style="font-size: large; color: blue;">Work from office : <input
-                                                    type="checkbox"></label>
+                                                ngModel #office="ngModel" id="check-office" name="check-office"  type="checkbox"></label>
                                         </div>
                                         <br>
                                         <div class="d-flex justify-content-around">
                                             <div class="button">
                                                 <input [routerLink]="['/search/intern']"
-                                                    [queryParams]="{ category:category.value, location: location.value,type:'internship'}"
+                                                    [queryParams]="{ category:category.value, location: location.value,type:'internship',home:home.value,office:office.value}"
                                                     type="submit" class="button1">
                                             </div>
                                             <div class="button">

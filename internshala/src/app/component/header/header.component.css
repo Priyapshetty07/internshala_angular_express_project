@@ -172,3 +172,9 @@ button {
 .dropdown-menu>li:hover>.submenu {
   display: block;
 }
+.navbar{
+  /* position: -webkit-sticky;  */
+ position: sticky;
+ top: 0;
+
+}

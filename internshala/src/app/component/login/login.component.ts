@@ -43,7 +43,10 @@ export class LoginComponent implements OnInit {
     // get return url from route parameters or default to '/'
     this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
   }
-
+  register() {
+    this.dialogRef.close();
+    this.router.navigate(['/register'])
+  }
   // convenience getter for easy access to form fields
   get f() { return this.loginForm.controls; }
 
@@ -70,6 +73,8 @@ export class LoginComponent implements OnInit {
               localStorage.setItem('username',data[0].firstname+' '+data[0].lastname);
               localStorage.setItem('login','true');
               localStorage.setItem('email',data[0].email);
+              localStorage.setItem('firstname',data[0].firstname)
+              localStorage.setItem('lastname',data[0].lastname)
               this.dialogRef.close('success');
               
               // this.router.navigate(['/about-us'])

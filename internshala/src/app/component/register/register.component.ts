@@ -41,11 +41,6 @@ errmsg='';
 
     }
   ];
-
-
-
-
-
   userlist: any;
 
   constructor(private myusersrv: UserService,public dialog: MatDialog) { }
