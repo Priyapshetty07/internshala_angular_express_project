@@ -185,7 +185,25 @@ router.post('/registerjob', (req, res, next) => {
   });
 });
 
+router.post('/forget', (req, res, next) => {
+  let {
+    email,
+    paswd,
+    
 
+  } = req.body
+
+  let insertcommand = `update internshala_project.register set paswd='${paswd}' where email='${email}' `;
+
+  dbConnection.query(insertcommand, (err, result) => {
+
+    if (err) throw err;
+
+    res.send("detailes are fetched from postman api detailes are inserted");
+
+  });
+
+})
 
 
 module.exports = router;

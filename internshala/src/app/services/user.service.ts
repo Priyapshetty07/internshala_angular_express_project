@@ -26,6 +26,9 @@ export class UserService {
     return this.myhttp.post("http://localhost:4200/api/users/registerjob",user,{ responseType: 'text' })
 
   }
+  forgetDeatils(data:any){
+    return this.myhttp.post('http://localhost:4200/api/users/forget', data, { responseType: 'text' })
+  }
 
   loginUser(email: string, paswd: string) {
     //rest api call to express

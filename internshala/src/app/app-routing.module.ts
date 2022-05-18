@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutUsComponent } from './component/about-us/about-us.component';
 import { ContactComponent } from './component/contact/contact.component';
+import { ForgetPasswordComponent } from './component/forget-password/forget-password.component';
 
 import { HireInternsOfYourCompanyComponent } from './component/hire-interns-of-your-company/hire-interns-of-your-company.component';
 import { HomeComponent } from './component/home/home.component';
@@ -21,7 +22,8 @@ const routes: Routes = [
   
   {path:'jobs',component:JobsComponent},
    {path:'login',component:LoginComponent},
-  //  {path:'login',component:RegisterComponent},
+   {path:'forgot-password',component:ForgetPasswordComponent},
+  
   {path:'register',component:RegisterComponent},
  
   {path:'terms',component:TermsComponent},
