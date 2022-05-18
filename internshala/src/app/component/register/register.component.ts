@@ -71,7 +71,7 @@ type='';
   }
 
   login() {
-    const dialogRef = this.dialog.open(LoginComponent);
+    let dialogRef = this.dialog.open(LoginComponent);
     dialogRef.afterClosed().subscribe(result => {
       if(result=='success') {
         window.location.reload()

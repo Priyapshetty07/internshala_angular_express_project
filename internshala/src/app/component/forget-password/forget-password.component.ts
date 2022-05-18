@@ -35,7 +35,7 @@ if(this.myform.valid)
   });
 }
 else{
-  this.errmsg="please fill details correctly";
+  this.errmsg="Please fill details correctly";
 }
 }
 }
