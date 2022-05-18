@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
+import { inject } from '@angular/core/testing';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
-import { MatDialogRef } from '@angular/material/dialog';
+import { MatDialogRef,MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import { UserService } from 'src/app/services/user.service';
 import { RegisterComponent } from '../register/register.component';
@@ -11,7 +12,6 @@ import { RegisterComponent } from '../register/register.component';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-
   myform: FormGroup = new FormGroup({
     email: new FormControl('', [Validators.required, Validators.email, Validators.minLength(4)]),
     paswd: new FormControl('', [Validators.required, Validators.minLength(5), Validators.maxLength(15)])
@@ -23,15 +23,20 @@ export class LoginComponent implements OnInit {
   returnUrl?: string;
 
   userMessage: string = '';
-
+  url:string='';
+  type='';
   constructor(
     private formBuilder: FormBuilder,
     private route: ActivatedRoute,
     private router: Router,
     private myuser:  UserService,
     private dialogRef: MatDialogRef<LoginComponent>,
-    private userservice:UserService
-  ) { }
+    private userservice:UserService,
+    @Inject(MAT_DIALOG_DATA) data:{url:string,type:string}
+  ) { 
+    this.url=data.url;
+    this.type=data.type;
+  }
 
 
   ngOnInit(): void {
@@ -45,7 +50,7 @@ export class LoginComponent implements OnInit {
   }
   register() {
     this.dialogRef.close();
-    this.router.navigate(['/register'])
+    this.router.navigate(['/register',{url:this.url,type:this.type}])
   }
   // convenience getter for easy access to form fields
   get f() { return this.loginForm.controls; }

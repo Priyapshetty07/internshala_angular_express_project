@@ -127,13 +127,20 @@
                         <h2>SUBMIT YOUR RESUME HERE : </h2>
                         <div class="input-group mb-3">
                             <input type="file" class="form-control input-group-sm" id="inputGroupFile02">
-                            <button class="btn btn-primary">Upload</button>
-                            <!-- <label class="input-group-text" for="inputGroupFile02"> Upload </label> -->
+                            <button class="btn btn-primary" (click)="upload()">Upload</button>
+                            
+                           
                         </div>
+                        <h3 *ngIf="">{{uploadmsg}}</h3>
                     </div>
+                    
+                   
+                   
                     <div style="text-align: center;">
-                        <button class="btn btn-primary"> Apply Now </button>
+                        <h3 [ngClass]="msgflag?'success':'error'">{{enrollmsg}}<a href="/jobs" *ngIf="!enrollbtnflag"> Click here</a></h3>
+                        <button class="btn btn-primary" *ngIf="enrollbtnflag" (click)="enroll(intern)"> Apply Now </button>
                     </div>
+                    <h2>{{resumerqrd}}</h2>
                 </div>
 
             </div>

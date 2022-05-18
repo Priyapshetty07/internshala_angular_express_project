@@ -105,7 +105,8 @@
                                         <p><i class="fa fa-briefcase"></i><b> {{job.type}}</b></p>
                                     </div>
                                     <div>
-                                        <a href="{{job.link}}"><b>View Details</b></a>
+                                        <a [routerLink]="['/view-jobs']" [queryParams]="{internshipID:job.id}"><b>View
+                                                Details</b></a>
                                     </div>
                                 </div>
                             </div>

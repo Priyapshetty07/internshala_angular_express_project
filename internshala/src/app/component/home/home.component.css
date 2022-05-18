@@ -11,8 +11,16 @@
     margin-top: 25px;
     color: white;
 }
+a{
+    text-decoration: none;
+
+    cursor: hand;
+}
 
 .hvr:hover{
-    border: rgb(1, 128, 179) 2px solid; 
+     text-decoration: none;
     cursor: hand;
+    box-shadow: 0.25px 0.5px 4px 2px rgb(238, 228, 228);
+    border-radius: 3px;
+    color: #4285F4;
 }

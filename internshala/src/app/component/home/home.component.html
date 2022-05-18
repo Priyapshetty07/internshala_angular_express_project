@@ -2,11 +2,11 @@
 <br>
 <div class="container">
   <div class="d-flex  justify-content-center">
-    
-      <input type="text" class="w-50 p-3" placeholder="What are you looking for?">
-      <span class=""><button class="btn btn-primary h-100 w-40" type="button">
-          <i class="bi bi-search"></i></button></span>
-    
+
+    <input type="text" class="w-50 p-3" placeholder="What are you looking for?">
+    <span class=""><button class="btn btn-primary h-100 w-40" type="button">
+        <i class="bi bi-search"></i></button></span>
+
   </div>
 </div>
 <br>
@@ -42,7 +42,7 @@
   
               ✔ Apply for free
 
-              <a href="/internships"><button type="button">View internships</button></a>
+              <button type="button"><a href="/internships"></a>View internships</button>
               
             </h4>
           </pre>
@@ -82,7 +82,9 @@
       <h4 class="align-self-center">Apply to 10,000+ internships for free</h4>
     </div>
   </div>
-  <div class="d-flex justify-content-end"><a href="/internships" style="text-decoration:none;"><h3><b>View All Internships</b></h3></a>
+  <div class="d-flex justify-content-end"><a href="/internships" style="text-decoration:none;">
+      <h3><b>View All Internships</b></h3>
+    </a>
   </div>
   <div>
     <h2><b>Popular City</b></h2>
@@ -90,26 +92,26 @@
   <div class="d-flex justify-content-around ">
     <div class="hvr">
       <a [routerLink]="['/search/intern']" [queryParams]="{ worktype:'work from home',type:'internship'}">
-        <div class="bg-image hover-zoom" >
+        <div class="bg-image hover-zoom">
           <img src="https://internshala.com/static/images/home/internships/categories/work_from_home.svg" alt="">
         </div>
-        <div class="d-flex justify-content-center bg-image hover-zoom">
+        <div class="d-flex justify-content-center">
           <p><b> work from home</b></p>
         </div>
       </a>
     </div>
     <div class="hvr">
-      <a>
-        <a [routerLink]="['/search/intern']" [queryParams]="{ location:'Delhi',type:'internship'}">
-          <img src="https://internshala.com/static/images/home/internships/categories/delhi_ncr.svg" alt="">
-        </a>
+
+      <a [routerLink]="['/search/intern']" [queryParams]="{ location:'Delhi',type:'internship'}">
+        <img src="https://internshala.com/static/images/home/internships/categories/delhi_ncr.svg" alt="">
+
         <div class="d-flex justify-content-center">
           <p><b> Delhi/NCR</b></p>
         </div>
       </a>
     </div>
-    <div>
-      <a>
+    <div class="hvr">
+      <a [routerLink]="['/search/intern']" [queryParams]="{ location:'Bangalore',type:'internship'}">
         <div>
           <img src="https://internshala.com/static/images/home/internships/categories/bangalore.svg" alt="">
         </div>
@@ -119,7 +121,7 @@
         </div>
       </a>
     </div>
-    <div><a>
+    <div class="hvr"><a [routerLink]="['/search/intern']" [queryParams]="{ location:'Mumbai',type:'internship'}">
         <div>
           <img src="https://internshala.com/static/images/home/internships/categories/mumbai.svg" alt="">
         </div>
@@ -128,7 +130,7 @@
           </p>
         </div>
       </a></div>
-    <div><a>
+    <div class="hvr"><a [routerLink]="['/search/intern']" [queryParams]="{ location:'Hyderabad',type:'internship'}">
         <div>
           <img src="https://internshala.com/static/images/home/internships/categories/hyderabad.svg" alt="">
         </div>
@@ -137,7 +139,7 @@
           </p>
         </div>
       </a></div>
-    <div><a>
+    <div class="hvr"><a [routerLink]="['/search/intern']" [queryParams]="{ location:'Chennai',type:'internship'}">
         <div>
           <img src="https://internshala.com/static/images/home/internships/categories/chennai.svg" alt="">
         </div>
@@ -146,7 +148,7 @@
           </p>
         </div>
       </a></div>
-    <div><a>
+    <div class="hvr"><a [routerLink]="['/search/intern']" [queryParams]="{ location:'Kolkata',type:'internship'}">
         <div>
           <img src="https://internshala.com/static/images/home/internships/categories/kolkata.svg" alt="">
         </div>
@@ -158,7 +160,7 @@
 
     <!-- ------------------ -->
 
-    <div><a>
+    <!-- <div class="hvr"><a>
         <div class="d-flex justify-content-center">
           <img src="https://internshala.com/static/images/home/internships/categories/international.svg" alt="">
         </div>
@@ -167,7 +169,7 @@
           </p>
         </div>
       </a>
-    </div>
+    </div> -->
   </div>
   <br>
   <br>
@@ -176,17 +178,18 @@
     <h2><b>Popular Catagories</b></h2>
   </div>
   <div class="d-flex justify-content-around">
-    <div>
-      <a>
+    <div class="hvr">
+      <a [routerLink]="['/search/intern']" [queryParams]="{ category:'Front End Development',type:'internship'}">
         <div>
-          <img src="https://internshala.com/static/images/home/internships/categories/part_time.svg" alt="">
+          <img src="https://internshala.com/static/images/home/internships/categories/computer_science.svg" alt="">
         </div>
         <div class="d-flex justify-content-center">
-          <p><b>Part Time</b></p>
+          <p><b>Front End Dev</b></p>
         </div>
       </a>
     </div>
-    <div>
+    
+    <div class="hvr">
       <a>
         <div>
           <img src="https://internshala.com/static/images/home/internships/categories/engineering.svg" alt="">
@@ -196,7 +199,17 @@
         </div>
       </a>
     </div>
-    <div>
+    <div class="hvr">
+      <a>
+        <div>
+          <img src="https://internshala.com/static/images/home/internships/categories/computer_science.svg" alt="">
+        </div>
+        <div class="d-flex justify-content-center">
+          <p><b>Back End dev</b></p>
+        </div>
+      </a>
+    </div>
+    <div class="hvr">
       <a>
         <div>
           <img src="https://internshala.com/static/images/home/internships/categories/ngo.svg" alt="">
@@ -207,7 +220,7 @@
         </div>
       </a>
     </div>
-    <div><a>
+    <div class="hvr"><a>
         <div>
           <img src="https://internshala.com/static/images/home/internships/categories/mba.svg" alt="">
         </div>
@@ -216,7 +229,7 @@
           </p>
         </div>
       </a></div>
-    <div><a>
+    <div class="hvr"><a>
         <div>
           <img src="https://internshala.com/static/images/home/internships/categories/design.svg" alt="">
         </div>
@@ -225,16 +238,16 @@
           </p>
         </div>
       </a></div>
-    <div><a>
+    <div class="hvr"><a>
         <div>
           <img src="https://internshala.com/static/images/home/internships/categories/science.svg" alt="">
         </div>
         <div class="d-flex justify-content-center">
-          <p> <b>Science</b>
+          <p> <b>Medicine</b>
           </p>
         </div>
       </a></div>
-    <div><a>
+    <div class="hvr"><a>
         <div>
           <img src="https://internshala.com/static/images/home/internships/categories/media.svg" alt="">
         </div>
@@ -243,7 +256,7 @@
           </p>
         </div>
       </a></div>
-    <div><a>
+    <div class="hvr"><a>
         <div class="d-flex justify-content-center">
           <img src="https://internshala.com/static/images/home/internships/categories/humanities.svg" alt="">
         </div>
@@ -352,7 +365,7 @@
 </div>
 <br>
 <br><br><br> -->
-<!-- <div class="container ">
+  <!-- <div class="container ">
   <h2>Specializations with guaranteed internships</h2>
 
   <div class="d-flex justify-content-start align-self-center ">
@@ -409,16 +422,18 @@
       <h4>Premium jobs on your fingertips</h4>
     </div>
     <div class="d-flex justify-content-end">
-      <a href="/jobs" style="text-decoration:none;"><h3><b>View All Jobs</b></h3></a>
+      <a href="/jobs" style="text-decoration:none;">
+        <h3><b>View All Jobs</b></h3>
+      </a>
     </div>
-    
+
     <div>
       <h2><b>Polpular Cities</b></h2>
     </div>
 
   </div>
   <div class="d-flex justify-content-around">
-    <div>
+    <div class="hvr">
       <a href="www.google.com">
         <div class="bg-image hover-zoom">
           <img src="https://internshala.com/static/images/home/internships/categories/work_from_home.svg" alt="">
@@ -428,7 +443,7 @@
         </div>
       </a>
     </div>
-    <div>
+    <div class="hvr">
       <a>
         <div>
           <img src="https://internshala.com/static/images/home/internships/categories/delhi_ncr.svg" alt="">
@@ -438,7 +453,7 @@
         </div>
       </a>
     </div>
-    <div>
+    <div class="hvr">
       <a>
         <div>
           <img src="https://internshala.com/static/images/home/internships/categories/bangalore.svg" alt="">
@@ -449,7 +464,7 @@
         </div>
       </a>
     </div>
-    <div><a>
+    <div class="hvr"><a>
         <div>
           <img src="https://internshala.com/static/images/home/internships/categories/mumbai.svg" alt="">
         </div>
@@ -458,7 +473,7 @@
           </p>
         </div>
       </a></div>
-    <div><a>
+    <div class="hvr"><a>
         <div>
           <img src="https://internshala.com/static/images/home/internships/categories/hyderabad.svg" alt="">
         </div>
@@ -467,7 +482,7 @@
           </p>
         </div>
       </a></div>
-    <div><a>
+    <div class="hvr"><a>
         <div>
           <img src="https://internshala.com/static/images/home/internships/categories/chennai.svg" alt="">
         </div>
@@ -476,7 +491,7 @@
           </p>
         </div>
       </a></div>
-    <div><a>
+    <div class="hvr"><a>
         <div>
           <img src="https://internshala.com/static/images/home/internships/categories/kolkata.svg" alt="">
         </div>
@@ -485,7 +500,7 @@
           </p>
         </div>
       </a></div>
-    <div><a>
+    <!-- <div class="hvr"><a>
         <div class="d-flex justify-content-center">
           <img src="https://internshala.com/static/images/home/internships/categories/international.svg" alt="">
         </div>
@@ -494,26 +509,27 @@
           </p>
         </div>
       </a>
-    </div>
+    </div> -->
 
   </div>
-  <br><br><br><br>
+  <br><br><br>
   <!-- --------------- -->
   <div>
     <h2><b>Popular Catagories</b></h2>
   </div>
-  <div class="d-flex justify-content-around">
-    <div>
+  <br>
+  <!-- <div class="d-flex justify-content-around">
+    <div class="hvr">
       <a>
         <div>
           <img src="https://internshala.com/static/images/home/internships/categories/marketing.svg" alt="">
         </div>
         <div class="d-flex justify-content-center">
-          <p><b>Maeketing</b></p>
+          <p><b>Marketing</b></p>
         </div>
       </a>
     </div>
-    <div>
+    <div class="hvr">
       <a>
         <div>
           <img src="	https://internshala.com/static/images/home/internships/categories/content_writing.svg" alt="">
@@ -523,7 +539,7 @@
         </div>
       </a>
     </div>
-    <div>
+    <div class="hvr">
       <a>
         <div>
           <img src="https://internshala.com/static/images/home/internships/categories/finance.svg" alt="">
@@ -534,7 +550,7 @@
         </div>
       </a>
     </div>
-    <div><a>
+    <div class="hvr"><a>
         <div>
           <img src="https://internshala.com/static/images/home/internships/categories/graphic_designing.svg" alt="">
         </div>
@@ -543,7 +559,7 @@
           </p>
         </div>
       </a></div>
-    <div><a>
+    <div class="hvr"><a>
         <div>
           <img src="https://internshala.com/static/images/home/internships/categories/computer_science.svg" alt="">
         </div>
@@ -552,7 +568,7 @@
           </p>
         </div>
       </a></div>
-    <div><a>
+    <div class="hvr"><a>
         <div>
           <img src="https://internshala.com/static/images/home/internships/categories/hr.svg" alt="">
         </div>
@@ -561,7 +577,7 @@
           </p>
         </div>
       </a></div>
-    <div><a>
+    <div class="hvr"><a>
         <div>
           <img src="https://internshala.com/static/images/home/internships/categories/data_science.svg" alt="">
         </div>
@@ -570,12 +586,103 @@
           </p>
         </div>
       </a></div>
-    <div><a>
+    <div class="hvr"><a>
         <div class="d-flex justify-content-center">
           <img src="https://internshala.com/static/images/home/internships/categories/engineering.svg" alt="">
         </div>
         <div class="d-flex justify-content-center">
           <p> <b>Engineering</b>
+          </p>
+        </div>
+      </a>
+    </div>
+  </div> -->
+  
+  <div class="d-flex justify-content-around">
+    <div class="hvr">
+      <a>
+        <div>
+          <img src="https://internshala.com/static/images/home/internships/categories/computer_science.svg" alt="">
+        </div>
+        <div class="d-flex justify-content-center">
+          <p><b>Front End Dev</b></p>
+        </div>
+      </a>
+    </div>
+    
+    <div class="hvr">
+      <a>
+        <div>
+          <img src="https://internshala.com/static/images/home/internships/categories/engineering.svg" alt="">
+        </div>
+        <div class="d-flex justify-content-center">
+          <p> <b>Engineering</b></p>
+        </div>
+      </a>
+    </div>
+    <div class="hvr">
+      <a>
+        <div>
+          <img src="https://internshala.com/static/images/home/internships/categories/computer_science.svg" alt="">
+        </div>
+        <div class="d-flex justify-content-center">
+          <p><b>Back End dev</b></p>
+        </div>
+      </a>
+    </div>
+    <div class="hvr">
+      <a>
+        <div>
+          <img src="https://internshala.com/static/images/home/internships/categories/ngo.svg" alt="">
+        </div>
+        <div class="d-flex justify-content-center">
+          <p> <b>NGO</b>
+          </p>
+        </div>
+      </a>
+    </div>
+    <div class="hvr"><a>
+        <div>
+          <img src="https://internshala.com/static/images/home/internships/categories/mba.svg" alt="">
+        </div>
+        <div class="d-flex justify-content-center">
+          <p><b>MBA</b>
+          </p>
+        </div>
+      </a></div>
+    <div class="hvr"><a>
+        <div>
+          <img src="https://internshala.com/static/images/home/internships/categories/design.svg" alt="">
+        </div>
+        <div class="d-flex justify-content-center">
+          <p> <b>Design</b>
+          </p>
+        </div>
+      </a></div>
+    <div class="hvr"><a>
+        <div>
+          <img src="https://internshala.com/static/images/home/internships/categories/science.svg" alt="">
+        </div>
+        <div class="d-flex justify-content-center">
+          <p> <b>Medicine</b>
+          </p>
+        </div>
+      </a></div>
+    <div class="hvr"><a>
+        <div>
+          <img src="https://internshala.com/static/images/home/internships/categories/media.svg" alt="">
+        </div>
+        <div class="d-flex justify-content-center">
+          <p><b> Media</b>
+          </p>
+        </div>
+      </a></div>
+    <div class="hvr"><a>
+        <div class="d-flex justify-content-center">
+          <img src="https://internshala.com/static/images/home/internships/categories/humanities.svg" alt="">
+        </div>
+        <div class="d-flex justify-content-center">
+          <p> <b>Humanities</b>
           </p>
         </div>
       </a>

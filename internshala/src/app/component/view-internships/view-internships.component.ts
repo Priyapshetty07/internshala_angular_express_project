@@ -29,7 +29,7 @@ export class ViewInternshipsComponent implements OnInit {
   }
 
   enroll(id:any) {
-    // let user=false;
+    let user=false;
     if (localStorage.getItem('login') == 'true') {
       let user={id:id.id,firstname:localStorage.getItem('firstname'),lastname:localStorage.getItem('lastname'),
       email:localStorage.getItem('email'),title:id.title,sub:id.sub,location:id.location}
@@ -46,7 +46,9 @@ export class ViewInternshipsComponent implements OnInit {
         }
       })
     } else {
-      const dialogRef = this.dialog.open(LoginComponent);
+      const dialogRef = this.dialog.open(LoginComponent,{
+        data:{url:this.router.url,type:'enroll'}
+      });
 
     dialogRef.afterClosed().subscribe(result => {
       if(result=='success') {

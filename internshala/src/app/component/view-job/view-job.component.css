@@ -1,3 +1,22 @@
-.des{
-    font-size: xx-large;
+
+body{
+    background-color: #FAFAFA;
+}
+
+p{
+ font-size: larger;   
+ line-height: 40px;
+}
+.desc{
+    font-size:x-large;
+}
+
+b{
+    font-size: large;
+}
+.success {
+    color:green;
+}
+.error {
+    color:red;
 }

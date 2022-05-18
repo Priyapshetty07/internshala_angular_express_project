@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
+import { ActivatedRoute, Router } from '@angular/router';
 import { UserService } from 'src/app/services/user.service';
 import { LoginComponent } from '../login/login.component';
 @Component({
@@ -10,6 +11,8 @@ import { LoginComponent } from '../login/login.component';
 })
 export class RegisterComponent implements OnInit {
 errmsg='';
+url:string='';
+type='';
   myform: FormGroup = new FormGroup({
     email: new FormControl('', [Validators.required, Validators.email, Validators.minLength(4)]),
     paswd: new FormControl('', [Validators.required, Validators.minLength(5), Validators.maxLength(7)]),
@@ -43,19 +46,20 @@ errmsg='';
   ];
   userlist: any;
 
-  constructor(private myusersrv: UserService,public dialog: MatDialog) { }
+  constructor(private myusersrv: UserService,public dialog: MatDialog,private route:Router,private router: ActivatedRoute) { }
 
   ngOnInit(): void {
-    // this.myusersrv.getProfile().subscribe((result: any) => {
-    //   this.userlist = result;
-    //   console.log(result);
-
-    // });
+    this.router.queryParams.subscribe((data)=>{
+      if(data['type']=="enroll") {
+        this.url=data['url'];
+      }
+    })
   }
   getValues() {
     // console.log('hello');
     if (this.myform.valid) {
       alert("successfully register")
+      this.route.navigate([this.url]);
       this.myusersrv.registerDetails(this.myform.value).subscribe((data) => {
         console.log(data)
         this.myform.reset();

@@ -34,7 +34,6 @@ const routes: Routes = [
   {path:'home',component:HomeComponent},
   {path:"search/jobs",component:SearchResultsComponent},
   {path:'search/intern',component:SearchResultsComponent},
-  {path:"view-job",component:ViewJobComponent},
   {path:"view-internships",component:ViewInternshipsComponent},
   {path:"view-jobs",component:ViewJobComponent},
   {path:'',component:HomeComponent}
