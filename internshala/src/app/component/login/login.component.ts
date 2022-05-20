@@ -23,19 +23,14 @@ export class LoginComponent implements OnInit {
   returnUrl?: string;
 
   userMessage: string = '';
-  url:string='';
-  type='';
   constructor(
     private formBuilder: FormBuilder,
     private route: ActivatedRoute,
     private router: Router,
     private myuser:  UserService,
     private dialogRef: MatDialogRef<LoginComponent>,
-    private userservice:UserService,
-    @Inject(MAT_DIALOG_DATA) data:{url:string,type:string}
+    private userservice:UserService
   ) { 
-    this.url=data.url;
-    this.type=data.type;
   }
 
 
@@ -50,7 +45,7 @@ export class LoginComponent implements OnInit {
   }
   register() {
     this.dialogRef.close();
-    this.router.navigate(['/register',{url:this.url,type:this.type}])
+    this.router.navigate(['/register'])
   }
   // convenience getter for easy access to form fields
   get f() { return this.loginForm.controls; }

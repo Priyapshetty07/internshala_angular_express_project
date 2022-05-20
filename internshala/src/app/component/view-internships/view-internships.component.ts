@@ -46,9 +46,7 @@ export class ViewInternshipsComponent implements OnInit {
         }
       })
     } else {
-      const dialogRef = this.dialog.open(LoginComponent,{
-        data:{url:this.router.url,type:'enroll'}
-      });
+      const dialogRef = this.dialog.open(LoginComponent);
 
     dialogRef.afterClosed().subscribe(result => {
       if(result=='success') {

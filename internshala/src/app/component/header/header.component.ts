@@ -101,9 +101,7 @@ islogin:boolean=false;
   constructor(public dialog: MatDialog,private router:Router,private userservice:UserService) { }
 
   openDialog() {
-    const dialogRef = this.dialog.open(LoginComponent,{
-      data:{}
-    });
+    const dialogRef = this.dialog.open(LoginComponent);
 
     dialogRef.afterClosed().subscribe(result => {
       if(result=='success') {

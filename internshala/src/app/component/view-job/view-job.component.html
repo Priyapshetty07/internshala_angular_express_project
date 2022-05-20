@@ -125,20 +125,21 @@
                 <div>
                     <div class="col-5">
                         <h2>SUBMIT YOUR RESUME HERE : </h2>
-                        <div class="input-group mb-3">
-                            <input type="file" class="form-control input-group-sm" id="inputGroupFile02">
-                            <button class="btn btn-primary" (click)="upload()">Upload</button>
-                            
-                           
-                        </div>
-                        <h3 *ngIf="">{{uploadmsg}}</h3>
+                        <form [formGroup]="fileForm">
+                            <!-- <div class="input-group mb-3">
+                                                    <input type="file" class="form-control" id="avatar" formControlName="fileinput" name="avatar" accept="image/png, image/jpeg">
+                                                </div> -->
+                            <!-- <mat-form-field class="formfield" appearance="outline"> -->
+                                <!-- <input matInput type="file" class="form-control" formControlName="fileinput"> -->
+                                <input type="file" class="form-control" formControlName="fileinput">
+                                <mat-error *ngIf="fileForm.get('fileinput').hasError('required') && fileForm.get('fileinput').touched">required</mat-error>
+                            <!-- </mat-form-field>                     -->
+                        </form>
+                        <!-- <h3 *ngIf="">{{uploadmsg}}</h3> -->
                     </div>
-                    
-                   
-                   
                     <div style="text-align: center;">
                         <h3 [ngClass]="msgflag?'success':'error'">{{enrollmsg}}<a href="/jobs" *ngIf="!enrollbtnflag"> Click here</a></h3>
-                        <button class="btn btn-primary" *ngIf="enrollbtnflag" (click)="enroll(intern)"> Apply Now </button>
+                        <button class="btn btn-primary" (click)="enroll(intern)" [disabled]="!fileForm.valid"> Apply Now </button>
                     </div>
                     <h2>{{resumerqrd}}</h2>
                 </div>

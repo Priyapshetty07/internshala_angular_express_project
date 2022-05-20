@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute } from '@angular/router';
 import { UserService } from 'src/app/services/user.service';
@@ -12,6 +12,8 @@ import { LoginComponent } from '../login/login.component';
 })
 export class ViewJobComponent implements OnInit {
   enrollmsg: string = '';
+  fileForm: FormGroup;
+  inputText: FormControl;
   uploadmsg: string = '';
   enrollbtnflag: boolean = true;
   msgflag: boolean = false;
@@ -34,7 +36,10 @@ export class ViewJobComponent implements OnInit {
   }
   get f() { return this.registerForm.controls; }
   ngOnInit(): void {
-
+    this.fileForm=new FormGroup({
+      fileinput : new FormControl('', [Validators.required])
+    })
+    
 
 
   }
@@ -45,8 +50,9 @@ export class ViewJobComponent implements OnInit {
 
   enroll(id: any) {
     //let user=false;
-    if (this.file == true) {
-      if (localStorage.getItem('login') == 'true') {
+
+    if (localStorage.getItem('login') == 'true') {
+      if (this.fileForm.valid) {
         let user = {
           id: id.id, firstname: localStorage.getItem('firstname'), lastname: localStorage.getItem('lastname'),
           email: localStorage.getItem('email'), title: id.title, sub: id.sub, location: id.location
@@ -64,19 +70,32 @@ export class ViewJobComponent implements OnInit {
           }
         })
       } else {
-        const dialogRef = this.dialog.open(LoginComponent);
-
-        dialogRef.afterClosed().subscribe(result => {
-          if (result == 'success') {
-            window.location.reload();
-          }
-        });
       }
-    }
-    else {
+    } else {
+      const dialogRef = this.dialog.open(LoginComponent);
 
-      this.resumerqrd = 'please upload resume to apply job';
-
+      dialogRef.afterClosed().subscribe(result => {
+        if (result == 'success') {
+          let user = {
+            id: id.id, firstname: localStorage.getItem('firstname'), lastname: localStorage.getItem('lastname'),
+            email: localStorage.getItem('email'), title: id.title, sub: id.sub, location: id.location
+          }
+          this.userservice.applytojobs(user).subscribe((data: any) => {
+            let result = JSON.parse(data);
+            if (result.message == 'user already exists') {
+              this.enrollmsg = 'user already applied to this job,to apply for other jobs';
+              this.enrollbtnflag = false;
+              this.msgflag = false;
+            } else {
+              this.enrollmsg = 'successfully apply  want to apply for other jobs ';
+              this.enrollbtnflag = false;
+              this.msgflag = true;
+            }
+          })
+          this.fileForm.reset();
+        }
+      });
     }
   }
+  
 }

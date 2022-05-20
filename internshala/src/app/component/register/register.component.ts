@@ -11,7 +11,6 @@ import { LoginComponent } from '../login/login.component';
 })
 export class RegisterComponent implements OnInit {
 errmsg='';
-url:string='';
 type='';
   myform: FormGroup = new FormGroup({
     email: new FormControl('', [Validators.required, Validators.email, Validators.minLength(4)]),
@@ -49,17 +48,12 @@ type='';
   constructor(private myusersrv: UserService,public dialog: MatDialog,private route:Router,private router: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.router.queryParams.subscribe((data)=>{
-      if(data['type']=="enroll") {
-        this.url=data['url'];
-      }
-    })
+    
   }
   getValues() {
     // console.log('hello');
     if (this.myform.valid) {
       alert("successfully register")
-      this.route.navigate([this.url]);
       this.myusersrv.registerDetails(this.myform.value).subscribe((data) => {
         console.log(data)
         this.myform.reset();

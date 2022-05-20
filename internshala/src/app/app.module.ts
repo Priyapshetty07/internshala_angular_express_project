@@ -36,8 +36,9 @@ import { ForgetPasswordComponent } from './component/forget-password/forget-pass
 
 // import { ForgetPasswordComponent } from './component/forget-password/forget-password.component';
 
-
-
+import { NgxMatFileInputModule } from '@angular-material-components/file-input';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
 @NgModule({
   declarations: [
     AppComponent,
@@ -78,8 +79,10 @@ import { ForgetPasswordComponent } from './component/forget-password/forget-pass
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatDialogModule
-    
+    MatDialogModule,
+    NgxMatFileInputModule,
+    MatInputModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
