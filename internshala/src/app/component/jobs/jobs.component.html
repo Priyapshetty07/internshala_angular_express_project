@@ -17,8 +17,9 @@
                                         <label for="select_category" style="font-size: large; color: blue;">Category
                                             :</label>
                                         <div id="category_options" style="padding-left: 100px;">
-                                            <select id="select_category" name="select_category"
-                                            ngModel #category="ngModel" data-placeholder="e.g Marketing" class="form_control">
+                                            <select id="select_category" name="select_category" ngModel
+                                                #category="ngModel" data-placeholder="e.g Marketing"
+                                                class="form_control">
                                                 <option value="Backend Development">
                                                     Backend Development
                                                 </option>
@@ -57,7 +58,7 @@
                                             :</label>
                                         <div id="city_options" style="padding-left: 100px;">
                                             <select id="select_city" name="select_city" data-placeholder="e.g Mumbai"
-                                            ngModel #location="ngModel" class="form_control">
+                                                ngModel #location="ngModel" class="form_control">
                                                 <option value="Bangalore">Bangalore</option>
                                                 <option value="Kolkata">Kolkata</option>
                                                 <option value="Delhi">Delhi</option>
@@ -71,16 +72,8 @@
                                     <!-- Check box - 1 -->
                                     <br>
                                     <div class="filters_checkboxes">
-                                        <div class="flex_row">
-                                            <label for="work_from_home" style="font-size: large; color: blue;">Work from
-                                                home : <input type="checkbox"> </label>
-                                        </div>
-                                        <br>
-                                        <!-- Checkbox - 2 -->
-                                        <div class="flex_row">
-                                            <label style="font-size: large; color: blue;">Work from office : <input
-                                                    type="checkbox"></label>
-                                        </div>
+                                        
+                                        
                                         <br>
                                         <div class="d-flex justify-content-around">
                                             <div class="button">
@@ -140,7 +133,8 @@
                                     <p><i class="fa fa-briefcase"></i><b> {{intern.type}}</b></p>
                                 </div>
                                 <div>
-                                    <a [routerLink]="['/view-jobs']"[queryParams]="{internshipID:intern.id}"><b>View Details</b></a>
+                                    <a [routerLink]="['/view-jobs']" [queryParams]="{internshipID:intern.id}"><b>View
+                                            Details</b></a>
                                 </div>
                             </div>
                         </div>

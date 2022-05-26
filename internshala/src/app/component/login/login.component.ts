@@ -95,13 +95,3 @@ export class LoginComponent implements OnInit {
 
 }
 
-
-//   constructor() { }
-
-//   ngOnInit(): void {
-//   }
-//   getValues() {
-//     console.log(this.myform);
-//   }
-
-// }

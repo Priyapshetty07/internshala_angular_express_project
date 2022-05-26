@@ -30,6 +30,9 @@ export class UserService {
     return this.myhttp.post('http://localhost:4200/api/users/forget', data, { responseType: 'text' })
   }
 
+  deleteUser(){
+    return this.myhttp.get('http://localhost:4200/api/users/register')
+  }
   loginUser(email: string, paswd: string) {
     //rest api call to express
     let loginData = {

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { UserService } from 'src/app/services/user.service';
+import { DeleteuserComponent } from '../deleteuser/deleteuser.component';
 import { HomeComponent } from '../home/home.component';
 import { LoginComponent } from '../login/login.component';
 
@@ -49,17 +50,7 @@ islogin:boolean=false;
     // }
 
   ]
-  // onlineTrainings = [
-  //   "Web Development",
-  //   "Java",
-  //   "API",
-  //   "Digital Marketing",
-  //   "Machine Learning",
-  //   "Advanced Excel",
-  //   "AutoCAD",
-  //   "Ethical Hacking"
-  // ]
-
+  
   jobs = [
     {
       category: "Location", options: [
@@ -102,6 +93,17 @@ islogin:boolean=false;
 
   openDialog() {
     const dialogRef = this.dialog.open(LoginComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      if(result=='success') {
+        // this.router.navigate(['/']);
+        window.location.reload()
+        
+      }
+    });
+  }
+  openDialogDA() {
+    const dialogRef = this.dialog.open(DeleteuserComponent);
 
     dialogRef.afterClosed().subscribe(result => {
       if(result=='success') {

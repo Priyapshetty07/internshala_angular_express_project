@@ -1,10 +1,13 @@
-.navbar {
+header {
   box-sizing: border-box;
-  width: 100%;
+  margin: 0;
   padding: 25px;
   display: flex;
+
   align-items: center;
+
   font-weight: bolder;
+
   box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.1);
   justify-content: center;
   align-content: stretch;
@@ -20,8 +23,7 @@ button {
   font-size: 16px;
   color: #484848;
   text-decoration: none;
-  margin-right: 35px;
-  
+  margin-right: 55px;
 }
 
 #signOut:hover {
@@ -135,12 +137,12 @@ button {
 
 
 .dropdown-menu li {
-  position: fixed;
+  position: relative;
 }
 
 .nav-item .submenu {
   display: none;
-  position: fixed;
+  position: absolute;
   left: 100%;
   top: -7px;
 }

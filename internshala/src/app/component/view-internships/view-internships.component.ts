@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute,Router } from '@angular/router';
 import { UserService } from 'src/app/services/user.service';
@@ -10,9 +11,21 @@ import { LoginComponent } from '../login/login.component';
 })
 export class ViewInternshipsComponent implements OnInit {
   desc:any="We are a technology company on a mission to equip students with relevant skills & practical exposure through internships and online training. Imagine a world full of freedom and possibilities. A worlwhere you can discover your passion and turn it into your career. A worldwhere your practical skills matter more than your university degree. A world where you do not have to wait till 21 to taste your first work experience (and get a rude shock that it is nothing like you had to imagine it to be). A world where you graduate fully assured, fully confident, and fully prepared to stake a claim on your place in the world.";
-  enrollmsg:string='';
-  enrollbtnflag:boolean=true;
-  msgflag:boolean=false;
+  // enrollmsg:string='';
+  // enrollbtnflag:boolean=true;
+  // msgflag:boolean=false;
+  enrollmsg: string = '';
+  fileForm: FormGroup;
+  inputText: FormControl;
+  uploadmsg: string = '';
+  enrollbtnflag: boolean = true;
+  msgflag: boolean = false;
+  resumerqrd: string = '';
+  shortLink: string = "";
+  loading: boolean = false; // Flag variable
+  file: boolean = false;
+  registerForm: any = FormGroup;
+  submitted = false;
   internship: any[] = [];
   constructor(public dialog: MatDialog,private route: ActivatedRoute, private userservice: UserService,private router:Router) {
     this.route.queryParams.subscribe(data => {
@@ -25,11 +38,17 @@ export class ViewInternshipsComponent implements OnInit {
     })
   }
 
+  get f() { return this.registerForm.controls; }
   ngOnInit(): void {
-  }
+    this.fileForm=new FormGroup({
+      fileinput : new FormControl('', [Validators.required])
+    })
+    
 
+
+  }
   enroll(id:any) {
-    let user=false;
+   // let user=false;
     if (localStorage.getItem('login') == 'true') {
       let user={id:id.id,firstname:localStorage.getItem('firstname'),lastname:localStorage.getItem('lastname'),
       email:localStorage.getItem('email'),title:id.title,sub:id.sub,location:id.location}
@@ -50,7 +69,23 @@ export class ViewInternshipsComponent implements OnInit {
 
     dialogRef.afterClosed().subscribe(result => {
       if(result=='success') {
-        window.location.reload();
+        let user = {
+          id: id.id, firstname: localStorage.getItem('firstname'), lastname: localStorage.getItem('lastname'),
+          email: localStorage.getItem('email'), title: id.title, sub: id.sub, location: id.location
+        }
+        this.userservice.applytojobs(user).subscribe((data: any) => {
+          let result = JSON.parse(data);
+          if (result.message == 'user already exists') {
+            this.enrollmsg = 'user already applied to this job,to apply for other jobs';
+            this.enrollbtnflag = false;
+            this.msgflag = false;
+          } else {
+            this.enrollmsg = 'successfully apply  want to apply for other jobs ';
+            this.enrollbtnflag = false;
+            this.msgflag = true;
+          }
+        })
+        this.fileForm.reset();
       }
     });
     }

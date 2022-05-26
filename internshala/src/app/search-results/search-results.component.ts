@@ -58,7 +58,7 @@ export class SearchResultsComponent implements OnInit {
 
           }
         }
-      }else if (Object.hasOwn(data, 'worktype') && Object.hasOwn(data, 'type')) {
+      } else if (Object.hasOwn(data, 'worktype') && Object.hasOwn(data, 'type')) {
         if (data['type'] == "jobs") {
           if (data['worktype'] == "work from home") {
             this.internships = this.userservice.internship.filter((val) =>

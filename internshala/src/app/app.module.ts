@@ -39,6 +39,7 @@ import { ForgetPasswordComponent } from './component/forget-password/forget-pass
 import { NgxMatFileInputModule } from '@angular-material-components/file-input';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { DeleteuserComponent } from './component/deleteuser/deleteuser.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -64,6 +65,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     ViewJobComponent,
     ViewInternshipsComponent,
     ForgetPasswordComponent,
+    DeleteuserComponent,
    
   
     

@@ -42,6 +42,23 @@
   <a href="/home" *ngIf="islogin">
     <button class="headingbutton" (click)="logout()"
       style="background-color: blue; color: beige; font-size: larger;">Logout</button></a>
+
+
+
+
+
+
+  <ul class="nav_links"  *ngIf="islogin">
+    <li class="nav-item dropdown" id="myDropdown">
+      <a class="nav-link dropdown-toggle"  data-bs-toggle="dropdown" style="color: blue; font-size: larger;">
+        Accounts </a>
+      <ul class="dropdown-menu">
+        <li> <a   class="dropdown-item"><button mat-button (click)="openDialogDA()" class="headingbutton"
+          style="color: blue; font-size: larger;">Deactivated Account</button></a>
+        </li>
+      </ul>
+    </li>
+  </ul>
   <a href="/register" *ngIf="!islogin">
     <button class="headingbutton" style="background-color: blue; color: beige; font-size: larger;">Register</button></a>
 </header>

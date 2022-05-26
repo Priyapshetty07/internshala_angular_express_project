@@ -1,0 +1,185 @@
+<br>
+<div class="modal-body" style="background-color: whitesmoke">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-5">
+                <img src="../../../assets/image/remove user.png"
+                    alt="images" width="400" height="380" />
+            </div>
+            <div class="col">
+                <div class="container" style="border: 2px solid rgb(240, 234, 234); border-radius: 10px;">
+                    <!-- <div class="row mt-3">
+                    <div class="container mt-3 mb-3"
+                        style="border: 1px solid #dee2e6!important; padding: 6px; border-radius: 5px;">
+                        <a class="google_login" href="#" style="text-decoration: none; color: #000;">
+                            <div style="text-align: center;">
+                                <div>
+                                    <img src="https://internshala.com/static/images/login/google_logo.png">
+
+                                    <b>Sign Up with Google</b>
+                                </
+                                div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col">
+                        <div class="border" style="border: 1px solid #dee2e6!important; width:160px;"></div>
+                    </div>
+
+                    <div class="col" style="margin-top: -12px;">
+                        OR
+                    </div>
+
+                    <div class="col">
+                        <div class="border" style="border: 1px solid #dee2e6!important; width:160px;"></div>
+                    </div>
+                </div>  -->
+                    <!-- <form class="row g-3" novalidate [formGroup]="myform">
+                        <div class="row mt-3">
+
+                            <div class="col">
+                                <br>
+                                <label for="formGroupExampleInput2" class="form-label"><b>Email</b></label>
+                                <input formControlName="email" type="email" class="form-control"
+                                    id="formGroupExampleInput2" placeholder="shashank@example.com">
+                                <div class="text-danger"
+                                    *ngIf="myform.controls['email'].touched && myform.controls['email'].invalid ">
+                                    <p *ngIf="myform.controls['email'].errors?.['required']"><b>Email is required</b>
+                                    </p>
+                                    <p *ngIf="myform.controls['email'].errors?.['email']"><b>Please enter valid
+                                            Email</b>
+                                    </p>
+                                    <p *ngIf="myform.controls['email'].errors?.['minlength']"><b>Email min length 4
+                                            character is required</b></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" row mt-3">
+                            <div class="col">
+                                <label for="formGroupExampleInput2" class="form-label"><b>Password</b></label>
+                                <input formControlName="password" type="password" class="form-control"
+                                    id="formGroupExampleInput2" placeholder="Minimum be atleast 5 characters">
+                                <div class="text-danger"
+                                    *ngIf="myform.controls['password'].touched && myform.controls['password'].invalid">
+                                    <p *ngIf="myform.controls['password'].errors?.['required']"><b>Please Enter
+                                            Password</b>
+                                    </p>
+                                    <p *ngIf="myform.controls['password'].errors?.['minlength']"><b>Min length should 5
+                                            char</b></p>
+                                    <p *ngIf="myform.controls['password'].errors?.['maxlength']"><b>Max length should 7
+                                            char</b></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col">
+                                <a href="/forgot-password" target="_blank"
+                                    style="float: right; text-decoration: none"><b>Forgot
+                                        password?</b></a>
+                            </div>
+
+                            <div>
+                                <div class="row mt-3">
+                                    <div class="col">
+                                        <div class="d-grid gap-2">
+                                            <button (click)="getValues()" type="submit"
+                                                class="btn btn-primary">Login</button>
+                                        </div>
+                                    </div>
+                                    <div>
+
+                                        <div class="row mt-3">
+                                            <label style="text-align: center;">
+                                                New to Internshala?
+                                                <a href="/register" target="_blank"
+                                                    style="text-decoration: none;"><b>Register</b></a>
+                                            </label>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form> -->
+
+                    <form class="row g-3" novalidate [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                        <div style="margin-top:10%; text-align: center; color: blue; font-size: 25px;">
+                            <b>Deactivate Account Here! </b>
+                        </div>
+
+                        
+                        <br>
+                        <div class=" row mt-3">
+                            <div class=" form-group mb-3">
+                                <p><b></b> </p>
+                                <label for="paswd"><b>Enter the correct password to deactivate account :</b></label>
+                                <br><br>
+                                <input type="password" class="form-control" formControlName="paswd"
+                                    id="exampleInputPassword1" placeholder="Password" minlength="2"
+                                    [ngClass]="{ 'is-invalid': submitted && f['paswd'].errors }" required>
+                                <div *ngIf="submitted && f['paswd'].errors" class="invalid-feedback">
+                                    <div class="text-danger" *ngIf="f['paswd'].errors['required']">Password is required
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            
+
+                            <div class="row mt-3">
+                                
+
+                                <div>
+                                    <div class="row mt-3">
+                                        <div class="col">
+                                            <div class="d-grid gap-2">
+
+                                                <div class="form-group">
+                                                    <button  type="submit"
+                                                        class="btn btn-danger blocks">
+                                                        <span *ngIf="loading"
+                                                            class="spinner-border spinner-border-sm mr-1"></span>
+                                                        Deactivate
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+
+                                        
+                                            <br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div *ngIf="userMessage" class="form-control is-invalid"> {{userMessage}}</div>
+                            <br> <br> <br>
+                            <!-- <button type="submit" class="btn btn-primary">Login</button> -->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="d-flex justify-content-between">
+    <div class="form-group">
+        <button [disabled]="loading" class="btn btn-primary">
+            <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+            Login
+        </button>
+    </div>
+    <div>
+        <button class="btn btn-primary"><a routerLink="/register">Register</a></button>
+    </div>
+    <div>
+        <button class="btn btn-primary"><a href="#">forget password</a></button>
+    </div>
+
+</div> -->
