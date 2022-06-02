@@ -96,7 +96,7 @@
                                 <!-- <h3 *ngIf="">{{uploadmsg}}</h3> -->
                             </div>
                             <div style="text-align: center;">
-                                <h3 [ngClass]="msgflag?'success':'error'">{{enrollmsg}}<a href="/jobs" *ngIf="!enrollbtnflag"> Click here</a></h3>
+                                <h3 [ngClass]="msgflag?'success':'error'">{{enrollmsg}}<a href="/internships" *ngIf="!enrollbtnflag"> Click here</a></h3>
                                 <button class="btn btn-primary" (click)="enroll(intern)" [disabled]="!fileForm.valid"> Enroll </button>
                             </div>
                             <h2>{{resumerqrd}}</h2>
